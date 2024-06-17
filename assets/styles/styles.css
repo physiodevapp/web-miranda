@@ -49,6 +49,63 @@
 .rooms__page-header__navbar .page-header__navbar__pages .page--active {
   color: #BEAD8E;
 }
+.rooms__room-card {
+  text-align: center;
+}
+.rooms__room-card__image {
+  max-height: 218px;
+  height: 218px;
+  width: 100%;
+  background: #E9E9E9;
+}
+.rooms__room-card__features {
+  list-style: none;
+  position: relative;
+  transform: translateY(-70%);
+  display: inline-flex;
+  background-color: white;
+  padding: 0.68em 1.3em;
+  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.0509803922);
+}
+.rooms__room-card__features .feature {
+  padding: 0em 0.43em;
+}
+.rooms__room-card__features .feature img {
+  line-height: 100%;
+  vertical-align: middle;
+}
+.rooms__room-card__title {
+  font-family: "Old Standard TT";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.7200000286px;
+  text-align: center;
+}
+.rooms__room-card__subtitle {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  padding: 0.1em 3em 0.6em;
+  margin-top: 1.4em;
+}
+.rooms__room-card__price {
+  font-family: "Archivo";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.41px;
+  color: #BEAD8E;
+  margin: 0em 0.4em;
+}
+.rooms__room-card__button {
+  font-family: "Archivo";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.41px;
+  margin: 0em 0.4em;
+}
 
 html,
 * {

@@ -1,0 +1,70 @@
+
+@mixin roomCard {
+  text-align: center;
+
+  &__image {
+    max-height: 218px;;
+    height: 218px;
+    width: 100%;
+    background: #E9E9E9;
+  }
+
+  &__features {
+    list-style: none;
+    position: relative;
+    transform: translateY(-70%);
+    display: inline-flex;
+    background-color: white;
+    padding: 0.68em 1.3em;
+    box-shadow: 0px 8px 16px 0px #8A8A8A0D;
+
+    & .feature {
+      padding: 0em 0.43em;
+
+      img {
+        line-height: 100%;
+        vertical-align: middle;
+      }
+
+      &--included {
+
+      }
+    }    
+  }
+
+  &__title {
+    font-family: $font-oldStandard;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.7200000286102295px;
+    text-align: center;
+  }
+  
+  &__subtitle {
+    font-family: $font-roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;    
+    padding: 0.1em 3em 0.6em;
+    margin-top: 1.4em;
+  }
+
+  &__price {
+    font-family: $font-archivo;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17.41px;
+    color: #BEAD8E;
+    margin: 0em 0.4em;
+  }
+
+  &__button {
+    font-family: $font-archivo;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17.41px;
+    margin: 0em 0.4em;
+  }
+}

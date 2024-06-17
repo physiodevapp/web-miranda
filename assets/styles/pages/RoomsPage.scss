@@ -1,5 +1,6 @@
 
 @import "../components/PageHeaderComponent.scss";
+@import "../components/RoomCardComponent.scss";
 
 .rooms {
   &__page-header {
@@ -8,6 +9,10 @@
     &__navbar {
       @include pageNavbar;
     }
+  }
+
+  &__room-card {
+    @include roomCard;
   }
 
 }
