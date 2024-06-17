@@ -1,8 +1,12 @@
 $font-oldStandard: "Old Standard TT";
 $font-archivo: "Archivo";
 $font-roboto: "Roboto";
+$color-primary: #BDAC8D;
+$color-secondary: #FFFFFF;
+$color-tertiary: #000000;
 
 @import "./pages/RoomsPage.scss";
+@import "./pages/OffersPage.scss";
 
 html,
 * {
