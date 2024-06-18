@@ -4,25 +4,20 @@
   color: #FFFFFF;
   height: 310px;
   position: relative;
-  padding: 9.7em 1.2em;
+  padding: 5.8em 1.2em 4.7em;
 
   &__title {
     font-family: $font-oldStandard;
     font-weight: 400;
     font-size: 2.8rem;
-    position: absolute;
-    top: 54%;
-    transform: translateY(-50%);
     line-height: 1em;
+    margin-top: 0.2em;
   }
 
   &__subtitle {
     font-family: $font-archivo;
     font-weight: 700;
     font-size: 0.8rem;
-    position: absolute;
-    top: 32%;
-    transform: translateY(-50%);
     text-transform: uppercase;
     letter-spacing: 0.2rem;
   }
