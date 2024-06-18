@@ -1,0 +1,17 @@
+@import "../components/PageHeaderComponent.scss";
+@import "../components/ButtonComponent.scss";
+
+.offers {
+
+  &__page-header {
+    @include pageHeader;
+
+    &__navbar {
+      @include pageNavbar;
+    }
+  }
+
+  & .button {
+    @include button;
+  }
+}
