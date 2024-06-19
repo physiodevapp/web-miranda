@@ -49,16 +49,21 @@
 .rooms__page-header__navbar .page-header__navbar__pages .page--active {
   color: #BEAD8E;
 }
-.rooms__room-card {
+.rooms__slider {
+  position: relative;
+  padding: 0em 1.26em;
+}
+.rooms__slider__room-card {
   text-align: center;
 }
-.rooms__room-card__image {
+.rooms__slider__room-card__image {
   max-height: 218px;
   height: 218px;
   width: 100%;
   background: #E9E9E9;
+  margin-top: 3em;
 }
-.rooms__room-card__features {
+.rooms__slider__room-card__features {
   list-style: none;
   position: relative;
   transform: translateY(-70%);
@@ -67,14 +72,14 @@
   padding: 0.68em 1.3em;
   box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.0509803922);
 }
-.rooms__room-card__features .feature {
+.rooms__slider__room-card__features .feature {
   padding: 0em 0.43em;
 }
-.rooms__room-card__features .feature img {
+.rooms__slider__room-card__features .feature img {
   line-height: 100%;
   vertical-align: middle;
 }
-.rooms__room-card__title {
+.rooms__slider__room-card__title {
   font-family: "Old Standard TT";
   font-size: 24px;
   font-weight: 400;
@@ -82,16 +87,16 @@
   letter-spacing: -0.7200000286px;
   text-align: center;
 }
-.rooms__room-card__subtitle {
+.rooms__slider__room-card__subtitle {
   font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  padding: 0.1em 3em 0.6em;
+  padding: 0.1em 1em 0.6em;
   margin-top: 1.4em;
 }
-.rooms__room-card__price {
+.rooms__slider__room-card__price {
   font-family: "Archivo";
   font-size: 16px;
   font-weight: 700;
@@ -99,12 +104,50 @@
   color: #BEAD8E;
   margin: 0em 0.4em;
 }
-.rooms__room-card__button {
+.rooms__slider__room-card__button {
   font-family: "Archivo";
   font-size: 16px;
   font-weight: 700;
   line-height: 17.41px;
   margin: 0em 0.4em;
+  border: none;
+  padding: 0em 0.3em;
+  background-color: #FFFFFF;
+  color: #BDBDBD;
+}
+.rooms__slider .pagination {
+  position: absolute;
+  bottom: 0em;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  left: 50%;
+  transform: translate(-50%, calc(100% + 2.6em));
+  max-width: 100%;
+}
+.rooms__slider .pagination .page {
+  font-family: "Oswald";
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: center;
+  padding: 0.7em 1.2em;
+  background: #FFFFFF;
+  color: #000000;
+}
+.rooms__slider .pagination .page.change-by-one {
+  padding: 0.7em 1.2em;
+  line-height: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.rooms__slider .pagination .page.not-allowed {
+  padding: 0.7em 1.0909em;
+}
+.rooms__slider .pagination .page--selected {
+  background: #BDAC8D;
+  color: #FFFFFF;
 }
 
 .offers .button {

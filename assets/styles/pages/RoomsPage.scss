@@ -11,8 +11,53 @@
     }
   }
 
-  &__room-card {
-    @include roomCard;
+  &__slider {
+    position: relative;
+    padding: 0em 1.26em;
+
+    &__room-card {
+      @include roomCard;
+    }
+
+    & .pagination {
+      position: absolute;
+      bottom: 0em;
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: center;
+      list-style: none;
+      left: 50%;
+      transform: translate(-50%, calc(100% + 2.6em));
+      max-width: 100%;
+
+      & .page {
+        font-family: "Oswald";
+        font-size: 0.9rem;
+        font-weight: 700;
+        line-height: 19px;
+        text-align: center;
+        padding: 0.7em 1.2em;
+        background: $color-secondary;
+        color: $color-tertiary;
+
+        &.change-by-one {
+          padding: 0.7em 1.2em;
+          line-height: 1;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &.not-allowed {
+          padding: 0.7em 1.0909em;
+        }
+        
+        &--selected {
+          background: $color-primary;
+          color: $color-secondary;
+        }
+      }
+    }
+
   }
 
 }
