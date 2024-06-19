@@ -3,24 +3,19 @@
   color: #FFFFFF;
   height: 310px;
   position: relative;
-  padding: 9.7em 1.2em;
+  padding: 5.8em 1.2em 4.7em;
 }
 .rooms__page-header__title {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 2.8rem;
-  position: absolute;
-  top: 54%;
-  transform: translateY(-50%);
   line-height: 1em;
+  margin-top: 0.2em;
 }
 .rooms__page-header__subtitle {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 0.8rem;
-  position: absolute;
-  top: 32%;
-  transform: translateY(-50%);
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
@@ -61,7 +56,6 @@
   height: 218px;
   width: 100%;
   background: #E9E9E9;
-  margin-top: 3em;
 }
 .rooms__slider__room-card__features {
   list-style: none;
@@ -93,7 +87,7 @@
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  padding: 0.1em 1em 0.6em;
+  padding: 0.1em 3em 0.6em;
   margin-top: 1.4em;
 }
 .rooms__slider__room-card__price {
@@ -110,10 +104,6 @@
   font-weight: 700;
   line-height: 17.41px;
   margin: 0em 0.4em;
-  border: none;
-  padding: 0em 0.3em;
-  background-color: #FFFFFF;
-  color: #BDBDBD;
 }
 .rooms__slider .pagination {
   position: absolute;
@@ -150,7 +140,158 @@
   color: #FFFFFF;
 }
 
-.offers .button {
+.offers__page-header {
+  background: #333333;
+  color: #FFFFFF;
+  height: 310px;
+  position: relative;
+  padding: 5.8em 1.2em 4.7em;
+}
+.offers__page-header__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 1em;
+  margin-top: 0.2em;
+}
+.offers__page-header__subtitle {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.offers__page-header__navbar {
+  position: absolute;
+  bottom: 0em;
+  right: 1.2em;
+  background-color: #FFFFFF;
+  padding: 1em;
+}
+.offers__page-header__navbar .page-header__navbar__pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  color: #333333;
+  font-family: "Archivo";
+}
+.offers__page-header__navbar .page-header__navbar__pages .page {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.offers__page-header__navbar .page-header__navbar__pages .page--divisor {
+  margin: 0em 0.4em;
+}
+.offers__page-header__navbar .page-header__navbar__pages .page--active {
+  color: #BEAD8E;
+}
+.offers__rooms {
+  padding: 0em 1.26em;
+}
+.offers__rooms__offer {
+  padding: 0em 0.5em;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1019607843);
+  position: relative;
+}
+.offers__rooms__offer .offer__price {
+  font-family: "Archivo";
+  font-weight: 700;
+  text-align: right;
+  position: absolute;
+  right: 1.5rem;
+}
+.offers__rooms__offer .offer__price--before {
+  font-size: 1.5rem;
+  line-height: 25.02px;
+  color: #BEAD8E;
+  top: 2.8em;
+}
+.offers__rooms__offer .offer__price--before .offer__price__time {
+  font-size: 1rem;
+  line-height: 11.97px;
+  text-decoration: line-through;
+}
+.offers__rooms__offer .offer__price--before .offer__price__value {
+  text-decoration: line-through;
+}
+.offers__rooms__offer .offer__price--after {
+  font-size: 2rem;
+  line-height: 32.64px;
+  color: #DE5777;
+  top: 3.4em;
+}
+.offers__rooms__offer .offer__price--after .offer__price__time {
+  font-size: 1rem;
+  line-height: 13.06px;
+}
+.offers__rooms__offer .offer__image {
+  height: 162px;
+  width: 100%;
+  background-color: #EBEBEB;
+}
+.offers__rooms__offer .offer__subtitle {
+  font-family: "Archivo";
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  color: #777777;
+  text-transform: uppercase;
+  margin-top: 0.6em;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+.offers__rooms__offer .offer__title {
+  font-family: "Old Standard TT";
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.4400000572px;
+  text-align: left;
+  color: #222222;
+  margin-top: 0.2em;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+.offers__rooms__offer .offer__description {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+  margin-top: 1.4em;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+.offers__rooms__offer .offer__amenities {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 0.4em;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+.offers__rooms__offer .offer__amenities__item {
+  width: 50%;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 17.58px;
+  text-align: left;
+  color: #777777;
+  display: flex;
+  align-items: center;
+  padding: 1em 0em 0em;
+}
+.offers__rooms__offer .offer__amenities__item img {
+  height: 16px;
+  padding-right: 0.5em;
+}
+.offers__rooms__offer .offer__button {
   padding-top: 1.6em;
   padding-bottom: 1.6em;
   background-color: #BDAC8D;
@@ -163,6 +304,10 @@
   text-transform: uppercase;
   color: white;
   border: none;
+  padding-left: 4em;
+  padding-right: 4em;
+  margin-top: 2.2em;
+  margin-left: 0.8rem;
 }
 
 html,

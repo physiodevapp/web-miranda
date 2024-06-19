@@ -1,5 +1,12 @@
 @import "../components/PageHeaderComponent.scss";
 @import "../components/ButtonComponent.scss";
+@import "../components/AmenitiesComponent.scss";
+@import "../components/RoomTitleComponent.scss";
+@import "../components/RoomDescriptionComponent.scss";
+@import "../components/RoomSubtitleComponent.scss";
+
+$offers-rooms-element-marging-right: 0.8rem;
+$offers-rooms-element-marging-left: $offers-rooms-element-marging-right;
 
 .offers {
 
@@ -11,7 +18,93 @@
     }
   }
 
-  & .button {
-    @include button;
+  &__rooms {
+    padding: 0em 1.26em;
+
+    &__offer {
+      padding: 0em 0.5em;
+      box-shadow: 0px 14px 24px 0px #B8B8B81A;
+      position: relative;
+
+      & .offer__price {
+        font-family: $font-archivo;
+        font-weight: 700;
+        text-align: right;
+        position: absolute;
+        right: 1.5rem;
+        
+        &--before {
+          font-size: 1.5rem;
+          line-height: 25.02px;
+          color: #BEAD8E;
+          top: 2.8em;          
+
+          & .offer__price__time {
+            font-size: 1rem;
+            line-height: 11.97px;
+            text-decoration: line-through;
+          }
+
+          & .offer__price__value {
+            text-decoration: line-through;
+          }
+        }
+
+        &--after {
+          font-size: 2rem;
+          line-height: 32.64px;
+          color: #DE5777;
+          top: 3.4em;
+
+          & .offer__price__time {
+            font-size: 1rem;
+            line-height: 13.06px;              
+          }
+        }
+
+      }
+
+      & .offer__image {
+        height: 162px;
+        width: 100%;
+        background-color: #EBEBEB;
+      }
+
+      & .offer__subtitle {
+        @include room-subtitle;
+        margin-top: 0.6em;
+        margin-left: $offers-rooms-element-marging-left;
+        margin-right: $offers-rooms-element-marging-right;
+      }
+
+      & .offer__title {
+        @include room-title;
+        margin-top: 0.2em;
+        margin-left: $offers-rooms-element-marging-left;
+        margin-right: $offers-rooms-element-marging-right;
+      }
+
+      & .offer__description {
+        @include room-description;
+        margin-top: 1.4em;
+        margin-left: $offers-rooms-element-marging-left;
+        margin-right: $offers-rooms-element-marging-right;
+      }
+  
+      & .offer__amenities {
+        @include amenities;
+        margin-top: 0.4em;
+        margin-left: $offers-rooms-element-marging-left;
+        margin-right: $offers-rooms-element-marging-right;
+      }
+
+      & .offer__button {
+        @include button;
+        padding-left: 4em;
+        padding-right: 4em;
+        margin-top: 2.2em;
+        margin-left: $offers-rooms-element-marging-left;
+      }
+    }
   }
 }
