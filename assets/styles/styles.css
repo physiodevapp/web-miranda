@@ -104,11 +104,116 @@
   background-color: transparent;
   color: #FFFFFF;
   outline: none;
+  font-family: "Roboto";
 }
 .home__availability .date-wrapper__text-input::placeholder {
   color: #686868;
   opacity: 1; /* Firefox */
 }
+.home__about-us {
+  padding: 5em 0em 0em;
+}
+.home__about-us__summary {
+  padding: 0em 1.2em;
+}
+.home__about-us__summary__title {
+  font-family: "Old Standard TT";
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.4400000572px;
+  text-align: left;
+  color: #222222;
+  margin-top: 0.6em;
+}
+.home__about-us__summary__subtitle {
+  font-family: "Archivo";
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  color: #777777;
+  text-transform: uppercase;
+}
+.home__about-us__summary__description {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+  margin-top: 0.8em;
+}
+.home__about-us__summary__button {
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+  background-color: #BDAC8D;
+  font-family: "Archivo";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  padding-right: 4.1em;
+  padding-left: 4.1em;
+  margin-top: 1.6em;
+}
+.home__about-us__feature {
+  text-align: center;
+  margin: 3.4em 0em 0em;
+}
+.home__about-us__feature__image {
+  width: 270px;
+  height: 300px;
+  background-color: #E4E4E4;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home__about-us__feature__details {
+  max-width: 270px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0em 1em 2.8em;
+}
+.home__about-us__feature__details .feature__details__image {
+  margin-top: 3.1em;
+}
+.home__about-us__feature__details .feature__details__title {
+  font-family: "Old Standard TT";
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.4400000572px;
+  text-align: left;
+  color: #222222;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0.6em;
+}
+.home__about-us__feature__details .feature__details__description {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+  text-align: center;
+  margin-top: 1em;
+}
+.home__about-us__feature__details--black {
+  background-color: #222222;
+}
+.home__about-us__feature__details--black .feature__details__title, .home__about-us__feature__details--black .feature__details__description {
+  color: #FFFFFF;
+}
+
 .rooms__page-header {
   background: #333333;
   color: #FFFFFF;

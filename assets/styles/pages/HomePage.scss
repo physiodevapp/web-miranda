@@ -84,6 +84,7 @@
         background-color: transparent;
         color: $color-secondary;
         outline: none;
+        font-family: $font-roboto;
 
         &::placeholder {
           color: #686868;
@@ -95,6 +96,79 @@
   }
 
   &__about-us {
-    
+    padding: 5em 0em 0em;
+
+    &__summary {
+      padding: 0em 1.2em;
+
+      &__title {
+        @include room-title;
+        margin-top: 0.6em;
+      }
+  
+      &__subtitle {
+        @include room-subtitle;
+      }
+  
+      &__description {
+        @include room-description;
+        margin-top: 0.8em;
+      }
+      &__button {
+        @include button;
+        padding-right: 4.1em;
+        padding-left: 4.1em;
+        margin-top: 1.6em;
+      }
+    }
+
+    &__feature {
+      text-align: center;
+      margin: 3.4em 0em 0em;
+
+      &__image {
+        width:270px;
+        height: 300px;
+        background-color: #E4E4E4;
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &__details {
+        max-width: 270px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0em 1em 2.8em;
+
+        .feature__details__image {
+          margin-top: 3.1em;
+        }
+        
+        .feature__details__title {
+          @include room-title;
+          text-align: center;
+          font-size: 2rem;
+          margin-top: 0.6em;
+        }
+
+        .feature__details__description {
+          @include room-description;
+          text-align: center;
+          margin-top: 1em;
+        }
+
+        &--black {
+          background-color: $color-tertiary;
+
+          .feature__details__title, .feature__details__description {
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+
   }
 }
