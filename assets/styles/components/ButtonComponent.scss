@@ -1,0 +1,15 @@
+
+@mixin button {
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+  background-color: $color-primary;
+  font-family: $font-archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.799999952316284px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+}

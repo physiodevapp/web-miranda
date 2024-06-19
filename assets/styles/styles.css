@@ -107,6 +107,21 @@
   margin: 0em 0.4em;
 }
 
+.offers .button {
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+  background-color: #BDAC8D;
+  font-family: "Archivo";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+}
+
 html,
 * {
   box-sizing: border-box;
