@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["styles.scss"],"names":[],"mappings":"AAAA;AAAA;EAEE;EACA;EACA;;;AAEF;EACE","file":"styles.css"}
+{"version":3,"sourceRoot":"","sources":["pages/RoomsPage.scss","components/PageHeaderComponent.scss","styles.scss"],"names":[],"mappings":"AAIE;ECFA;EACA;EACA;EACA;EACA;;AAEA;EACE,aCTe;EDUf;EACA;EACA;EACA;EACA;EACA;;AAGF;EACE,aClBW;EDmBX;EACA;EACA;EACA;EACA;EACA;EACA;;ADnBA;ECwBF;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA,aC1CW;;AD4CX;EACE;EACA;;AAEA;EACE;;AAGF;EACE;;;ACjDR;AAAA;EAEE;EACA;EACA;;;AAEF;EACE","file":"styles.css"}

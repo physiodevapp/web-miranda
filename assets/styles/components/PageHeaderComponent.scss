@@ -1,0 +1,59 @@
+
+@mixin pageHeader {
+  background: #333333;
+  color: #FFFFFF;
+  height: 310px;
+  position: relative;
+  padding: 9.7em 1.2em;
+
+  &__title {
+    font-family: $font-oldStandard;
+    font-weight: 400;
+    font-size: 2.8rem;
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    line-height: 1em;
+  }
+
+  &__subtitle {
+    font-family: $font-archivo;
+    font-weight: 700;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 32%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@mixin pageNavbar {
+  position: absolute;
+  bottom: 0em;
+  right: 1.2em;
+  background-color: #FFFFFF;
+  padding: 1em;
+  
+  & .page-header__navbar__pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    color:#333333;
+    font-family: $font-archivo;
+
+    & .page {
+      font-weight: 700;
+      font-size: 1rem;
+
+      &--divisor {
+        margin: 0em 0.4em;
+      }
+
+      &--active {
+        color: #BEAD8E;
+      }
+    }
+  }
+}

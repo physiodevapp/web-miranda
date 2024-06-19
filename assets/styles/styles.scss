@@ -1,3 +1,8 @@
+$font-oldStandard: "Old Standard TT";
+$font-archivo: "Archivo";
+
+@import "./pages/RoomsPage.scss";
+
 html,
 * {
   box-sizing: border-box;
