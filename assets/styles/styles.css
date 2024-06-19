@@ -1,7 +1,58 @@
+.home__page-header {
+  background: #333333;
+  color: #FFFFFF;
+  position: relative;
+  padding: 5.8em 1.2em 4.7em;
+}
+.home__page-header__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 1em;
+  margin-top: 0.28em;
+}
+.home__page-header__subtitle {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.home__page-header__title {
+  margin-top: 0.8em;
+}
+.home__page-header .button {
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+  background-color: #BDAC8D;
+  font-family: "Archivo";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  display: block;
+}
+.home__page-header .button--primary {
+  padding-right: 3.27em;
+  padding-left: 3.27em;
+  border: 1px solid #BDAC8D;
+  margin-top: 3em;
+}
+.home__page-header .button--black {
+  padding-right: 3.337em;
+  padding-left: 3.337em;
+  background: inherit;
+  border: 1px solid white;
+  margin-top: 2em;
+}
+
 .rooms__page-header {
   background: #333333;
   color: #FFFFFF;
-  height: 310px;
   position: relative;
   padding: 5.8em 1.2em 4.7em;
 }
@@ -127,7 +178,7 @@
   text-align: center;
   padding: 0.7em 1.2em;
   background: #FFFFFF;
-  color: #000000;
+  color: #222222;
 }
 .rooms__slider .pagination .page.change-by-one {
   padding: 0.7em 1.2em;
@@ -146,7 +197,6 @@
 .offers__page-header {
   background: #333333;
   color: #FFFFFF;
-  height: 310px;
   position: relative;
   padding: 5.8em 1.2em 4.7em;
 }

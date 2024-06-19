@@ -1,0 +1,38 @@
+
+@import "../components/PageHeaderComponent.scss";
+@import "../components/RoomCardComponent.scss";
+@import "../components/ButtonComponent.scss";
+@import "../components/RoomTitleComponent.scss";
+@import "../components/RoomDescriptionComponent.scss";
+@import "../components/RoomSubtitleComponent.scss";
+
+.home {
+  
+  &__page-header {
+    @include pageHeader;
+
+    &__title {
+      margin-top: 0.8em;
+    }
+
+    .button {
+      @include button;
+      display: block;
+
+      &--primary {
+        padding-right: 3.27em;
+        padding-left: 3.27em;
+        border: 1px solid $color-primary;
+        margin-top: 3em;
+      }
+
+      &--black {
+        padding-right: 3.337em;
+        padding-left: 3.337em;
+        background: inherit;
+        border: 1px solid white;
+        margin-top: 2em;
+      }
+    }
+  }
+}
