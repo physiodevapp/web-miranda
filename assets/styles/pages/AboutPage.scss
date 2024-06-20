@@ -32,4 +32,81 @@
       margin-top: 1em;
     }
   }
+
+  &__services {
+    padding: 0em 1.2em;
+    margin-top: 3em;
+
+    &__list {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__item {
+        width: 50%;
+        text-align: center;
+        padding: 3.05em 0em;
+        max-width: 169px;
+
+        &--primary {
+          background-color: $color-primary;
+        }
+
+        .item__title {
+          font-family: $font-archivo;
+          font-size: 0.8rem;
+          font-weight: 700;
+          line-height: 14px;
+          letter-spacing: 2.4000000953674316px;
+          text-align: center;  
+          color: $color-tertiary;
+          text-transform: uppercase;
+          
+          &--secondary {
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+  }
+
+  &__restaurant {
+    margin-top: 3em;
+    padding: 0em 2.5em;
+
+    &__image {
+      height: 232px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      background-color: #E5E5E5;
+    }
+
+    &__title {
+      @include room-title;
+      margin-top: 2em;
+      margin-top: 0.8em;
+      font-size: 2.2rem;
+    }
+
+    &__subtitle {
+      @include room-subtitle;
+      margin-top: 2em;
+      margin-top: 2.4em;
+    }
+
+    &__description {
+      @include room-description;
+      margin-top: 1.4em;
+    }
+
+    &__button {
+      @include button;
+      padding-right: 3.27em;
+      padding-left: 3.27em;
+      margin-top: 1.6em;
+    }
+  }
 }

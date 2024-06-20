@@ -681,6 +681,100 @@
   text-align: center;
   margin-top: 1em;
 }
+.about__services {
+  padding: 0em 1.2em;
+  margin-top: 3em;
+}
+.about__services__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about__services__list__item {
+  width: 50%;
+  text-align: center;
+  padding: 3.05em 0em;
+  max-width: 169px;
+}
+.about__services__list__item--primary {
+  background-color: #BDAC8D;
+}
+.about__services__list__item .item__title {
+  font-family: "Archivo";
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 2.4000000954px;
+  text-align: center;
+  color: #222222;
+  text-transform: uppercase;
+}
+.about__services__list__item .item__title--secondary {
+  color: #FFFFFF;
+}
+.about__restaurant {
+  margin-top: 3em;
+  padding: 0em 2.5em;
+}
+.about__restaurant__image {
+  height: 232px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  background-color: #E5E5E5;
+}
+.about__restaurant__title {
+  font-family: "Old Standard TT";
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.4400000572px;
+  text-align: left;
+  color: #222222;
+  margin-top: 2em;
+  margin-top: 0.8em;
+  font-size: 2.2rem;
+}
+.about__restaurant__subtitle {
+  font-family: "Archivo";
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  color: #777777;
+  text-transform: uppercase;
+  margin-top: 2em;
+  margin-top: 2.4em;
+}
+.about__restaurant__description {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+  margin-top: 1.4em;
+}
+.about__restaurant__button {
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+  background-color: #BDAC8D;
+  font-family: "Archivo";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  padding-right: 3.27em;
+  padding-left: 3.27em;
+  margin-top: 1.6em;
+}
 
 .rooms__page-header {
   background: #333333;
