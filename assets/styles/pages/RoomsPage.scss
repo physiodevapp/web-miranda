@@ -1,6 +1,7 @@
 
 @import "../components/PageHeaderComponent.scss";
 @import "../components/RoomCardComponent.scss";
+@import "../components/FooterComponent.scss";
 
 .rooms {
   &__page-header {
@@ -60,4 +61,8 @@
 
   }
 
+}
+
+.footer {
+  @include footer;
 }
