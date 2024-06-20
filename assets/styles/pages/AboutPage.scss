@@ -182,4 +182,80 @@
 
     }
   }
+
+  &__facts {
+    padding: 0em 1.2em;
+    margin-top: 3em;
+
+    &__title {
+      @include room-title;
+      font-size: 3.8rem;
+      line-height: 60px;
+      margin-top: 0.4em;
+    }
+
+    &__subtitle {
+      @include room-subtitle;
+    }
+
+    &__list {
+      list-style: none;
+      margin-top: 2.8em;
+
+      &__item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 5em;
+
+        .facts__list__item__image {
+          height: 100%;
+        }
+
+        .facts__list__item__wrapper {
+          padding-left: 1.4em;
+
+          &__title {
+            @include room-title;
+            font-size: 3.8rem;
+            line-height: 60px
+          }
+
+          &__subtitle {
+            @include room-description;
+          }
+
+        }
+      }
+    }
+
+    &__slider {
+      margin: 3em auto 0em;
+      min-height: 160px;
+      max-width: 450px;
+      padding: 0em 0em 3em;
+
+      .facts__slider {
+
+        &__image {
+          height: 230px;
+          width: 100%;
+          background-color: #DFDFDF;
+        }
+
+      }
+
+      .swiper-slide {
+        padding: 0em 0em;
+      }
+
+      .swiper-pagination {
+
+        .swiper-pagination-bullet-active {
+          background-color: $color-primary;
+        }
+      }
+
+    }
+  }
 }
