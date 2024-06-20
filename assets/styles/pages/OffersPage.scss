@@ -5,6 +5,7 @@
 @import "../components/RoomTitleComponent.scss";
 @import "../components/RoomDescriptionComponent.scss";
 @import "../components/RoomSubtitleComponent.scss";
+@import "../components/FooterComponent.scss";
 
 $offers-rooms-element-marging-right: 0.8rem;
 $offers-rooms-element-marging-left: $offers-rooms-element-marging-right;
@@ -170,4 +171,8 @@ $offers-rooms-element-marging-left: $offers-rooms-element-marging-right;
     }
 
   }
+}
+
+.footer {
+  @include footer;
 }
