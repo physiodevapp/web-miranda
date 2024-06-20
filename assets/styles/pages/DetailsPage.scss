@@ -3,6 +3,7 @@
 @import "../components/RoomTitleComponent.scss";
 @import "../components/RoomDescriptionComponent.scss";
 @import "../components/RoomSubtitleComponent.scss";
+@import "../components/AmenitiesComponent.scss";
 
 .details {
 
@@ -119,6 +120,21 @@
       line-height: 24px;
       text-align: left;
       margin-top: 2.5em;
+    }
+  }
+
+  &__amenities {
+    margin-top: 2em;
+    padding: 0em 1em;
+
+    &__title {
+      @include room-title;
+      font-size: 1.9rem;
+    }
+
+    &__list {
+
+      @include amenities;
     }
   }
 
