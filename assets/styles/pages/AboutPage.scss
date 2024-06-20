@@ -5,7 +5,11 @@
 @import "../components/RoomDescriptionComponent.scss";
 @import "../components/RoomSubtitleComponent.scss";
 @import "../components/FooterComponent.scss";
+@import "../components/NavbarComponent.scss";
 
+.navbar {
+  @include navbar;
+}
 
 .about {
   &__page-header {
