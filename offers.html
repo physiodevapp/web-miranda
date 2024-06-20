@@ -11,6 +11,36 @@
   <title>Document</title>
 </head>
 <body class="offers">
+  <nav class="navbar">
+    <button id="menu-button" class="navbar__button">
+      <img src="./assets/images/1 (1).svg" alt="">
+      <img src="./assets/images/1 (2).svg" style="display: none;" alt="">
+    </button>
+    <div class="navbar__brand">
+      <img class="navbar__brand__logo" src="./assets/images/H.svg" alt="">
+      <img class="navbar__brand__title" src="./assets/images/Hotel Miranda.svg" alt="">
+    </div>
+    <button class="navbar__button">
+      <img src="./assets/images/392531_account_friend_human_man_member_icon 1.svg" alt="">
+    </button>
+    <button class="navbar__button">
+      <img src="./assets/images/4092559_search_magnifier_mobile ui_zoom_icon 1.svg" alt="">
+    </button>
+    <ul id="navbar-menu" class="navbar__menu">
+      <li class="navbar__menu__link">
+        <a href="./about.html">About Us</a>
+      </li>
+      <li class="navbar__menu__link">
+        <a href="./rooms.html">Rooms</a>
+      </li>
+      <li class="navbar__menu__link">
+        <a href="./offers.html">Offers</a>
+      </li>
+      <li class="navbar__menu__link">
+        <a href="./contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
   <header class="offers__page-header">
     <h6 class="offers__page-header__subtitle">THE ULTIMATE LUXURY</h6>
     <h4 class="offers__page-header__title">Our Offers</h4>
@@ -41,10 +71,6 @@
         <ul class="offer__amenities__item"><img src="./assets/images/svg-gobbler - 2022-03-03T182946.721 1.svg"/>Single bed</ul>
         <ul class="offer__amenities__item"><img src="./assets/images/svg-gobbler - 2022-03-03T175828.668 1 (2).svg"/>Shop near</ul>
         <ul class="offer__amenities__item"><img src="./assets/images/svg-gobbler - 2022-03-03T180356.761 1 (4).svg"/>Towels</ul>
-        <!-- <ul class="offer__amenities__item"><img src="./assets/images/svg-gobbler - 2022-03-03T183514.620 1.svg"/>24/7 Online Support</ul>
-        <ul class="offer__amenities__item"><img src="./assets/images/svg-gobbler - 2022-03-03T183336.988 1.svg"/>Strong Locker</ul>
-        <ul class="offer__amenities__item"><img src="./assets/images/svg-gobbler - 2022-03-03T183435.137 1.svg"/>Smart Security</ul>
-        <ul class="offer__amenities__item"><img src="./assets/images/svg-gobbler - 2022-03-03T183600.191 1.svg"/>Expert Team</ul> -->
       </li>
       <button class="offer__button">Book now</button>
     </article>
@@ -393,20 +419,24 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper(".swiper", {
-      // Optional parameters
-
-
-      // If we need pagination
       pagination: {
         el: ".swiper-pagination",
       },
-
-      // Navigation arrows
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
     });
+  </script>
+  <script>
+    const menuButton = document.getElementById("menu-button");
+    const navbarMenu = document.getElementById("navbar-menu");
+    
+    const handleClickMenuButton = () => {
+      console.log('first')
+      navbarMenu.classList.toggle("opened");
+    }
+    menuButton.addEventListener("click", handleClickMenuButton);
   </script>
 
 </body>
