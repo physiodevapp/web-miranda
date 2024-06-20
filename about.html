@@ -60,10 +60,92 @@
     <p class="about__restaurant__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
     <button class="about__restaurant__button">Take a tour</button>
   </section>
-  <section class="about__facilities"></section>
-  <section class="about__facts"></section>
+  <section class="about__facilities">
+    <h6 class="about__facilities__subtitle">Facilities</h6>
+    <h4 class="about__facilities__title">Core Features</h4>
+    <div class="swiper about__facilities__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="facilities__slider">
+            <span class="facilities__slider__number" >01</span>
+            <img class="facilities__slider__image" src="./assets/images/icon 1.svg" alt="" />
+            <h4 class="facilities__slider__title">Have High Rating</h4>
+            <p class="facilities__slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="facilities__slider">
+            <img class="facilities__slider__image" src="./assets/images/icon 1.svg" alt="" />
+            <h4 class="facilities__slider__title">Have High Rating</h4>
+            <p class="facilities__slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+          </article>
+        </div>
+      </div> 
+
+      <div class="swiper-pagination"></div> 
+    </div>
+  </section>
+  <section class="about__facts">
+    <h6 class="about__facts__subtitle">Counter</h6>
+    <h4 class="about__facts__title">Some Fun Facts</h4>
+    <ul class="about__facts__list">
+      <li class="about__facts__list__item">
+        <img class="facts__list__item__image" src="./assets/images/svg-gobbler - 2022-03-03T162637.580 1.svg" alt="">
+        <div class="facts__list__item__wrapper">
+          <h4 class="facts__list__item__wrapper__title">8000</h4>
+          <h6 class="facts__list__item__wrapper__subtitle">Happy Users</h6>
+        </div>
+      </li>
+      <li class="about__facts__list__item">
+        <img class="facts__list__item__image" src="./assets/images/svg-gobbler - 2022-03-03T162713.643 1.svg" alt="">
+        <div class="facts__list__item__wrapper">
+          <h4 class="facts__list__item__wrapper__title">10M</h4>
+          <h6 class="facts__list__item__wrapper__subtitle">Reviews & Appriciate</h6>
+        </div>
+      </li>
+      <li class="about__facts__list__item">
+        <img class="facts__list__item__image" src="./assets/images/svg-gobbler - 2022-03-03T162519.735 1.svg" alt="">
+        <div class="facts__list__item__wrapper">
+          <h4 class="facts__list__item__wrapper__title">100</h4>
+          <h6 class="facts__list__item__wrapper__subtitle">Country Coverage</h6>
+        </div>
+      </li>
+    </ul>
+    <div class="swiper about__facts__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="facts__slider">
+            <img class="facts__slider__image" src="" alt="" />
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="facts__slider">
+            <img class="facts__slider__image" src="" alt="" />
+          </article>
+        </div>
+      </div> 
+
+      <div class="swiper-pagination"></div> 
+    </div>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiperFacilities = new Swiper(".swiper.about__facilities__slider", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+    });
+  </script>
+  <script>
+    const swiperFacts = new Swiper(".swiper.about__facts__slider", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+    });
+  </script>
 
 </body>
 </html>
