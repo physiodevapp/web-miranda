@@ -5,6 +5,7 @@
 @import "../components/RoomTitleComponent.scss";
 @import "../components/RoomDescriptionComponent.scss";
 @import "../components/RoomSubtitleComponent.scss";
+@import "../components/FooterComponent.scss";
 
 .home {
   
@@ -444,6 +445,7 @@
   &__milestones {
     background-color: $color-tertiary;
     padding: 1em 0em;
+    margin-top: 3em;
 
     &__list {
       list-style: none;
@@ -476,4 +478,40 @@
     }
   }
 
+  &__gallery {
+    
+    &__slider {
+      margin: 3em auto 0em;
+      min-height: 160px;
+      max-width: 450px;
+      padding: 0em 0em 3em;
+
+      .gallery__slider {
+
+        &__image {
+          height: 230px;
+          width: 100%;
+          background-color: #DFDFDF;
+        }
+
+      }
+
+      .swiper-slide {
+        padding: 0em 0em;
+      }
+
+      .swiper-pagination {
+
+        .swiper-pagination-bullet-active {
+          background-color: $color-primary;
+        }
+      }
+
+    }
+  }
+
+}
+
+.footer {
+  @include footer;
 }
