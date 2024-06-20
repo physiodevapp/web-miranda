@@ -441,4 +441,43 @@
     }
   }
 
+  &__milestones {
+    background-color: $color-tertiary;
+    padding: 1em 0em;
+
+    &__list {
+      list-style: none;
+
+      &__item {
+        text-align: center;
+        padding: 2em 0em;
+
+        .milestones__list__item {
+
+          &__image {
+
+          }
+
+          &__title {
+            font-family: $font-roboto;
+            font-size: 3.8rem;
+            font-weight: 700;
+            line-height: 81.84px;
+            text-align: center;
+            color: $color-secondary;
+          }
+
+          &__subtitle {
+            font-family: $font-roboto;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 21.82px;
+            text-align: center;   
+            color: #999999;         
+          }
+        }
+      }
+    }
+  }
+
 }
