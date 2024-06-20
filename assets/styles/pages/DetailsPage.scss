@@ -1,0 +1,54 @@
+@import "../components/PageHeaderComponent.scss";
+@import "../components/ButtonComponent.scss";
+@import "../components/RoomTitleComponent.scss";
+@import "../components/RoomDescriptionComponent.scss";
+@import "../components/RoomSubtitleComponent.scss";
+
+.details {
+
+  &__page-header {
+    @include pageHeader;
+    padding-bottom: 4.9em;
+
+    &__navbar {
+      @include pageNavbar;
+    }
+
+  }
+
+  &__room {
+    margin-top: 3em;
+    padding: 0em 1.2em;
+
+    &__title {
+      @include room-title;
+      margin-top: 0.4em;
+    }
+
+    &__subtitle {
+      @include room-subtitle;
+    }
+
+    &__price {
+      font-family: $font-archivo;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 25.02px;
+      color: #BEAD8E;
+      margin-top: 0.8em;
+
+      &__time{
+        font-size: 0.8rem;
+        line-height: 11.97px;
+      }
+    }
+
+    &__image {
+      width: 100%;
+      height: 214px;
+      background-color: #EFEFEF;
+      margin-top: 1.6em;
+    }
+  }
+
+}
