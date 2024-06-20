@@ -633,6 +633,162 @@
   background-color: #BDAC8D;
 }
 
+.footer {
+  padding: 0em 1.2em;
+  margin-top: 6em;
+  position: relative;
+}
+.footer__brand__logo {
+  display: flex;
+  align-items: center;
+}
+.footer__brand__logo__image {
+  font-family: "Archivo";
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 43px;
+  padding: 0.46em 0.625em;
+  background-color: #BDAC8D;
+  color: #FFFFFF;
+}
+.footer__brand__logo__title-wrapper {
+  padding-left: 1em;
+  flex: 1;
+}
+.footer__brand__logo__title-wrapper .brand__title-wrapper__title {
+  font-family: "Archivo";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28.29px;
+  letter-spacing: 2.5999999046px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.footer__brand__logo__title-wrapper .brand__title-wrapper__title--bold {
+  font-weight: 700;
+}
+.footer__brand__description {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+  margin-top: 3em;
+}
+.footer__social-media {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.6em;
+}
+.footer__social-media__icon {
+  padding: 0.6em 0.6em;
+  display: flex;
+  cursor: pointer;
+}
+.footer__social-media__icon:hover {
+  background-color: #BDAC8D;
+}
+.footer__social-media__icon:hover svg path {
+  fill: #FFFFFF;
+}
+.footer__social-media__icon svg path {
+  fill: #777777;
+}
+.footer__services {
+  margin-top: 1em;
+}
+.footer__services__title {
+  font-family: "Old Standard TT";
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.4400000572px;
+  text-align: left;
+  color: #222222;
+  font-size: 1.7rem;
+}
+.footer__services__list {
+  list-style: none;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 335px;
+}
+.footer__services__list__item {
+  padding: 0em;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  color: #777777;
+}
+.footer__contact {
+  margin-top: 0.6em;
+}
+.footer__contact__title {
+  font-family: "Old Standard TT";
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.4400000572px;
+  text-align: left;
+  color: #222222;
+  font-size: 1.7rem;
+}
+.footer__contact__list {
+  list-style: none;
+  margin-top: 1.6em;
+}
+.footer__contact__list__item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3em;
+}
+.footer__contact__list__item .contact__list__item__wrapper {
+  padding-left: 1em;
+}
+.footer__contact__list__item .contact__list__item__wrapper__title {
+  font-family: "Old Standard TT";
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.4400000572px;
+  text-align: left;
+  color: #222222;
+  font-size: 1.4rem;
+  line-height: 16.41px;
+}
+.footer__contact__list__item .contact__list__item__wrapper__subtitle {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+  font-size: 0.9rem;
+}
+.footer__copyright {
+  position: absolute;
+  left: 0em;
+  width: 100%;
+  background-color: #F8F8F8;
+  padding: 0.4em 1.2em;
+}
+.footer__copyright__paragraph {
+  padding: 0.6em 0em;
+  font-family: "Roboto";
+  color: #222222;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 18.75px;
+  letter-spacing: -0.4799999893px;
+  text-align: left;
+}
+
 .rooms__page-header {
   background: #333333;
   color: #FFFFFF;
