@@ -1,0 +1,35 @@
+
+@import "../components/PageHeaderComponent.scss";
+@import "../components/ButtonComponent.scss";
+@import "../components/RoomTitleComponent.scss";
+@import "../components/RoomDescriptionComponent.scss";
+@import "../components/RoomSubtitleComponent.scss";
+
+
+.about {
+  &__page-header {
+    @include pageHeader;
+    padding-bottom: 5.8em;
+
+    &__navbar {
+      @include pageNavbar;
+    }
+  }
+
+  &__history {
+    margin-top: 3.6em;
+    padding: 0em 1.2em;
+
+    &__video {
+      width: 100%;
+      max-height: 270px;
+    }
+
+    &__introduction {
+      @include room-title;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 1em;
+    }
+  }
+}
