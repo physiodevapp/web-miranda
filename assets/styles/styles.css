@@ -1378,6 +1378,95 @@
   color: #222222;
   font-size: 1.9rem;
 }
+.details__related-rooms__slider {
+  margin-top: 3em;
+  min-height: 160px;
+}
+.details__related-rooms__slider .swiper-slide {
+  padding: 0em 0.3em;
+}
+.details__related-rooms__slider .slider__button {
+  height: unset;
+  padding: 0.75em 1em;
+  color: #222222;
+  top: 7.5em;
+}
+.details__related-rooms__slider .slider__button::after {
+  display: none;
+}
+.details__related-rooms__slider .slider__button img {
+  transform: scale(1.2);
+}
+.details__related-rooms__slider .slider__button--next {
+  background: #BDAC8D;
+  right: 0em;
+}
+.details__related-rooms__slider .slider__button--prev {
+  background-color: #FFFFFF;
+  left: 0em;
+}
+.details__related-rooms__slider .related-rooms__slider__room-card {
+  text-align: center;
+  background-color: #FFFFFF;
+  padding-bottom: 1.6em;
+}
+.details__related-rooms__slider .related-rooms__slider__room-card__image {
+  max-height: 218px;
+  height: 218px;
+  width: 100%;
+  background: #E9E9E9;
+}
+.details__related-rooms__slider .related-rooms__slider__room-card__features {
+  list-style: none;
+  position: relative;
+  transform: translateY(-70%);
+  display: inline-flex;
+  background-color: white;
+  padding: 0.68em 1.3em;
+  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.0509803922);
+}
+.details__related-rooms__slider .related-rooms__slider__room-card__features .feature {
+  padding: 0em 0.43em;
+}
+.details__related-rooms__slider .related-rooms__slider__room-card__features .feature img {
+  line-height: 100%;
+  vertical-align: middle;
+}
+.details__related-rooms__slider .related-rooms__slider__room-card__title {
+  font-family: "Old Standard TT";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.7200000286px;
+  text-align: center;
+}
+.details__related-rooms__slider .related-rooms__slider__room-card__subtitle {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  padding: 0.1em 3em 0.6em;
+  margin-top: 1.4em;
+}
+.details__related-rooms__slider .related-rooms__slider__room-card__price {
+  font-family: "Archivo";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.41px;
+  color: #BEAD8E;
+  margin: 0em 0.4em;
+}
+.details__related-rooms__slider .related-rooms__slider__room-card__button {
+  font-family: "Archivo";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.41px;
+  margin: 0em 0.4em;
+  color: #BDBDBD;
+  background-color: #FFFFFF;
+  border: none;
+}
 
 .offers__page-header {
   background: #333333;
