@@ -1,0 +1,85 @@
+@mixin navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0em;
+  left: 0em;
+  width: 100%;
+  height: 70px;
+  background-color: $color-secondary;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-left: 1.2em;
+
+    &__logo {
+      padding: 0.654em;
+      background-color: $color-secondary;
+      box-shadow: 0px 14px 24px 0px #8B8B8B40;
+    }
+
+    &__title {
+      padding-left: 0.8em;
+    }
+
+    &__description {
+      @include room-description;
+      margin-top: 3em;
+    }
+
+  }
+
+  &__button {
+    border: none;
+    background-color: $color-secondary;
+    padding: 1em;
+    line-height: 0px;
+    cursor: pointer;
+
+    .opened {
+
+    }
+  }
+
+  &__menu {
+    box-shadow: inset 0px 4px 4px 0px #0000004A;
+    position: fixed;
+    left: 0em;
+    top: 70px;
+    width: 100%;
+    z-index: 1;
+    background-color: $color-secondary;
+    list-style: none;
+    padding: 1em 1em;
+    display: none;
+
+    &.opened {
+      display: block;
+    }
+
+    &__link {
+      padding: 0.6em 0em;
+
+      a {
+        text-decoration:none;
+        color: $color-tertiary;
+        font-family: $font-archivo;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 17.41px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 0.4em 1em;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}
