@@ -1,3 +1,79 @@
+.navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0em;
+  left: 0em;
+  width: 100%;
+  height: 70px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-left: 1.2em;
+}
+.navbar__brand__logo {
+  padding: 0.654em;
+  background-color: #FFFFFF;
+  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
+}
+.navbar__brand__title {
+  padding-left: 0.8em;
+}
+.navbar__brand__description {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+  margin-top: 3em;
+}
+.navbar__button {
+  border: none;
+  background-color: #FFFFFF;
+  padding: 1em;
+  line-height: 0px;
+  cursor: pointer;
+}
+.navbar__menu {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.2901960784);
+  position: fixed;
+  left: 0em;
+  top: 70px;
+  width: 100%;
+  z-index: 1;
+  background-color: #FFFFFF;
+  list-style: none;
+  padding: 1em 1em;
+  display: none;
+}
+.navbar__menu.opened {
+  display: block;
+}
+.navbar__menu__link {
+  padding: 0.6em 0em;
+}
+.navbar__menu__link a {
+  text-decoration: none;
+  color: #222222;
+  font-family: "Archivo";
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 17.41px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.4em 1em;
+}
+.navbar__menu__link a:hover {
+  color: #BDAC8D;
+}
+
 .home__page-header {
   background: #333333;
   color: #FFFFFF;
@@ -307,6 +383,7 @@
   height: 218px;
   width: 100%;
   background: #E9E9E9;
+  margin-top: 3em;
 }
 .home__rooms__popular-rooms__slider .popular-rooms__slider__room-card__features {
   list-style: none;
@@ -338,7 +415,7 @@
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  padding: 0.1em 3em 0.6em;
+  padding: 0.1em 1em 0.6em;
   margin-top: 1.4em;
 }
 .home__rooms__popular-rooms__slider .popular-rooms__slider__room-card__price {
@@ -355,9 +432,10 @@
   font-weight: 700;
   line-height: 17.41px;
   margin: 0em 0.4em;
-  color: #BDBDBD;
-  background-color: #FFFFFF;
   border: none;
+  padding: 0em 0.3em;
+  background-color: #FFFFFF;
+  color: #BDBDBD;
 }
 .home__rooms__popular-rooms__slider .popular-rooms__slider__room-card .room-card-wrapper {
   margin: 0em 1em;
@@ -1323,6 +1401,7 @@
   height: 218px;
   width: 100%;
   background: #E9E9E9;
+  margin-top: 3em;
 }
 .rooms__slider__room-card__features {
   list-style: none;
@@ -1354,7 +1433,7 @@
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  padding: 0.1em 3em 0.6em;
+  padding: 0.1em 1em 0.6em;
   margin-top: 1.4em;
 }
 .rooms__slider__room-card__price {
@@ -1371,9 +1450,10 @@
   font-weight: 700;
   line-height: 17.41px;
   margin: 0em 0.4em;
-  color: #BDBDBD;
-  background-color: #FFFFFF;
   border: none;
+  padding: 0em 0.3em;
+  background-color: #FFFFFF;
+  color: #BDBDBD;
 }
 .rooms__slider .pagination {
   position: absolute;
@@ -1745,6 +1825,7 @@
   height: 218px;
   width: 100%;
   background: #E9E9E9;
+  margin-top: 3em;
 }
 .details__related-rooms__slider .related-rooms__slider__room-card__features {
   list-style: none;
@@ -1776,7 +1857,7 @@
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  padding: 0.1em 3em 0.6em;
+  padding: 0.1em 1em 0.6em;
   margin-top: 1.4em;
 }
 .details__related-rooms__slider .related-rooms__slider__room-card__price {
@@ -1793,9 +1874,10 @@
   font-weight: 700;
   line-height: 17.41px;
   margin: 0em 0.4em;
-  color: #BDBDBD;
-  background-color: #FFFFFF;
   border: none;
+  padding: 0em 0.3em;
+  background-color: #FFFFFF;
+  color: #BDBDBD;
 }
 
 .offers__page-header {
@@ -2033,6 +2115,7 @@
   height: 218px;
   width: 100%;
   background: #E9E9E9;
+  margin-top: 3em;
 }
 .offers__popular-rooms__slider .popular-rooms__slider__room-card__features {
   list-style: none;
@@ -2064,7 +2147,7 @@
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  padding: 0.1em 3em 0.6em;
+  padding: 0.1em 1em 0.6em;
   margin-top: 1.4em;
 }
 .offers__popular-rooms__slider .popular-rooms__slider__room-card__price {
@@ -2081,7 +2164,8 @@
   font-weight: 700;
   line-height: 17.41px;
   margin: 0em 0.4em;
-  color: #BDBDBD;
-  background-color: #FFFFFF;
   border: none;
+  padding: 0em 0.3em;
+  background-color: #FFFFFF;
+  color: #BDBDBD;
 }
