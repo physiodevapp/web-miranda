@@ -1,0 +1,25 @@
+
+@mixin amenities {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  &__item {
+    width: 50%;
+    font-family: $font-roboto;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 17.58px;
+    text-align: left;
+    color: #777777;
+    display: flex;
+    align-items: center;
+    padding: 1em 0em 0em;
+
+    & img {
+      height: 16px;
+      padding-right: 0.5em;
+    }
+  }
+}
