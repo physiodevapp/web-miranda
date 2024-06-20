@@ -590,6 +590,7 @@
 .home__milestones {
   background-color: #222222;
   padding: 1em 0em;
+  margin-top: 3em;
 }
 .home__milestones__list {
   list-style: none;
@@ -613,6 +614,23 @@
   line-height: 21.82px;
   text-align: center;
   color: #999999;
+}
+.home__gallery__slider {
+  margin: 3em auto 0em;
+  min-height: 160px;
+  max-width: 450px;
+  padding: 0em 0em 3em;
+}
+.home__gallery__slider .gallery__slider__image {
+  height: 230px;
+  width: 100%;
+  background-color: #DFDFDF;
+}
+.home__gallery__slider .swiper-slide {
+  padding: 0em 0em;
+}
+.home__gallery__slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #BDAC8D;
 }
 
 .rooms__page-header {
