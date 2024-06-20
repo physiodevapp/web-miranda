@@ -7,7 +7,9 @@ $color-secondary: #FFFFFF;
 $color-tertiary: #222222;
 
 @import "./pages/HomePage.scss";
+@import "./pages/AboutPage.scss";
 @import "./pages/RoomsPage.scss";
+@import "./pages/DetailsPage.scss";
 @import "./pages/OffersPage.scss";
 
 html,

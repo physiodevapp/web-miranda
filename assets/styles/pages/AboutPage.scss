@@ -1,0 +1,261 @@
+
+@import "../components/PageHeaderComponent.scss";
+@import "../components/ButtonComponent.scss";
+@import "../components/RoomTitleComponent.scss";
+@import "../components/RoomDescriptionComponent.scss";
+@import "../components/RoomSubtitleComponent.scss";
+
+
+.about {
+  &__page-header {
+    @include pageHeader;
+    padding-bottom: 5.8em;
+
+    &__navbar {
+      @include pageNavbar;
+    }
+  }
+
+  &__history {
+    margin-top: 3.6em;
+    padding: 0em 1.2em;
+
+    &__video {
+      width: 100%;
+      max-height: 270px;
+    }
+
+    &__introduction {
+      @include room-title;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 1em;
+    }
+  }
+
+  &__services {
+    padding: 0em 1.2em;
+    margin-top: 3em;
+
+    &__list {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__item {
+        width: 50%;
+        text-align: center;
+        padding: 3.05em 0em;
+        max-width: 169px;
+
+        &--primary {
+          background-color: $color-primary;
+        }
+
+        .item__title {
+          font-family: $font-archivo;
+          font-size: 0.8rem;
+          font-weight: 700;
+          line-height: 14px;
+          letter-spacing: 2.4000000953674316px;
+          text-align: center;  
+          color: $color-tertiary;
+          text-transform: uppercase;
+          
+          &--secondary {
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+  }
+
+  &__restaurant {
+    margin-top: 3em;
+    padding: 0em 2.5em;
+
+    &__image {
+      height: 232px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      background-color: #E5E5E5;
+    }
+
+    &__title {
+      @include room-title;
+      margin-top: 2em;
+      margin-top: 0.8em;
+      font-size: 2.2rem;
+    }
+
+    &__subtitle {
+      @include room-subtitle;
+      margin-top: 2em;
+      margin-top: 2.4em;
+    }
+
+    &__description {
+      @include room-description;
+      margin-top: 1.4em;
+    }
+
+    &__button {
+      @include button;
+      padding-right: 3.27em;
+      padding-left: 3.27em;
+      margin-top: 1.6em;
+    }
+  }
+
+  &__facilities {
+    margin-top: 4em;
+    padding: 4em 0em 0em;
+    background-color: $color-tertiary;
+    
+    &__title {
+      @include room-title;
+      text-align: center;
+      margin-top: 0.4em;
+      font-size: 3.6em;
+      color: $color-secondary;
+    } 
+
+    &__subtitle {
+      @include room-subtitle;
+      text-align: center;
+      color: $color-secondary;
+    } 
+
+    &__slider {
+      margin: 4em auto 0em;
+      min-height: 160px;
+      max-width: 450px;
+      padding: 0em 0em 3em;
+
+      .facilities__slider {
+        padding: 5em 1.4em 3.6em;
+        margin: 0em 1em;
+        background: #333333;
+
+        &__number {
+          position: absolute;
+          right: 0.3em;
+          top: 0em;
+          font-family: $font-archivo;
+          font-size: 120px;
+          font-weight: 700;
+          line-height: 130px;
+          color: $color-tertiary;
+        }
+
+        &__title {
+          @include room-title;
+          font-size: 1.9rem;
+          margin-top: 1.4em;
+          color: $color-secondary;
+        } 
+
+        &__description {
+          @include room-description;
+          margin-top: 1em;
+          color: $color-secondary;
+        }
+      }
+
+      .swiper-slide {
+        padding: 0em 0em;
+      }
+
+      .swiper-pagination {
+
+        .swiper-pagination-bullet {
+          background-color: #333333;
+        }
+
+        .swiper-pagination-bullet-active {
+          background-color: $color-primary;
+        }
+      }
+
+    }
+  }
+
+  &__facts {
+    padding: 0em 1.2em;
+    margin-top: 3em;
+
+    &__title {
+      @include room-title;
+      font-size: 3.8rem;
+      line-height: 60px;
+      margin-top: 0.4em;
+    }
+
+    &__subtitle {
+      @include room-subtitle;
+    }
+
+    &__list {
+      list-style: none;
+      margin-top: 2.8em;
+
+      &__item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 5em;
+
+        .facts__list__item__image {
+          height: 100%;
+        }
+
+        .facts__list__item__wrapper {
+          padding-left: 1.4em;
+
+          &__title {
+            @include room-title;
+            font-size: 3.8rem;
+            line-height: 60px
+          }
+
+          &__subtitle {
+            @include room-description;
+          }
+
+        }
+      }
+    }
+
+    &__slider {
+      margin: 3em auto 0em;
+      min-height: 160px;
+      max-width: 450px;
+      padding: 0em 0em 3em;
+
+      .facts__slider {
+
+        &__image {
+          height: 230px;
+          width: 100%;
+          background-color: #DFDFDF;
+        }
+
+      }
+
+      .swiper-slide {
+        padding: 0em 0em;
+      }
+
+      .swiper-pagination {
+
+        .swiper-pagination-bullet-active {
+          background-color: $color-primary;
+        }
+      }
+
+    }
+  }
+}
