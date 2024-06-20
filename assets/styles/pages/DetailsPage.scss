@@ -5,6 +5,11 @@
 @import "../components/RoomSubtitleComponent.scss";
 @import "../components/AmenitiesComponent.scss";
 @import "../components/FooterComponent.scss";
+@import "../components/NavbarComponent.scss";
+
+.navbar {
+  @include navbar;
+}
 
 .details {
 
