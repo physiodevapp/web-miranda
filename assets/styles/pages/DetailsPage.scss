@@ -51,4 +51,75 @@
     }
   }
 
+  &__availability {
+    margin-top: 1em;
+    padding: 0em 1.2em;
+
+    &__form {
+      padding: 0em 1em;
+
+      &__label {
+        font-family: $font-roboto;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 18.75px;
+        text-align: left;
+        color: $color-tertiary;
+        display: block;
+        margin-bottom: 1.4em;
+      }
+
+      &__button {
+        @include button;
+        width: 100%;
+      }
+    }
+
+
+    .date-wrapper {
+      padding: 0.4em 2em 0.6em;
+      display: inline-flex;
+      width: 100%;
+      margin-bottom: 2em;
+
+      &__button-picker {
+        border: none;
+        background: $color-secondary;
+        line-height: 0px;
+        vertical-align: bottom;
+      }
+
+      &__date-input {
+        width: 0px;
+        height: 0px;
+        border: none;
+      }
+
+      &__text-input {
+        border: none;
+        flex: 1;
+        margin-left: 0.8em;
+        background-color: transparent;
+        color: $color-tertiary;
+        outline: none;
+        font-family: $font-roboto;
+
+        &::placeholder {
+          color: #686868;
+          opacity: 1; /* Firefox */
+        }
+      }
+
+    }
+
+    &__terms {
+      font-family: Roboto;
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      margin-top: 2.5em;
+    }
+  }
+
 }

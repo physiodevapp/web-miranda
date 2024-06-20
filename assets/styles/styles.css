@@ -1168,6 +1168,76 @@
   background-color: #EFEFEF;
   margin-top: 1.6em;
 }
+.details__availability {
+  margin-top: 1em;
+  padding: 0em 1.2em;
+}
+.details__availability__form {
+  padding: 0em 1em;
+}
+.details__availability__form__label {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 18.75px;
+  text-align: left;
+  color: #222222;
+  display: block;
+  margin-bottom: 1.4em;
+}
+.details__availability__form__button {
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+  background-color: #BDAC8D;
+  font-family: "Archivo";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  width: 100%;
+}
+.details__availability .date-wrapper {
+  padding: 0.4em 2em 0.6em;
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.details__availability .date-wrapper__button-picker {
+  border: none;
+  background: #FFFFFF;
+  line-height: 0px;
+  vertical-align: bottom;
+}
+.details__availability .date-wrapper__date-input {
+  width: 0px;
+  height: 0px;
+  border: none;
+}
+.details__availability .date-wrapper__text-input {
+  border: none;
+  flex: 1;
+  margin-left: 0.8em;
+  background-color: transparent;
+  color: #222222;
+  outline: none;
+  font-family: "Roboto";
+}
+.details__availability .date-wrapper__text-input::placeholder {
+  color: #686868;
+  opacity: 1; /* Firefox */
+}
+.details__availability__terms {
+  font-family: Roboto;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 2.5em;
+}
 
 .offers__page-header {
   background: #333333;
