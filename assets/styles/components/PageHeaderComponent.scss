@@ -2,7 +2,6 @@
 @mixin pageHeader {
   background: #333333;
   color: #FFFFFF;
-  height: 310px;
   position: relative;
   padding: 5.8em 1.2em 4.7em;
 
@@ -38,7 +37,7 @@
     color:#333333;
     font-family: $font-archivo;
 
-    & .page {
+    .page {
       font-weight: 700;
       font-size: 1rem;
 

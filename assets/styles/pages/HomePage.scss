@@ -1,0 +1,276 @@
+
+@import "../components/PageHeaderComponent.scss";
+@import "../components/RoomCardComponent.scss";
+@import "../components/ButtonComponent.scss";
+@import "../components/RoomTitleComponent.scss";
+@import "../components/RoomDescriptionComponent.scss";
+@import "../components/RoomSubtitleComponent.scss";
+
+.home {
+  
+  &__page-header {
+    @include pageHeader;
+
+    &__title {
+      margin-top: 0.8em;
+    }
+
+    .button {
+      @include button;
+      display: block;
+
+      &--primary {
+        padding-right: 3.27em;
+        padding-left: 3.27em;
+        border: 1px solid $color-primary;
+        margin-top: 3em;
+      }
+
+      &--black {
+        padding-right: 3.337em;
+        padding-left: 3.337em;
+        background: inherit;
+        border: 1px solid white;
+        margin-top: 2em;
+      }
+    }
+  }
+
+  &__availability {
+    background-color: $color-tertiary;
+    padding: 2.25em 1.3em;
+
+    &__label {
+      font-family: $font-roboto;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 18.75px;
+      text-align: left;
+      color: $color-secondary;
+      display: block;
+      margin-bottom: 1.4em;
+    }
+
+    .button {
+      @include button;
+      padding-right: 1.8em;
+      padding-left: 1.8em;
+    }
+
+    .date-wrapper {
+      padding: 0.4em 0em 0.6em;
+      border-bottom: 2px solid $color-primary;
+      display: inline-flex;
+      width: 100%;
+      margin-bottom: 3em;
+
+      &__button-picker {
+        border: none;
+        background: $color-tertiary;
+        line-height: 0px;
+        vertical-align: bottom;
+      }
+
+      &__date-input {
+        width: 0px;
+        height: 0px;
+        border: none;
+      }
+
+      &__text-input {
+        border: none;
+        flex: 1;
+        margin-left: 0.8em;
+        background-color: transparent;
+        color: $color-secondary;
+        outline: none;
+        font-family: $font-roboto;
+
+        &::placeholder {
+          color: #686868;
+          opacity: 1; /* Firefox */
+        }
+      }
+
+    }
+  }
+
+  &__about-us {
+    padding: 5em 0em 0em;
+
+    &__summary {
+      padding: 0em 1.2em;
+
+      &__title {
+        @include room-title;
+        margin-top: 0.6em;
+      }
+  
+      &__subtitle {
+        @include room-subtitle;
+      }
+  
+      &__description {
+        @include room-description;
+        margin-top: 0.8em;
+      }
+      &__button {
+        @include button;
+        padding-right: 4.1em;
+        padding-left: 4.1em;
+        margin-top: 1.6em;
+      }
+    }
+
+    &__feature {
+      text-align: center;
+      margin: 3.4em 0em 0em;
+
+      &__image {
+        width:270px;
+        height: 300px;
+        background-color: #E4E4E4;
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &__details {
+        max-width: 270px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0em 1em 2.8em;
+
+        .feature__details__image {
+          margin-top: 3.1em;
+        }
+        
+        .feature__details__title {
+          @include room-title;
+          text-align: center;
+          font-size: 2rem;
+          margin-top: 0.6em;
+        }
+
+        .feature__details__description {
+          @include room-description;
+          text-align: center;
+          margin-top: 1em;
+        }
+
+        &--black {
+          background-color: $color-tertiary;
+
+          .feature__details__title, .feature__details__description {
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+
+  }
+
+  &__rooms {
+    margin: 4em 0em 0em;
+    padding: 0em 0em;
+
+    &__title {
+      @include room-title;
+      text-align: center;
+      margin-top: 0.4em;
+      padding: 0em 0.8em;
+    }
+
+    &__subtitle {
+      @include room-subtitle;
+      text-align: center;
+    }
+
+    &__popular-rooms {
+      background: #222222;
+      padding: 3em 1em 2em;
+  
+      &__title {
+        @include room-title;
+        font-size: 2.4em;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 0.7em;
+      }
+  
+      &__subtitle {
+        @include room-subtitle;
+        text-align: center;
+        color: #BDAC8D;
+      }
+  
+      &__slider {
+        margin-top: 3em;
+        min-height: 160px;
+  
+        .swiper-slide {
+          padding: 0em 0em;
+        }
+  
+        .slider__button {
+          height: unset;
+          padding: 0.75em 1em;
+          color: #222222;
+          top: 7em;
+  
+          &::after {
+            display: none;
+          }
+  
+          img {
+            transform: scale(1.2);  
+          }
+  
+          &--next {
+            background: #BDAC8D;
+            right: 1em;
+          }
+  
+          &--prev {
+            background-color: #FFFFFF;
+            left: 1em;
+          }
+        }
+  
+        .popular-rooms__slider__room-card {
+          @include roomCard;
+          background-color: $color-secondary;
+          padding-bottom: 1.6em;
+
+          .room-card-wrapper {
+            margin: 0em 1em;
+            position: relative;
+            top: -4em;
+            padding: 1.2em 0em;
+            background-color: $color-secondary;
+          }
+
+          &__features {
+            transform: translateY(-14em);
+          }
+
+          &__price {
+            font-size: 2rem;
+            margin: 0.6em 0.4em 0em;
+
+            .room-card__price__time {
+              font-size: 1rem;
+              line-height: 11.97px;
+            }
+          }
+        }
+  
+      }
+  
+    }
+
+  }
+
+}

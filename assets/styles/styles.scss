@@ -4,8 +4,9 @@ $font-roboto: "Roboto";
 $font-oswald: "Oswald";
 $color-primary: #BDAC8D;
 $color-secondary: #FFFFFF;
-$color-tertiary: #000000;
+$color-tertiary: #222222;
 
+@import "./pages/HomePage.scss";
 @import "./pages/RoomsPage.scss";
 @import "./pages/OffersPage.scss";
 

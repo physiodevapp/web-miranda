@@ -5,10 +5,354 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./assets/styles/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Home</title>
 </head>
-<body>
+<body class="home">
+  <header class="home__page-header">
+    <h6 class="home__page-header__subtitle">THE ULTIMATE LUXURY<br> EXPERIENCE</h6>
+    <h4 class="home__page-header__title">The Perfect<br>Base For You</h4>
+    <button class="button button--primary">TAKE A TOUR</button>
+    <button class="button button--black">LEARN MORE</button>
+  </header>
+  <article class="home__availability">
+    <label for="arrival-date-input" class="home__availability__label">Arrival Date</label>
+    <div class="date-wrapper">
+      <button id="arrival-date-button" class="date-wrapper__button-picker">
+        <img src="./assets/images/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.svg" alt="">
+      </button>
+      <input id="arrival-date-input" name="arrival-date" class="date-wrapper__date-input" type="date">
+      <input id="arrival-text-input" name="arrival-text" class="date-wrapper__text-input" type="text">
+    </div>
+    <label for="departure-date-input" class="home__availability__label">LeDeparture Date</label>
+    <div class="date-wrapper">
+      <button id="departure-date-button" class="date-wrapper__button-picker">
+        <img src="./assets/images/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.svg" alt="">
+      </button>
+      <input id="departure-date-input" name="departure-date" class="date-wrapper__date-input" type="date">
+      <input id="departure-text-input" name="departure-text" class="date-wrapper__text-input" type="text">
+    </div>
+    <button class="button">Check availability</button>
+  </article>
+  <section class="home__about-us">
+    <article class="home__about-us__summary">
+      <h6 class="home__about-us__summary__subtitle">About us</h6>
+      <h4 class="home__about-us__summary__title">Discover Our Underground</h4>
+      <p class="home__about-us__summary__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <button class="home__about-us__summary__button">Book now</button>
+    </article>
+    <article class="home__about-us__feature">
+      <img class="home__about-us__feature__image" src="" alt="">
+      <article class="home__about-us__feature__details">
+        <img class="feature__details__image" src="./assets/images/svg-gobbler - 2022-03-01T200745.428 1.svg" alt="">
+        <h4 class="feature__details__title">Strong Team</h4>
+        <p class="feature__details__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+      </article>
+    </article>
+    <article class="home__about-us__feature">
+      <img class="home__about-us__feature__image" src="" alt="">
+      <article class="home__about-us__feature__details home__about-us__feature__details--black">
+        <img class="feature__details__image" src="./assets/images/svg-gobbler - 2022-03-01T201407.985 1.svg" alt="">
+        <h4 class="feature__details__title">Luxury Room</h4>
+        <p class="feature__details__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+      </article>
+    </article>
+  </section>
+  <section class="home__rooms">
+    <h6 class="home__rooms__subtitle">Rooms</h6>
+    <h4 class="home__rooms__title">Hand Picked Rooms</h4>
+    <div class="swiper home__rooms__popular-rooms__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="popular-rooms__slider__room-card">
+            <img class="popular-rooms__slider__room-card__image" data-field="image" src="" alt="" />
+            <li class="popular-rooms__slider__room-card__features">
+              <ul class="feature">
+                <img
+                  src="./assets/images/8725460_bed_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature--included">
+                <img
+                  src="./assets/images/925808_wifi_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature--included">
+                <img
+                  src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature">
+                <img
+                  src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature">
+                <img
+                  src="./assets/images/9042522_gym_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature--included">
+                <img
+                  src="./assets/images/9081473_smoking_no_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature">
+                <img
+                  src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+            </li>
+            <div class="room-card-wrapper">
+              <h4 class="popular-rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+              <h6 class="popular-rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+              <h5 class="popular-rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="popular-rooms__slider__room-card">
+            <img class="popular-rooms__slider__room-card__image" data-field="image" src="" alt="" />
+            <li class="popular-rooms__slider__room-card__features">
+              <ul class="feature">
+                <img
+                  src="./assets/images/8725460_bed_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature--included">
+                <img
+                  src="./assets/images/925808_wifi_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature--included">
+                <img
+                  src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature">
+                <img
+                  src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature">
+                <img
+                  src="./assets/images/9042522_gym_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature--included">
+                <img
+                  src="./assets/images/9081473_smoking_no_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature">
+                <img
+                  src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+            </li>
+            <div class="room-card-wrapper">
+              <h4 class="popular-rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+              <h6 class="popular-rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+              <h5 class="popular-rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="popular-rooms__slider__room-card">
+            <img class="popular-rooms__slider__room-card__image" src="" alt="" />
+            <li class="popular-rooms__slider__room-card__features">
+              <ul class="feature">
+                <img
+                  src="./assets/images/8725460_bed_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature--included">
+                <img
+                  src="./assets/images/925808_wifi_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature--included">
+                <img
+                  src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature">
+                <img
+                  src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature">
+                <img
+                  src="./assets/images/9042522_gym_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature--included">
+                <img
+                  src="./assets/images/9081473_smoking_no_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+              <ul class="feature feature">
+                <img
+                  src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg"
+                  alt="includes-bed"
+                />
+              </ul>
+            </li>
+            <div class="room-card-wrapper">
+              <h4 class="popular-rooms__slider__room-card__title">Minimal Duplex Room</h4>
+              <h6 class="popular-rooms__slider__room-card__subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+              <h5 class="popular-rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+            </div>
+          </article>
+        </div>
+      </div>
+  
+      <div class="swiper-button-prev slider__button slider__button--prev"><img src="./assets/images/2849832_arrows_navigation_arrow_left_back_icon 1.svg" alt=""></div>
+      <div class="swiper-button-next slider__button slider__button--next"><img src="./assets/images/1.svg" alt=""></div>
+  
+    </div>
+  </section>
+  <section class="home__intro-video"></section>
+  <section class="home__facilities"></section>
+  <section class="home__menu"></section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/jquery.inputmask.bundle.min.js" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.9/jquery.inputmask.min.js" integrity="sha512-F5Ul1uuyFlGnIT1dk2c4kB4DBdi5wnBJjVhL7gQlGh46Xn0VhvD8kgxLtjdZ5YN83gybk/aASUAlpdoWUjRR3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    const todayDate = new Date().toLocaleDateString("es-US", {
+      day: "numeric",
+      year: "numeric",
+      month: "short"
+    });
+    const nextDate = new Date(new Date().setDate(new Date().getDate() + 7)).toLocaleDateString("es-US", {
+      day: "numeric",
+      year: "numeric",
+      month: "short"
+    });
+    
+    const arrivalButton = document.getElementById("arrival-date-button");
+    const arrivalDateInput = document.getElementById("arrival-date-input"); 
+    const arrivalTextInput = document.getElementById("arrival-text-input");
+    Inputmask("datetime", {
+      inputFormat: "dd mmm yyyy",
+      clearMaskOnLostFocus: true
+    }).mask(arrivalTextInput);
+    arrivalTextInput.setAttribute("placeholder", todayDate);
+
+    const departureButton = document.getElementById("departure-date-button");
+    const departureDateInput = document.getElementById("departure-date-input"); 
+    const departureTextInput = document.getElementById("departure-text-input");
+    Inputmask("datetime", {
+      inputFormat: "dd mmm yyyy",
+      clearMaskOnLostFocus: true
+    }).mask(departureTextInput);
+    departureTextInput.setAttribute("placeholder", nextDate);
+
+    const handleClickArrivalButton = () => {
+      try {
+        arrivalDateInput.showPicker();
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    const handleChangeArrivalDate = (event) => {
+      const newDate = new Date(event.target.valueAsNumber).toLocaleDateString("es-MX", {
+        day: "2-digit",
+        year: "numeric",
+        month: "short"
+      });
+
+      arrivalTextInput.value = newDate;
+    }
+    const handleBlurArrivalText = (event) => {
+      arrivalTextInput.setAttribute("placeholder", todayDate);
+      
+      const newDate = new Date(event.target.value);
+      if (newDate != "Invalid Date") {
+        arrivalDateInput.value = `${newDate.getFullYear()}-${newDate.toLocaleDateString("default", { month: "2-digit" })}-${newDate.toLocaleDateString("default", { day: "2-digit" })}`;
+      } else {
+        arrivalDateInput.value = null;
+        arrivalTextInput.value = null;
+      }
+
+    };
+
+    arrivalButton.addEventListener("click", handleClickArrivalButton);
+    arrivalDateInput.addEventListener("change", handleChangeArrivalDate);
+    arrivalTextInput.addEventListener("blur", handleBlurArrivalText);
+
+    const handleClickDepartureButton = () => {
+      try {
+        departureDateInput.showPicker();
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    const handleChangeDepartureDate = (event) => {
+      const newDate = new Date(event.target.valueAsNumber).toLocaleDateString("es-MX", {
+        day: "2-digit",
+        year: "numeric",
+        month: "short"
+      });
+
+      departureTextInput.value = newDate;
+    }
+    const handleBlurDepartureText = (event) => {
+      departureTextInput.setAttribute("placeholder", nextDate);
+      
+      const newDate = new Date(event.target.value);
+      if (newDate != "Invalid Date") {
+        departureDateInput.value = `${newDate.getFullYear()}-${newDate.toLocaleDateString("default", { month: "2-digit" })}-${newDate.toLocaleDateString("default", { day: "2-digit" })}`;
+      } else {
+        departureDateInput.value = null;
+        departureTextInput.value = null;
+      }
+    };
+
+    departureButton.addEventListener("click", handleClickDepartureButton);
+    departureDateInput.addEventListener("change", handleChangeDepartureDate);
+    departureTextInput.addEventListener("blur", handleBlurDepartureText);
+  </script>
   
 </body>
 </html>
