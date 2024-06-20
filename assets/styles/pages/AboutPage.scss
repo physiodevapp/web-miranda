@@ -4,6 +4,7 @@
 @import "../components/RoomTitleComponent.scss";
 @import "../components/RoomDescriptionComponent.scss";
 @import "../components/RoomSubtitleComponent.scss";
+@import "../components/FooterComponent.scss";
 
 
 .about {
@@ -258,4 +259,8 @@
 
     }
   }
+}
+
+.footer {
+  @include footer;
 }
