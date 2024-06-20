@@ -60,10 +60,42 @@
     <p class="about__restaurant__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
     <button class="about__restaurant__button">Take a tour</button>
   </section>
-  <section class="about__facilities"></section>
+  <section class="about__facilities">
+    <h6 class="about__facilities__subtitle">Facilities</h6>
+    <h4 class="about__facilities__title">Core Features</h4>
+    <div class="swiper about__facilities__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="facilities__slider">
+            <span class="facilities__slider__number" >01</span>
+            <img class="facilities__slider__image" src="./assets/images/icon 1.svg" alt="" />
+            <h4 class="facilities__slider__title">Have High Rating</h4>
+            <p class="facilities__slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="facilities__slider">
+            <img class="facilities__slider__image" src="./assets/images/icon 1.svg" alt="" />
+            <h4 class="facilities__slider__title">Have High Rating</h4>
+            <p class="facilities__slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+          </article>
+        </div>
+      </div> 
+
+      <div class="swiper-pagination"></div> 
+    </div>
+  </section>
   <section class="about__facts"></section>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiperFacilities = new Swiper(".swiper.about__facilities__slider", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+    });
+  </script>
 
 </body>
 </html>
