@@ -231,28 +231,55 @@
   
       <div class="swiper-button-prev slider__button slider__button--prev"><img src="./assets/images/2849832_arrows_navigation_arrow_left_back_icon 1.svg" alt=""></div>
       <div class="swiper-button-next slider__button slider__button--next"><img src="./assets/images/1.svg" alt=""></div>
-  
     </div>
   </section>
-  <section class="home__intro-video"></section>
-  <section class="home__facilities"></section>
+  <section class="home__intro-video">
+    <h6 class="home__intro-video__subtitle">Intro video</h6>
+    <h4 class="home__intro-video__title">Meet With Our Luxury Place.</h4>
+    <p class="home__intro-video__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
+    <iframe class="home__intro-video__video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Bu3Doe45lcU?si=9HRVhvdSXwNgSY9d&amp;start=25&amp;end=75" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <button class="home__intro-video__button">Book now</button>
+  </section>
+  <section class="home__facilities">
+    <h6 class="home__facilities__subtitle">Facilities</h6>
+    <h4 class="home__facilities__title">Core Features</h4>
+    <div class="swiper home__facilities__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="facilities__slider">
+            <img class="facilities__slider__image" src="./assets/images/icon 1.svg" alt="" />
+            <h4 class="facilities__slider__title">Have High Rating</h4>
+            <p class="facilities__slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="facilities__slider">
+            <img class="facilities__slider__image" src="./assets/images/icon 1.svg" alt="" />
+            <h4 class="facilities__slider__title">Have High Rating</h4>
+            <p class="facilities__slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+          </article>
+        </div>
+      </div> 
+
+      <div class="swiper-pagination"></div> 
+    </div>
+  </section>
   <section class="home__menu"></section>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    const swiper = new Swiper(".swiper", {
-      // Optional parameters
-
-
-      // If we need pagination
-      pagination: {
-        el: ".swiper-pagination",
-      },
-
-      // Navigation arrows
+    const swiperRooms = new Swiper(".swiper.home__rooms__popular-rooms__slider", {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+    const swiperFacilities = new Swiper(".swiper.home__facilities__slider", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
       },
     });
   </script>

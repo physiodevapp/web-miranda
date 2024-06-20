@@ -64,6 +64,7 @@
   margin-bottom: 1.4em;
 }
 .home__availability .button {
+  max-height: 270px;
   padding-top: 1.6em;
   padding-bottom: 1.6em;
   background-color: #BDAC8D;
@@ -375,6 +376,124 @@
 .home__rooms__popular-rooms__slider .popular-rooms__slider__room-card__price .room-card__price__time {
   font-size: 1rem;
   line-height: 11.97px;
+}
+.home__intro-video {
+  background-color: #222222;
+  padding: 4em 1.2em 2.4em;
+}
+.home__intro-video__title {
+  font-family: "Old Standard TT";
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.4400000572px;
+  text-align: left;
+  color: #222222;
+  color: #FFFFFF;
+  margin-top: 0.8em;
+}
+.home__intro-video__subtitle {
+  font-family: "Archivo";
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  color: #777777;
+  text-transform: uppercase;
+  color: #BDAC8D;
+}
+.home__intro-video__description {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+  color: #FFFFFF;
+  margin-top: 0.8em;
+}
+.home__intro-video__video {
+  margin-top: 2em;
+  width: 100%;
+  max-height: 270px;
+}
+.home__intro-video__button {
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+  background-color: #BDAC8D;
+  font-family: "Archivo";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  padding-right: 4.1em;
+  padding-left: 4.1em;
+  margin-top: 2em;
+}
+.home__facilities {
+  margin-top: 4em;
+}
+.home__facilities__title {
+  font-family: "Old Standard TT";
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.4400000572px;
+  text-align: left;
+  color: #222222;
+  text-align: center;
+  margin-top: 0.4em;
+  font-size: 3.6em;
+}
+.home__facilities__subtitle {
+  font-family: "Archivo";
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  color: #777777;
+  text-transform: uppercase;
+  text-align: center;
+}
+.home__facilities__slider {
+  margin: 4em auto 0em;
+  min-height: 160px;
+  max-width: 450px;
+}
+.home__facilities__slider .facilities__slider {
+  padding: 0em 2.2em 4.6em;
+}
+.home__facilities__slider .facilities__slider__title {
+  font-family: "Old Standard TT";
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.4400000572px;
+  text-align: left;
+  color: #222222;
+  font-size: 1.9rem;
+  margin-top: 1.4em;
+}
+.home__facilities__slider .facilities__slider__description {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+  margin-top: 1em;
+}
+.home__facilities__slider .swiper-slide {
+  padding: 0em 0em;
+}
+.home__facilities__slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #BDAC8D;
 }
 
 .rooms__page-header {
