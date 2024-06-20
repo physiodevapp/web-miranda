@@ -2,6 +2,11 @@
 @import "../components/PageHeaderComponent.scss";
 @import "../components/RoomCardComponent.scss";
 @import "../components/FooterComponent.scss";
+@import "../components/NavbarComponent.scss";
+
+.navbar {
+  @include navbar;
+}
 
 .rooms {
   &__page-header {
