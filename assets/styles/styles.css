@@ -681,6 +681,39 @@
   text-align: center;
   margin-top: 1em;
 }
+.about__services {
+  padding: 0em 1.2em;
+  margin-top: 3em;
+}
+.about__services__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about__services__list__item {
+  width: 50%;
+  text-align: center;
+  padding: 3.05em 0em;
+  max-width: 169px;
+}
+.about__services__list__item--primary {
+  background-color: #BDAC8D;
+}
+.about__services__list__item .item__title {
+  font-family: "Archivo";
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 2.4000000954px;
+  text-align: center;
+  color: #222222;
+  text-transform: uppercase;
+}
+.about__services__list__item .item__title--secondary {
+  color: #FFFFFF;
+}
 
 .rooms__page-header {
   background: #333333;

@@ -32,4 +32,43 @@
       margin-top: 1em;
     }
   }
+
+  &__services {
+    padding: 0em 1.2em;
+    margin-top: 3em;
+
+    &__list {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__item {
+        width: 50%;
+        text-align: center;
+        padding: 3.05em 0em;
+        max-width: 169px;
+
+        &--primary {
+          background-color: $color-primary;
+        }
+
+        .item__title {
+          font-family: $font-archivo;
+          font-size: 0.8rem;
+          font-weight: 700;
+          line-height: 14px;
+          letter-spacing: 2.4000000953674316px;
+          text-align: center;  
+          color: $color-tertiary;
+          text-transform: uppercase;
+          
+          &--secondary {
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+  }
 }
