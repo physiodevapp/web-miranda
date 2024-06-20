@@ -196,4 +196,29 @@
     }
   }
 
+  &__policy {
+    margin-top: 6em;
+    padding: 0em 1.2em;
+
+    &__title {
+      @include room-title;
+      font-size: 1.9rem;
+    }
+
+    &__description {
+      @include room-description;
+      margin-top: 2em;
+    }
+  }
+
+  &__related-rooms {
+    margin-top: 4.5em;
+    padding: 0em 1.2em;
+
+    &__title {
+      @include room-title;
+      font-size: 1.9rem;
+    }
+  }
+
 }
