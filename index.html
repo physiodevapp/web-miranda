@@ -264,7 +264,68 @@
       <div class="swiper-pagination"></div> 
     </div>
   </section>
-  <section class="home__menu"></section>
+  <section class="home__menu">
+    <img class="home__menu__image" src="./assets/images/icon 4.svg" alt="">
+    <h6 class="home__menu__subtitle">Menu</h6>
+    <h4 class="home__menu__title">Our Foods Menu</h4>
+    <div class="swiper home__menu__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="menu__slider">
+            <article class="menu__slider__dish">
+              <img class="menu__slider__dish__image" src="" alt="" />
+              <div class="dish__details__wrapper">
+                <h4 class="dish__details__wrapper__title">Eggs & Bacon</h4>
+                <p class="dish__details__wrapper__description">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </article>
+            <article class="menu__slider__dish">
+              <img class="menu__slider__dish__image" src="" alt="" />
+              <div class="dish__details__wrapper">
+                <h4 class="dish__details__wrapper__title">Tea or Coffee</h4>
+                <p class="dish__details__wrapper__description">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </article>
+            <article class="menu__slider__dish">
+              <img class="menu__slider__dish__image" src="" alt="" />
+              <div class="dish__details__wrapper">
+                <h4 class="dish__details__wrapper__title">Chia Oatmeal</h4>
+                <p class="dish__details__wrapper__description">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </article>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="menu__slider">
+            <article class="menu__slider__dish">
+              <img class="menu__slider__dish__image" src="" alt="" />
+              <div class="dish__details__wrapper">
+                <h4 class="dish__details__wrapper__title">Eggs & Bacon</h4>
+                <p class="dish__details__wrapper__description">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </article>
+            <article class="menu__slider__dish">
+              <img class="menu__slider__dish__image" src="" alt="" />
+              <div class="dish__details__wrapper">
+                <h4 class="dish__details__wrapper__title">Tea or Coffee</h4>
+                <p class="dish__details__wrapper__description">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </article>
+            <article class="menu__slider__dish">
+              <img class="menu__slider__dish__image" src="" alt="" />
+              <div class="dish__details__wrapper">
+                <h4 class="dish__details__wrapper__title">Chia Oatmeal</h4>
+                <p class="dish__details__wrapper__description">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </article>
+          </article>
+        </div>
+      </div> 
+
+      <div class="swiper-button-prev slider__button slider__button--prev"><img src="./assets/images/2849832_arrows_navigation_arrow_left_back_icon 1.svg" alt=""></div>
+      <div class="swiper-button-next slider__button slider__button--next"><img src="./assets/images/1.svg" alt=""></div>
+    </div>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
@@ -280,6 +341,14 @@
       pagination: {
         el: ".swiper-pagination",
         clickable: true
+      },
+    });
+  </script>
+  <script>
+    const swiperMenu = new Swiper(".swiper.home__menu__slider", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
   </script>

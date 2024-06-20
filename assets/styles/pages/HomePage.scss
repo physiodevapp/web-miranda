@@ -247,13 +247,16 @@
           .room-card-wrapper {
             margin: 0em 1em;
             position: relative;
-            top: -4em;
+            top: -1.2em;
             padding: 1.2em 0em;
             background-color: $color-secondary;
           }
 
           &__features {
-            transform: translateY(-14em);
+            position: absolute;
+            top: 0em;
+            left: 50%;
+            transform: translateX(-50%);
           }
 
           &__price {
@@ -354,6 +357,87 @@
         }
       }
 
+    }
+  }
+
+  &__menu {
+    position: relative;
+    margin-top: 4em;
+    padding: 0em 1.2em;
+
+    &__image {
+      position: relative;
+      left: calc(100% + 1.2em);
+      transform: translateX(-100%);
+    }
+
+    &__subtitle {
+      @include room-subtitle;
+      margin-top: 0.6em;
+    }
+
+    &__title {
+      @include room-title;
+      margin-top: 0.4em;
+      font-size: 3.8em;
+      line-height: 60px;
+    }
+
+    &__slider {
+      margin-top: 2.6em;
+      padding: 0em 0em 3em;
+
+      .slider__button {
+        height: unset;
+        padding: 0.75em 1em;
+        color: #222222;
+        top: 26.5em;
+
+        &::after {
+          display: none;
+        }
+
+        img {
+          transform: scale(1.2);  
+        }
+
+        &--next {
+          background: #BDAC8D;
+          right: 0em;
+        }
+
+        &--prev {
+          background-color: #FFFFFF;
+          left: 100%;
+          transform: translateX(calc(-200% - 0.4em));
+        }
+      }
+
+      .menu__slider__dish {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1em;
+
+        &__image {
+          width: 120px;
+          height: 120px;
+          background-color: #DBDBDB;
+        }
+
+        .dish__details__wrapper {
+          padding-left: 1.6em;
+
+          &__title {
+            @include room-title;
+            font-size: 1.8rem;
+          }
+
+          &__description {
+            @include room-description;
+          }
+        }
+    
+      }
     }
   }
 
