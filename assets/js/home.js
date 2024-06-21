@@ -119,3 +119,6 @@
   departureButton.addEventListener("click", handleClickDepartureButton);
   departureDateInput.addEventListener("change", handleChangeDepartureDate);
   departureTextInput.addEventListener("blur", handleBlurDepartureText);
+
+  const facilitiesSliders = document.querySelectorAll(".home__facilities__slider .swiper-wrapper .facilities__slider__number");
+  facilitiesSliders.forEach((htmlElement, index) => htmlElement.innerHTML = index < 10 ? `0${index + 1}` : index);
