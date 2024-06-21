@@ -1126,6 +1126,18 @@
   height: 214px;
   background-color: #EFEFEF;
   margin-top: 1.6em;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.details__room__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
 }
 .details__availability {
   margin-top: 1em;
@@ -1430,6 +1442,20 @@
 }
 .details__related-rooms__slider .related-rooms__slider__room-card__button:hover {
   color: #BDAC8D;
+}
+.details__related-rooms__slider .related-rooms__slider__room-card__image {
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.details__related-rooms__slider .related-rooms__slider__room-card__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .offers__rooms {
