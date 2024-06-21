@@ -339,6 +339,9 @@
   background-color: #FFFFFF;
   color: #BDBDBD;
 }
+.home__rooms__popular-rooms__slider .popular-rooms__slider__room-card__button:hover {
+  color: #BDAC8D;
+}
 .home__rooms__popular-rooms__slider .popular-rooms__slider__room-card .room-card-wrapper {
   margin: 0em 1em;
   position: relative;
@@ -957,6 +960,13 @@
   background-color: #FFFFFF;
   color: #BDBDBD;
 }
+.rooms__slider__room-card__button:hover {
+  color: #BDAC8D;
+}
+.rooms__slider__room-card__button a {
+  text-decoration: none;
+  color: inherit;
+}
 .rooms__slider .pagination {
   position: absolute;
   bottom: 0em;
@@ -1335,6 +1345,9 @@
   background-color: #FFFFFF;
   color: #BDBDBD;
 }
+.details__related-rooms__slider .related-rooms__slider__room-card__button:hover {
+  color: #BDAC8D;
+}
 
 .offers__rooms {
   padding: 0em 1.26em;
@@ -1579,6 +1592,9 @@
   padding: 0em 0.3em;
   background-color: #FFFFFF;
   color: #BDBDBD;
+}
+.offers__popular-rooms__slider .popular-rooms__slider__room-card__button:hover {
+  color: #BDAC8D;
 }
 
 html,
