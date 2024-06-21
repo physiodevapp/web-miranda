@@ -11,6 +11,7 @@ $color-tertiary: #222222;
 @import "./pages/RoomsPage.scss";
 @import "./pages/DetailsPage.scss";
 @import "./pages/OffersPage.scss";
+@import "./components/NavbarComponent.scss";
 
 html,
 * {
@@ -21,3 +22,9 @@ html,
 body {
   min-width: 320px;
 }
+
+.navbar {
+  @include navbar;
+}
+
+

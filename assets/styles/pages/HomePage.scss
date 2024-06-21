@@ -6,11 +6,6 @@
 @import "../components/RoomDescriptionComponent.scss";
 @import "../components/RoomSubtitleComponent.scss";
 @import "../components/FooterComponent.scss";
-@import "../components/NavbarComponent.scss";
-
-.home-navbar {
-  @include navbar;
-}
 
 .home-header {
   @include pageHeader;

@@ -6,14 +6,9 @@
 @import "../components/RoomDescriptionComponent.scss";
 @import "../components/RoomSubtitleComponent.scss";
 @import "../components/FooterComponent.scss";
-@import "../components/NavbarComponent.scss";
 
 $offers-rooms-element-marging-right: 0.8rem;
 $offers-rooms-element-marging-left: $offers-rooms-element-marging-right;
-
-.offers-navbar {
-  @include navbar;
-}
 
 .offers-header {
   @include pageHeader;

@@ -1,85 +1,3 @@
-.home-navbar {
-  position: fixed;
-  z-index: 10;
-  top: 0em;
-  left: 0em;
-  width: 100%;
-  height: 70px;
-  background-color: #FFFFFF;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.home-navbar__brand {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  padding-left: 1.2em;
-}
-.home-navbar__brand__logo {
-  padding: 0.654em;
-  background-color: #FFFFFF;
-  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
-}
-.home-navbar__brand__title {
-  padding-left: 0.8em;
-}
-.home-navbar__brand__description {
-  font-family: "Roboto";
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  color: #777777;
-  margin-top: 3em;
-}
-.home-navbar__button {
-  border: none;
-  background-color: #FFFFFF;
-  padding: 1em;
-  line-height: 0px;
-  cursor: pointer;
-}
-.home-navbar__button__image {
-  display: none;
-}
-.home-navbar__button__image.show {
-  display: block;
-}
-.home-navbar__menu {
-  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.2901960784);
-  position: fixed;
-  left: 0em;
-  top: 70px;
-  width: 100%;
-  z-index: 1;
-  background-color: #FFFFFF;
-  list-style: none;
-  padding: 1em 1em;
-  display: none;
-}
-.home-navbar__menu.opened {
-  display: block;
-}
-.home-navbar__menu__link {
-  padding: 0.6em 0em;
-}
-.home-navbar__menu__link a {
-  text-decoration: none;
-  color: #222222;
-  font-family: "Archivo";
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 17.41px;
-  cursor: pointer;
-  display: inline-block;
-  padding: 0.4em 1em;
-}
-.home-navbar__menu__link a:hover {
-  color: #BDAC8D;
-}
-
 .home-header {
   background: #333333;
   color: #FFFFFF;
@@ -874,88 +792,6 @@
   text-align: left;
 }
 
-.about-navbar {
-  position: fixed;
-  z-index: 10;
-  top: 0em;
-  left: 0em;
-  width: 100%;
-  height: 70px;
-  background-color: #FFFFFF;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.about-navbar__brand {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  padding-left: 1.2em;
-}
-.about-navbar__brand__logo {
-  padding: 0.654em;
-  background-color: #FFFFFF;
-  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
-}
-.about-navbar__brand__title {
-  padding-left: 0.8em;
-}
-.about-navbar__brand__description {
-  font-family: "Roboto";
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  color: #777777;
-  margin-top: 3em;
-}
-.about-navbar__button {
-  border: none;
-  background-color: #FFFFFF;
-  padding: 1em;
-  line-height: 0px;
-  cursor: pointer;
-}
-.about-navbar__button__image {
-  display: none;
-}
-.about-navbar__button__image.show {
-  display: block;
-}
-.about-navbar__menu {
-  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.2901960784);
-  position: fixed;
-  left: 0em;
-  top: 70px;
-  width: 100%;
-  z-index: 1;
-  background-color: #FFFFFF;
-  list-style: none;
-  padding: 1em 1em;
-  display: none;
-}
-.about-navbar__menu.opened {
-  display: block;
-}
-.about-navbar__menu__link {
-  padding: 0.6em 0em;
-}
-.about-navbar__menu__link a {
-  text-decoration: none;
-  color: #222222;
-  font-family: "Archivo";
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 17.41px;
-  cursor: pointer;
-  display: inline-block;
-  padding: 0.4em 1em;
-}
-.about-navbar__menu__link a:hover {
-  color: #BDAC8D;
-}
-
 .about-header {
   background: #333333;
   color: #FFFFFF;
@@ -1432,88 +1268,6 @@
   text-align: left;
 }
 
-.rooms-navbar {
-  position: fixed;
-  z-index: 10;
-  top: 0em;
-  left: 0em;
-  width: 100%;
-  height: 70px;
-  background-color: #FFFFFF;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.rooms-navbar__brand {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  padding-left: 1.2em;
-}
-.rooms-navbar__brand__logo {
-  padding: 0.654em;
-  background-color: #FFFFFF;
-  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
-}
-.rooms-navbar__brand__title {
-  padding-left: 0.8em;
-}
-.rooms-navbar__brand__description {
-  font-family: "Roboto";
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  color: #777777;
-  margin-top: 3em;
-}
-.rooms-navbar__button {
-  border: none;
-  background-color: #FFFFFF;
-  padding: 1em;
-  line-height: 0px;
-  cursor: pointer;
-}
-.rooms-navbar__button__image {
-  display: none;
-}
-.rooms-navbar__button__image.show {
-  display: block;
-}
-.rooms-navbar__menu {
-  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.2901960784);
-  position: fixed;
-  left: 0em;
-  top: 70px;
-  width: 100%;
-  z-index: 1;
-  background-color: #FFFFFF;
-  list-style: none;
-  padding: 1em 1em;
-  display: none;
-}
-.rooms-navbar__menu.opened {
-  display: block;
-}
-.rooms-navbar__menu__link {
-  padding: 0.6em 0em;
-}
-.rooms-navbar__menu__link a {
-  text-decoration: none;
-  color: #222222;
-  font-family: "Archivo";
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 17.41px;
-  cursor: pointer;
-  display: inline-block;
-  padding: 0.4em 1em;
-}
-.rooms-navbar__menu__link a:hover {
-  color: #BDAC8D;
-}
-
 .rooms-header {
   background: #333333;
   color: #FFFFFF;
@@ -1817,88 +1571,6 @@
   line-height: 18.75px;
   letter-spacing: -0.4799999893px;
   text-align: left;
-}
-
-.details-navbar {
-  position: fixed;
-  z-index: 10;
-  top: 0em;
-  left: 0em;
-  width: 100%;
-  height: 70px;
-  background-color: #FFFFFF;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.details-navbar__brand {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  padding-left: 1.2em;
-}
-.details-navbar__brand__logo {
-  padding: 0.654em;
-  background-color: #FFFFFF;
-  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
-}
-.details-navbar__brand__title {
-  padding-left: 0.8em;
-}
-.details-navbar__brand__description {
-  font-family: "Roboto";
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  color: #777777;
-  margin-top: 3em;
-}
-.details-navbar__button {
-  border: none;
-  background-color: #FFFFFF;
-  padding: 1em;
-  line-height: 0px;
-  cursor: pointer;
-}
-.details-navbar__button__image {
-  display: none;
-}
-.details-navbar__button__image.show {
-  display: block;
-}
-.details-navbar__menu {
-  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.2901960784);
-  position: fixed;
-  left: 0em;
-  top: 70px;
-  width: 100%;
-  z-index: 1;
-  background-color: #FFFFFF;
-  list-style: none;
-  padding: 1em 1em;
-  display: none;
-}
-.details-navbar__menu.opened {
-  display: block;
-}
-.details-navbar__menu__link {
-  padding: 0.6em 0em;
-}
-.details-navbar__menu__link a {
-  text-decoration: none;
-  color: #222222;
-  font-family: "Archivo";
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 17.41px;
-  cursor: pointer;
-  display: inline-block;
-  padding: 0.4em 1em;
-}
-.details-navbar__menu__link a:hover {
-  color: #BDAC8D;
 }
 
 .details-header {
@@ -2446,88 +2118,6 @@
   text-align: left;
 }
 
-.offers-navbar {
-  position: fixed;
-  z-index: 10;
-  top: 0em;
-  left: 0em;
-  width: 100%;
-  height: 70px;
-  background-color: #FFFFFF;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.offers-navbar__brand {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  padding-left: 1.2em;
-}
-.offers-navbar__brand__logo {
-  padding: 0.654em;
-  background-color: #FFFFFF;
-  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
-}
-.offers-navbar__brand__title {
-  padding-left: 0.8em;
-}
-.offers-navbar__brand__description {
-  font-family: "Roboto";
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  color: #777777;
-  margin-top: 3em;
-}
-.offers-navbar__button {
-  border: none;
-  background-color: #FFFFFF;
-  padding: 1em;
-  line-height: 0px;
-  cursor: pointer;
-}
-.offers-navbar__button__image {
-  display: none;
-}
-.offers-navbar__button__image.show {
-  display: block;
-}
-.offers-navbar__menu {
-  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.2901960784);
-  position: fixed;
-  left: 0em;
-  top: 70px;
-  width: 100%;
-  z-index: 1;
-  background-color: #FFFFFF;
-  list-style: none;
-  padding: 1em 1em;
-  display: none;
-}
-.offers-navbar__menu.opened {
-  display: block;
-}
-.offers-navbar__menu__link {
-  padding: 0.6em 0em;
-}
-.offers-navbar__menu__link a {
-  text-decoration: none;
-  color: #222222;
-  font-family: "Archivo";
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 17.41px;
-  cursor: pointer;
-  display: inline-block;
-  padding: 0.4em 1em;
-}
-.offers-navbar__menu__link a:hover {
-  color: #BDAC8D;
-}
-
 .offers-header {
   background: #333333;
   color: #FFFFFF;
@@ -2983,6 +2573,88 @@ html,
 
 body {
   min-width: 320px;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 10;
+  top: 0em;
+  left: 0em;
+  width: 100%;
+  height: 70px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-left: 1.2em;
+}
+.navbar__brand__logo {
+  padding: 0.654em;
+  background-color: #FFFFFF;
+  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
+}
+.navbar__brand__title {
+  padding-left: 0.8em;
+}
+.navbar__brand__description {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+  margin-top: 3em;
+}
+.navbar__button {
+  border: none;
+  background-color: #FFFFFF;
+  padding: 1em;
+  line-height: 0px;
+  cursor: pointer;
+}
+.navbar__button__image {
+  display: none;
+}
+.navbar__button__image.show {
+  display: block;
+}
+.navbar__menu {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.2901960784);
+  position: fixed;
+  left: 0em;
+  top: 70px;
+  width: 100%;
+  z-index: 1;
+  background-color: #FFFFFF;
+  list-style: none;
+  padding: 1em 1em;
+  display: none;
+}
+.navbar__menu.opened {
+  display: block;
+}
+.navbar__menu__link {
+  padding: 0.6em 0em;
+}
+.navbar__menu__link a {
+  text-decoration: none;
+  color: #222222;
+  font-family: "Archivo";
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 17.41px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.4em 1em;
+}
+.navbar__menu__link a:hover {
+  color: #BDAC8D;
 }
 
 /*# sourceMappingURL=styles.css.map */
