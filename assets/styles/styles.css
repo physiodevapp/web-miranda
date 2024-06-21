@@ -1560,6 +1560,9 @@
   color: #BEAD8E;
 }
 
+.rooms {
+  margin-bottom: 6em;
+}
 .rooms__slider {
   position: relative;
   padding: 0em 1.26em;
