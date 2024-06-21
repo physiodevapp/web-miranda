@@ -1499,9 +1499,21 @@
   line-height: 13.06px;
 }
 .offers__rooms__offer .offer__image {
+  background-color: #EBEBEB;
   height: 162px;
   width: 100%;
-  background-color: #EBEBEB;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.offers__rooms__offer .offer__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 .offers__rooms__offer .offer__subtitle {
   font-family: "Archivo";
@@ -1704,6 +1716,20 @@
 }
 .offers__popular-rooms__slider .popular-rooms__slider__room-card__button:hover {
   color: #BDAC8D;
+}
+.offers__popular-rooms__slider .popular-rooms__slider__room-card__image {
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.offers__popular-rooms__slider .popular-rooms__slider__room-card__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 html,
