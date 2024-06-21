@@ -6,13 +6,15 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const todayDate = new Date().toLocaleDateString("es-US", {
+const locales = "en-US";
+
+const todayDate = new Date().toLocaleDateString(locales, {
   weekday: "short",
   day: "numeric",
   year: "numeric",
   month: "short"
 });
-const nextDate = new Date(new Date().setDate(new Date().getDate() + 7)).toLocaleDateString("es-US", {
+const nextDate = new Date(new Date().setDate(new Date().getDate() + 7)).toLocaleDateString(locales, {
   weekday: "short",
   day: "numeric",
   year: "numeric",
@@ -37,7 +39,9 @@ Inputmask("datetime", {
 }).mask(departureTextInput);
 departureTextInput.setAttribute("placeholder", nextDate);
 
-const handleClickArrivalButton = () => {
+const handleClickArrivalButton = (event) => {
+  event.preventDefault();
+
   try {
     arrivalDateInput.showPicker();
   } catch (error) {
@@ -45,7 +49,7 @@ const handleClickArrivalButton = () => {
   }
 }
 const handleChangeArrivalDate = (event) => {
-  const newDate = new Date(event.target.valueAsNumber).toLocaleDateString("es-MX", {
+  const newDate = new Date(event.target.valueAsNumber).toLocaleDateString(locales, {
     day: "2-digit",
     year: "numeric",
     month: "short"
@@ -69,7 +73,9 @@ arrivalButton.addEventListener("click", handleClickArrivalButton);
 arrivalDateInput.addEventListener("change", handleChangeArrivalDate);
 arrivalTextInput.addEventListener("blur", handleBlurArrivalText);
 
-const handleClickDepartureButton = () => {
+const handleClickDepartureButton = (event) => {
+  event.preventDefault();
+
   try {
     departureDateInput.showPicker();
   } catch (error) {
@@ -77,7 +83,7 @@ const handleClickDepartureButton = () => {
   }
 }
 const handleChangeDepartureDate = (event) => {
-  const newDate = new Date(event.target.valueAsNumber).toLocaleDateString("es-MX", {
+  const newDate = new Date(event.target.valueAsNumber).toLocaleDateString(locales, {
     day: "2-digit",
     year: "numeric",
     month: "short"
