@@ -3,12 +3,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./assets/styles/styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="./assets/js/navbar.js" defer></script>
+  <script src="./assets/js/about.js" defer></script>
   <title>About Us</title>
 </head>
 <body>
@@ -266,35 +269,5 @@
       <p class="footer__copyright__paragraph">Terms of use | Privacy Environmental Policy</p>
     </article>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiperFacilities = new Swiper(".swiper.about__facilities__slider", {
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-    });
-  </script>
-  <script>
-    const swiperFacts = new Swiper(".swiper.about__facts__slider", {
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-    });
-  </script>
-  <script>
-    const menuButton = document.getElementById("menu-button");
-    const navbarMenu = document.getElementById("navbar-menu");
-    
-    const handleClickMenuButton = () => {
-      navbarMenu.classList.toggle("opened");      
-      document.getElementById("menu-button-open").classList.toggle("show");
-      document.getElementById("menu-button-close").classList.toggle("show");
-    }
-    menuButton.addEventListener("click", handleClickMenuButton);
-  </script>
-
 </body>
 </html>
