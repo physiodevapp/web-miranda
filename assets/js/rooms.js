@@ -37,7 +37,7 @@ class Pagination {
       .forEach((fieldHTMLElement) => {
         const fieldName = fieldHTMLElement.dataset.field;
         if (fieldHTMLElement.tagName === "IMG" && fieldHTMLElement.hasAttribute("src"))
-          fieldHTMLElement.src = (this.isURL(itemObject[fieldName]) && itemObject[fieldName]) || "";
+          fieldHTMLElement.src = (itemObject[fieldName]) || "";
         else
           fieldHTMLElement.innerHTML = itemObject[fieldHTMLElement.dataset.field] || "";
       });
@@ -194,82 +194,170 @@ const rooms = [
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1719001376258.jpg'
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1718983706784.jpg'
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1718998497112.jpg'
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1718982740187.jpg'
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1719001376258.jpg'
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1718998497112.jpg'
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1718998497112.jpg'
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1719001376258.jpg'
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1718983706784.jpg'
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1718998497112.jpg'
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1718982740187.jpg'
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1719001376258.jpg'
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1718982740187.jpg'
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1718998497112.jpg'
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1719001376258.jpg'
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
+    price: "$345/Night",
+    url: './assets/images/photo_1718983706784.jpg'
+  },
+  { 
+    title: "Minimal Duplex Room", 
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
+    price: "$345/Night",
+    url: './assets/images/photo_1718998497112.jpg'
+  },
+  { 
+    title: "Minimal Duplex Room", 
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
+    price: "$345/Night",
+    url: './assets/images/photo_1718982740187.jpg'
+  },
+  { 
+    title: "Minimal Duplex Room", 
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
+    price: "$345/Night",
+    url: './assets/images/photo_1719001376258.jpg'
+  },
+  { 
+    title: "Minimal Duplex Room", 
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
+    price: "$345/Night",
+    url: './assets/images/photo_1718982740187.jpg'
+  },
+  { 
+    title: "Minimal Duplex Room", 
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
+    price: "$345/Night",
+    url: './assets/images/photo_1718998497112.jpg'
+  },
+  { 
+    title: "Minimal Duplex Room", 
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
+    price: "$345/Night",
+    url: './assets/images/photo_1719001376258.jpg'
+  },
+  { 
+    title: "Minimal Duplex Room", 
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
+    price: "$345/Night",
+    url: './assets/images/photo_1718983706784.jpg'
+  },
+  { 
+    title: "Minimal Duplex Room", 
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
+    price: "$345/Night",
+    url: './assets/images/photo_1718998497112.jpg'
+  },
+  { 
+    title: "Minimal Duplex Room", 
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
+    price: "$345/Night",
+    url: './assets/images/photo_1718982740187.jpg'
+  },
+  { 
+    title: "Minimal Duplex Room", 
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
+    price: "$345/Night",
+    url: './assets/images/photo_1719001376258.jpg'
+  },
+  { 
+    title: "Minimal Duplex Room", 
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
+    price: "$345/Night",
+    url: './assets/images/photo_1718982740187.jpg'
+  },
+  { 
+    title: "Minimal Duplex Room", 
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
+    price: "$345/Night",
+    url: './assets/images/photo_1718998497112.jpg'
   },
 ];
 const roomsPagination = new Pagination(2, rooms, "pagination");
