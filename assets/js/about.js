@@ -12,3 +12,7 @@ const swiperFacts = new Swiper(".swiper.about__facts__slider", {
     clickable: true
   },
 });
+
+const facilitiesSliders = document.querySelectorAll(".about__facilities__slider .swiper-wrapper .facilities__slider__number");
+facilitiesSliders.forEach((htmlElement, index) => htmlElement.innerHTML = index < 10 ? `0${index + 1}` : index);
+
