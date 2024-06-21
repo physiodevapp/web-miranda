@@ -3,7 +3,8 @@
   background: #333333;
   color: #FFFFFF;
   position: relative;
-  padding: 9em 1.2em 4.7em;
+  padding: 9em 1.2em 6em;
+  min-height: 335px;
 
   &__title {
     font-family: $font-oldStandard;
@@ -11,12 +12,17 @@
     font-size: 3.5rem;
     line-height: 1em;
     margin-top: 0.28em;
+
+    &--home {
+      margin-top: 1em;
+    }
   }
 
   &__subtitle {
     font-family: $font-archivo;
     font-weight: 700;
     font-size: 0.8rem;
+    line-height: 18px;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
   }
@@ -34,19 +40,27 @@
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
-    color:#333333;
+    color: $color-tertiary;
     font-family: $font-archivo;
 
     .page {
       font-weight: 700;
       font-size: 1rem;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
 
       &--divisor {
         margin: 0em 0.4em;
+        cursor: default;
       }
 
       &--active {
         color: #BEAD8E;
+        cursor: default;
       }
     }
   }

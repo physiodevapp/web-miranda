@@ -1,17 +1,8 @@
-@import "../components/PageHeaderComponent.scss";
 @import "../components/ButtonComponent.scss";
 @import "../components/RoomTitleComponent.scss";
 @import "../components/RoomDescriptionComponent.scss";
 @import "../components/RoomSubtitleComponent.scss";
 @import "../components/AmenitiesComponent.scss";
-
-.details-header {
-  @include pageHeader;
-
-  &__navbar {
-    @include pageNavbar;
-  }
-}
 
 .details {
 

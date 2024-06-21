@@ -1,22 +1,12 @@
-@import "../components/PageHeaderComponent.scss";
 @import "../components/RoomCardComponent.scss";
 @import "../components/ButtonComponent.scss";
 @import "../components/AmenitiesComponent.scss";
 @import "../components/RoomTitleComponent.scss";
 @import "../components/RoomDescriptionComponent.scss";
 @import "../components/RoomSubtitleComponent.scss";
-@import "../components/FooterComponent.scss";
 
 $offers-rooms-element-marging-right: 0.8rem;
 $offers-rooms-element-marging-left: $offers-rooms-element-marging-right;
-
-.offers-header {
-  @include pageHeader;
-
-  &__navbar {
-    @include pageNavbar;
-  }
-}
 
 .offers {
 

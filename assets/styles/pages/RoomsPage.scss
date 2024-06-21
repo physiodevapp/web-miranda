@@ -1,15 +1,6 @@
 
-@import "../components/PageHeaderComponent.scss";
 @import "../components/RoomCardComponent.scss";
 @import "../components/FooterComponent.scss";
-
-.rooms-header {
-  @include pageHeader;
-
-  &__navbar {
-    @include pageNavbar;
-  }
-}
 
 .rooms {
   margin-bottom: 6em;

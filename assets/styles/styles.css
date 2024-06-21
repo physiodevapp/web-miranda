@@ -1,28 +1,4 @@
-.home-header {
-  background: #333333;
-  color: #FFFFFF;
-  position: relative;
-  padding: 9em 1.2em 4.7em;
-  padding: 11em 1.2em 4.7em;
-}
-.home-header__title {
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 3.5rem;
-  line-height: 1em;
-  margin-top: 0.28em;
-}
-.home-header__subtitle {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-}
-.home-header__title {
-  margin-top: 0.8em;
-}
-.home-header .button {
+.header .button {
   padding-top: 1.6em;
   padding-bottom: 1.6em;
   background-color: #BDAC8D;
@@ -37,13 +13,13 @@
   border: none;
   display: block;
 }
-.home-header .button--primary {
+.header .button--primary {
   padding-right: 3.27em;
   padding-left: 3.27em;
   border: 1px solid #BDAC8D;
   margin-top: 3em;
 }
-.home-header .button--black {
+.header .button--black {
   padding-right: 3.337em;
   padding-left: 3.337em;
   background: inherit;
@@ -637,52 +613,6 @@
   background-color: #BDAC8D;
 }
 
-.about-header {
-  background: #333333;
-  color: #FFFFFF;
-  position: relative;
-  padding: 9em 1.2em 4.7em;
-}
-.about-header__title {
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 3.5rem;
-  line-height: 1em;
-  margin-top: 0.28em;
-}
-.about-header__subtitle {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-}
-.about-header__navbar {
-  position: absolute;
-  bottom: -0.1em;
-  right: 1.2em;
-  background-color: #FFFFFF;
-  padding: 1em;
-}
-.about-header__navbar__pages {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  color: #333333;
-  font-family: "Archivo";
-}
-.about-header__navbar__pages .page {
-  font-weight: 700;
-  font-size: 1rem;
-}
-.about-header__navbar__pages .page--divisor {
-  margin: 0em 0.4em;
-}
-.about-header__navbar__pages .page--active {
-  color: #BEAD8E;
-}
-
 .about__history {
   margin-top: 3.6em;
   padding: 0em 1.2em;
@@ -958,52 +888,6 @@
   background-color: #BDAC8D;
 }
 
-.rooms-header {
-  background: #333333;
-  color: #FFFFFF;
-  position: relative;
-  padding: 9em 1.2em 4.7em;
-}
-.rooms-header__title {
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 3.5rem;
-  line-height: 1em;
-  margin-top: 0.28em;
-}
-.rooms-header__subtitle {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-}
-.rooms-header__navbar {
-  position: absolute;
-  bottom: -0.1em;
-  right: 1.2em;
-  background-color: #FFFFFF;
-  padding: 1em;
-}
-.rooms-header__navbar__pages {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  color: #333333;
-  font-family: "Archivo";
-}
-.rooms-header__navbar__pages .page {
-  font-weight: 700;
-  font-size: 1rem;
-}
-.rooms-header__navbar__pages .page--divisor {
-  margin: 0em 0.4em;
-}
-.rooms-header__navbar__pages .page--active {
-  color: #BEAD8E;
-}
-
 .rooms {
   margin-bottom: 6em;
 }
@@ -1106,52 +990,6 @@
 .rooms__slider .pagination .page--selected {
   background: #BDAC8D;
   color: #FFFFFF;
-}
-
-.details-header {
-  background: #333333;
-  color: #FFFFFF;
-  position: relative;
-  padding: 9em 1.2em 4.7em;
-}
-.details-header__title {
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 3.5rem;
-  line-height: 1em;
-  margin-top: 0.28em;
-}
-.details-header__subtitle {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-}
-.details-header__navbar {
-  position: absolute;
-  bottom: -0.1em;
-  right: 1.2em;
-  background-color: #FFFFFF;
-  padding: 1em;
-}
-.details-header__navbar__pages {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  color: #333333;
-  font-family: "Archivo";
-}
-.details-header__navbar__pages .page {
-  font-weight: 700;
-  font-size: 1rem;
-}
-.details-header__navbar__pages .page--divisor {
-  margin: 0em 0.4em;
-}
-.details-header__navbar__pages .page--active {
-  color: #BEAD8E;
 }
 
 .details__room {
@@ -1498,52 +1336,6 @@
   color: #BDBDBD;
 }
 
-.offers-header {
-  background: #333333;
-  color: #FFFFFF;
-  position: relative;
-  padding: 9em 1.2em 4.7em;
-}
-.offers-header__title {
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 3.5rem;
-  line-height: 1em;
-  margin-top: 0.28em;
-}
-.offers-header__subtitle {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-}
-.offers-header__navbar {
-  position: absolute;
-  bottom: -0.1em;
-  right: 1.2em;
-  background-color: #FFFFFF;
-  padding: 1em;
-}
-.offers-header__navbar__pages {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  color: #333333;
-  font-family: "Archivo";
-}
-.offers-header__navbar__pages .page {
-  font-weight: 700;
-  font-size: 1rem;
-}
-.offers-header__navbar__pages .page--divisor {
-  margin: 0em 0.4em;
-}
-.offers-header__navbar__pages .page--active {
-  color: #BEAD8E;
-}
-
 .offers__rooms {
   padding: 0em 1.26em;
   margin-top: 3em;
@@ -1883,6 +1675,64 @@ body {
 }
 .navbar__menu__link a:hover {
   color: #BDAC8D;
+}
+
+.header {
+  background: #333333;
+  color: #FFFFFF;
+  position: relative;
+  padding: 9em 1.2em 6em;
+  min-height: 335px;
+}
+.header__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 1em;
+  margin-top: 0.28em;
+}
+.header__title--home {
+  margin-top: 1em;
+}
+.header__subtitle {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.header__navbar {
+  position: absolute;
+  bottom: -0.1em;
+  right: 1.2em;
+  background-color: #FFFFFF;
+  padding: 1em;
+}
+.header__navbar__pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  color: #222222;
+  font-family: "Archivo";
+}
+.header__navbar__pages .page {
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.header__navbar__pages .page a {
+  text-decoration: none;
+  color: inherit;
+}
+.header__navbar__pages .page--divisor {
+  margin: 0em 0.4em;
+  cursor: default;
+}
+.header__navbar__pages .page--active {
+  color: #BEAD8E;
+  cursor: default;
 }
 
 .footer {
