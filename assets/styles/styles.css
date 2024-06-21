@@ -259,7 +259,7 @@
   height: unset;
   padding: 0.75em 1em;
   color: #222222;
-  top: 7em;
+  top: 10em;
 }
 .home__rooms__popular-rooms__slider .slider__button::after {
   display: none;
@@ -1265,7 +1265,7 @@
   height: unset;
   padding: 0.75em 1em;
   color: #222222;
-  top: 7.5em;
+  top: 10em;
 }
 .details__related-rooms__slider .slider__button::after {
   display: none;
@@ -1513,7 +1513,7 @@
   height: unset;
   padding: 0.75em 1em;
   color: #222222;
-  top: 6.4em;
+  top: 10em;
 }
 .offers__popular-rooms__slider .slider__button::after {
   display: none;
