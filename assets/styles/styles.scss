@@ -12,6 +12,7 @@ $color-tertiary: #222222;
 @import "./pages/DetailsPage.scss";
 @import "./pages/OffersPage.scss";
 @import "./components/NavbarComponent.scss";
+@import "./components/FooterComponent.scss";
 
 html,
 * {
@@ -26,5 +27,11 @@ body {
 .navbar {
   @include navbar;
 }
+
+.footer {
+  @include footer;
+}
+
+
 
 
