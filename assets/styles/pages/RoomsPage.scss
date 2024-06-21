@@ -12,6 +12,22 @@
     &__room-card {
       @include roomCard;
 
+      &__image {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+        }
+      }
+
       &__button {
 
         a {

@@ -1046,6 +1046,20 @@
 .rooms__slider__room-card__button:hover {
   color: #BDAC8D;
 }
+.rooms__slider__room-card__image {
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.rooms__slider__room-card__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
 .rooms__slider__room-card__button a {
   text-decoration: none;
   color: inherit;
