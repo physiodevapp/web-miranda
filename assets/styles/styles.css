@@ -711,9 +711,7 @@
   text-align: center;
   padding: 3.05em 0em;
   max-width: 169px;
-}
-.about__services__list__item--primary {
-  background-color: #BDAC8D;
+  color: #222222;
 }
 .about__services__list__item .item__title {
   font-family: "Archivo";
@@ -722,10 +720,13 @@
   line-height: 14px;
   letter-spacing: 2.4000000954px;
   text-align: center;
-  color: #222222;
+  color: inherit;
   text-transform: uppercase;
 }
-.about__services__list__item .item__title--secondary {
+.about__services__list__item--secondary {
+  background-color: #BDAC8D;
+}
+.about__services__list__item--secondary .item__title {
   color: #FFFFFF;
 }
 .about__restaurant {
@@ -733,11 +734,22 @@
   padding: 0em 2.5em;
 }
 .about__restaurant__image {
+  background-color: #E5E5E5;
   height: 232px;
   width: 100%;
   margin: 0 auto;
   display: block;
-  background-color: #E5E5E5;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.about__restaurant__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
 }
 .about__restaurant__title {
   font-family: "Old Standard TT";
@@ -939,9 +951,21 @@
   padding: 0em 0em 3em;
 }
 .about__facts__slider .facts__slider__image {
+  background-color: #DFDFDF;
   height: 230px;
   width: 100%;
-  background-color: #DFDFDF;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.about__facts__slider .facts__slider__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  width: 100%;
 }
 .about__facts__slider .swiper-slide {
   padding: 0em 0em;
