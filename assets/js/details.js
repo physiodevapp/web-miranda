@@ -49,12 +49,12 @@ const handleClickArrivalButton = (event) => {
   }
 }
 const handleChangeArrivalDate = (event) => {
-  const newDate = new Date(event.target.valueAsNumber).toLocaleDateString(locales, {
+  const newDate = new Date(event.target.valueAsNumber).toLocaleDateString("es-US", {
     day: "2-digit",
     year: "numeric",
     month: "short"
   });
-
+  
   arrivalTextInput.value = newDate;
 }
 const handleBlurArrivalText = (event) => {
@@ -62,7 +62,7 @@ const handleBlurArrivalText = (event) => {
   
   const newDate = new Date(event.target.value);
   if (newDate != "Invalid Date") {
-    arrivalDateInput.value = `${newDate.getFullYear()}-${newDate.toLocaleDateString("default", { month: "2-digit" })}-${newDate.toLocaleDateString("default", { day: "2-digit" })}`;
+    arrivalDateInput.value = `${newDate.getFullYear()}-${newDate.toLocaleDateString(locales, { month: "2-digit" })}-${newDate.toLocaleDateString(locales, { day: "2-digit" })}`;
   } else {
     arrivalDateInput.value = null;
     arrivalTextInput.value = null;
@@ -83,7 +83,7 @@ const handleClickDepartureButton = (event) => {
   }
 }
 const handleChangeDepartureDate = (event) => {
-  const newDate = new Date(event.target.valueAsNumber).toLocaleDateString(locales, {
+  const newDate = new Date(event.target.valueAsNumber).toLocaleDateString("es-US", {
     day: "2-digit",
     year: "numeric",
     month: "short"
@@ -96,7 +96,7 @@ const handleBlurDepartureText = (event) => {
   
   const newDate = new Date(event.target.value);
   if (newDate != "Invalid Date") {
-    departureDateInput.value = `${newDate.getFullYear()}-${newDate.toLocaleDateString("default", { month: "2-digit" })}-${newDate.toLocaleDateString("default", { day: "2-digit" })}`;
+    departureDateInput.value = `${newDate.getFullYear()}-${newDate.toLocaleDateString(locales, { month: "2-digit" })}-${newDate.toLocaleDateString(locales, { day: "2-digit" })}`;
   } else {
     departureDateInput.value = null;
     departureTextInput.value = null;

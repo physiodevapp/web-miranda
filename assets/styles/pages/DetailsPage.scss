@@ -38,6 +38,20 @@
       height: 214px;
       background-color: #EFEFEF;
       margin-top: 1.6em;
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      overflow: hidden;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+      }
+
     }
   }
 
@@ -246,6 +260,22 @@
         @include roomCard;
         background-color: $color-secondary;
         padding-bottom: 1.6em;
+
+        &__image {
+          display: block;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          overflow: hidden;
+
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+          }
+        }
       }
 
     }
