@@ -7,21 +7,19 @@
 @import "../components/FooterComponent.scss";
 @import "../components/NavbarComponent.scss";
 
-.navbar {
+.details-navbar {
   @include navbar;
 }
 
-.details {
+.details-header {
+  @include pageHeader;
 
-  &__page-header {
-    @include pageHeader;
-    padding-bottom: 4.9em;
-
-    &__navbar {
-      @include pageNavbar;
-    }
-
+  &__navbar {
+    @include pageNavbar;
   }
+}
+
+.details {
 
   &__room {
     margin-top: 3em;
@@ -270,6 +268,6 @@
 
 }
 
-.footer {
+.details-footer {
   @include footer;
 }

@@ -8,39 +8,40 @@
 @import "../components/FooterComponent.scss";
 @import "../components/NavbarComponent.scss";
 
-.navbar {
+.home-navbar {
   @include navbar;
 }
 
-.home {
-  
-  &__page-header {
-    @include pageHeader;
+.home-header {
+  @include pageHeader;
+  padding: 11em 1.2em 4.7em;
 
-    &__title {
-      margin-top: 0.8em;
+  &__title {
+    margin-top: 0.8em;
+  }
+
+  .button {
+    @include button;
+    display: block;
+
+    &--primary {
+      padding-right: 3.27em;
+      padding-left: 3.27em;
+      border: 1px solid $color-primary;
+      margin-top: 3em;
     }
 
-    .button {
-      @include button;
-      display: block;
-
-      &--primary {
-        padding-right: 3.27em;
-        padding-left: 3.27em;
-        border: 1px solid $color-primary;
-        margin-top: 3em;
-      }
-
-      &--black {
-        padding-right: 3.337em;
-        padding-left: 3.337em;
-        background: inherit;
-        border: 1px solid white;
-        margin-top: 2em;
-      }
+    &--black {
+      padding-right: 3.337em;
+      padding-left: 3.337em;
+      background: inherit;
+      border: 1px solid white;
+      margin-top: 2em;
     }
   }
+}
+
+.home {
 
   &__availability {
     background-color: $color-tertiary;
@@ -517,6 +518,6 @@
 
 }
 
-.footer {
+.home-footer {
   @include footer;
 }

@@ -7,19 +7,19 @@
 @import "../components/FooterComponent.scss";
 @import "../components/NavbarComponent.scss";
 
-.navbar {
+.about-navbar {
   @include navbar;
 }
 
-.about {
-  &__page-header {
-    @include pageHeader;
-    padding-bottom: 5.8em;
+.about-header {
+  @include pageHeader;
 
-    &__navbar {
-      @include pageNavbar;
-    }
+  &__navbar {
+    @include pageNavbar;
   }
+}
+
+.about {
 
   &__history {
     margin-top: 3.6em;
@@ -265,6 +265,6 @@
   }
 }
 
-.footer {
+.about-footer {
   @include footer;
 }

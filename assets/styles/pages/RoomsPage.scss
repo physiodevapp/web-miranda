@@ -4,18 +4,19 @@
 @import "../components/FooterComponent.scss";
 @import "../components/NavbarComponent.scss";
 
-.navbar {
+.rooms-navbar {
   @include navbar;
 }
 
-.rooms {
-  &__page-header {
-    @include pageHeader;
+.rooms-header {
+  @include pageHeader;
 
-    &__navbar {
-      @include pageNavbar;
-    }
+  &__navbar {
+    @include pageNavbar;
   }
+}
+
+.rooms {
 
   &__slider {
     position: relative;
@@ -68,6 +69,6 @@
 
 }
 
-.footer {
+.rooms-footer {
   @include footer;
 }

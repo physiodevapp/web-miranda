@@ -3,12 +3,12 @@
   background: #333333;
   color: #FFFFFF;
   position: relative;
-  padding: 5em 1.2em 4.7em;
+  padding: 9em 1.2em 4.7em;
 
   &__title {
     font-family: $font-oldStandard;
     font-weight: 400;
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     line-height: 1em;
     margin-top: 0.28em;
   }
@@ -29,7 +29,7 @@
   background-color: #FFFFFF;
   padding: 1em;
   
-  & .page-header__navbar__pages {
+  &__pages {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

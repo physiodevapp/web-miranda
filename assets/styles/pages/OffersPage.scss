@@ -11,19 +11,19 @@
 $offers-rooms-element-marging-right: 0.8rem;
 $offers-rooms-element-marging-left: $offers-rooms-element-marging-right;
 
-.navbar {
+.offers-navbar {
   @include navbar;
 }
 
-.offers {
+.offers-header {
+  @include pageHeader;
 
-  &__page-header {
-    @include pageHeader;
-
-    &__navbar {
-      @include pageNavbar;
-    }
+  &__navbar {
+    @include pageNavbar;
   }
+}
+
+.offers {
 
   &__rooms {
     padding: 0em 1.26em;
@@ -178,6 +178,6 @@ $offers-rooms-element-marging-left: $offers-rooms-element-marging-right;
   }
 }
 
-.footer {
+.offers-footer {
   @include footer;
 }
