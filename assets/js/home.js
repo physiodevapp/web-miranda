@@ -52,7 +52,9 @@
   }).mask(departureTextInput);
   departureTextInput.setAttribute("placeholder", nextDate);
 
-  const handleClickArrivalButton = () => {
+  const handleClickArrivalButton = (event) => {
+    event.preventDefault();
+    
     try {
       arrivalDateInput.showPicker();
     } catch (error) {
@@ -84,7 +86,9 @@
   arrivalDateInput.addEventListener("change", handleChangeArrivalDate);
   arrivalTextInput.addEventListener("blur", handleBlurArrivalText);
 
-  const handleClickDepartureButton = () => {
+  const handleClickDepartureButton = (event) => {
+    event.preventDefault();
+
     try {
       departureDateInput.showPicker();
     } catch (error) {
