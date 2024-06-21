@@ -1818,6 +1818,7 @@ body {
   align-items: center;
   flex: 1;
   padding-left: 1.2em;
+  cursor: pointer;
 }
 .navbar__brand__logo {
   padding: 0.654em;
@@ -1839,12 +1840,14 @@ body {
 .navbar__button {
   border: none;
   background-color: #FFFFFF;
-  padding: 1em;
+  padding: 0.9em;
   line-height: 0px;
+  width: 46px;
   cursor: pointer;
 }
 .navbar__button__image {
   display: none;
+  width: 100%;
 }
 .navbar__button__image.show {
   display: block;
