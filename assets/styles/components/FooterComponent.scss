@@ -1,6 +1,6 @@
 
 @mixin footer {
-  padding: 6em 1.2em;
+  padding: 6em 1.2em 5em;
   position: relative;
 
   &__brand {
@@ -139,7 +139,7 @@
     left: 0em;
     width: 100%;
     background-color: #F8F8F8;
-    padding: 0.4em 1.2em;
+    padding: 0.5em 1.2em;
 
      &__paragraph {
       padding: 0.6em 0em;
