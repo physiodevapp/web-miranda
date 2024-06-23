@@ -153,4 +153,34 @@
       text-align: left;
      }
   }
+
+  @media only screen and (min-width: 1000px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 8em;
+
+    &__brand-media__wrapper {
+      flex: 1;
+      padding-right: 2em;
+    }
+
+    &__services {
+      flex: 1;
+      padding-right: 2em;
+    }
+
+    &__contact {
+      flex: 0.8;
+    }
+
+    &__copyright {
+      bottom: 0em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: $color-secondary;
+      padding: 1.4em 1.2em;
+    }
+  }
 }

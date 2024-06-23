@@ -1988,7 +1988,7 @@ body {
 @media only screen and (min-width: 1000px) {
   .navbar {
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     padding: 0.6em 7em;
     width: 100%;
     height: 70px;
@@ -2241,6 +2241,33 @@ body {
   line-height: 18.75px;
   letter-spacing: -0.4799999893px;
   text-align: left;
+}
+@media only screen and (min-width: 1000px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 8em;
+  }
+  .footer__brand-media__wrapper {
+    flex: 1;
+    padding-right: 2em;
+  }
+  .footer__services {
+    flex: 1;
+    padding-right: 2em;
+  }
+  .footer__contact {
+    flex: 0.8;
+  }
+  .footer__copyright {
+    bottom: 0em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 1.4em 1.2em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
