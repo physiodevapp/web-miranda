@@ -96,4 +96,40 @@
 
     }
   }
+
+  &__form {
+    padding: 0em 1.2em;
+    margin-top: 1.5em;
+    text-align: center;
+    
+    input, textarea {
+      width: 100%;
+      border: none;
+      padding: 1em 1em 1em 2.4em;
+      background: #F8F8F8;
+      margin-bottom: 1em;
+      font-family: $font-roboto;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 18.75px;
+      text-align: left;
+    }
+    
+    input {
+      background-position: 0.6em center;
+      background-repeat: no-repeat;
+    }
+
+    textarea {
+      background-position: 0.6em 1em;
+      background-repeat: no-repeat;
+    }
+
+    &__button {
+      @include button;
+      width: calc(100% - 2.6em);
+      margin-top: 1.6em;
+    }
+  }
+
 }
