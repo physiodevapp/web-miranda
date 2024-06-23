@@ -1843,6 +1843,47 @@
 .contact__maps__slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #BDAC8D;
 }
+.contact__form {
+  padding: 0em 1.2em;
+  margin-top: 1.5em;
+  text-align: center;
+}
+.contact__form input, .contact__form textarea {
+  width: 100%;
+  border: none;
+  padding: 1em 1em 1em 2.4em;
+  background: #F8F8F8;
+  margin-bottom: 1em;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
+}
+.contact__form input {
+  background-position: 0.6em center;
+  background-repeat: no-repeat;
+}
+.contact__form textarea {
+  background-position: 0.6em 1em;
+  background-repeat: no-repeat;
+}
+.contact__form__button {
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+  background-color: #BDAC8D;
+  font-family: "Archivo";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  width: calc(100% - 2.6em);
+  margin-top: 1.6em;
+}
 
 html,
 * {
@@ -1874,6 +1915,7 @@ body {
   align-items: center;
   flex: 1;
   padding-left: 1.2em;
+  z-index: 10;
   cursor: pointer;
 }
 .navbar__brand__logo {
