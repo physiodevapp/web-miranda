@@ -1759,6 +1759,91 @@
   width: 100%;
 }
 
+.contact__list {
+  list-style: none;
+  margin-top: 5em;
+  padding: 0em 2em;
+}
+.contact__list__item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10em;
+  position: relative;
+}
+.contact__list__item__number {
+  position: absolute;
+  font-family: "Roboto";
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 234.38px;
+  letter-spacing: -6px;
+  text-align: right;
+  color: #F8F8F8;
+  right: 0%;
+  top: 72%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.contact__list__item__image {
+  align-self: flex-start;
+}
+.contact__list__item .list__item__wrapper {
+  padding: 0.25em 3em 0em 1.2em;
+}
+.contact__list__item .list__item__wrapper__title {
+  font-family: "Old Standard TT";
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.4400000572px;
+  text-align: left;
+  color: #222222;
+  font-size: 1.4rem;
+  line-height: 16.41px;
+  padding-bottom: 1em;
+}
+.contact__list__item .list__item__wrapper__subtitle {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+  font-size: 0.9rem;
+}
+.contact__maps {
+  padding: 0em 1.2em;
+}
+.contact__maps__slider {
+  margin: 3em auto 0em;
+  min-height: 160px;
+  max-width: 450px;
+  padding: 0em 0em 3em;
+}
+.contact__maps__slider .maps__slider__image {
+  background-color: #DFDFDF;
+  height: 230px;
+  width: 100%;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.contact__maps__slider .maps__slider__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+.contact__maps__slider .swiper-slide {
+  padding: 0em 0em;
+}
+.contact__maps__slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #BDAC8D;
+}
+
 html,
 * {
   box-sizing: border-box;
