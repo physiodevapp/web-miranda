@@ -14,21 +14,6 @@
       margin-bottom: 10em;
       position: relative;
 
-      &__number {
-        position: absolute;
-        font-family: $font-roboto;
-        font-size: 200px;
-        font-weight: 700;
-        line-height: 234.38px;
-        letter-spacing: -6px;
-        text-align: right;
-        color: #F8F8F8;
-        right: 0%;
-        top: 72%;
-        transform: translateY(-50%);
-        z-index: -1;
-      }
-
       &__image {
         align-self: flex-start;
       }
@@ -46,6 +31,21 @@
         &__subtitle {
           @include room-description;
           font-size: 0.9rem;
+        }
+
+        &__number {
+          position: absolute;
+          font-family: $font-roboto;
+          font-size: 200px;
+          font-weight: 700;
+          line-height: 234.38px;
+          letter-spacing: -6px;
+          text-align: right;
+          color: #F8F8F8;
+          right: 0%;
+          top: 72%;
+          transform: translateY(-50%);
+          z-index: -1;
         }
       }
     }
@@ -77,7 +77,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            height: 100%;
+            width: 100%;
           }
         }
 
@@ -130,6 +130,73 @@
       width: calc(100% - 2.6em);
       margin-top: 1.6em;
     }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    padding: 0em 7em;
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      padding: 0em 1em;
+
+      &__item {
+        flex: 1;
+        margin-bottom: 5em;
+        padding-left: 2em;
+
+        .list__item__wrapper {
+
+          &__number {
+            right: 0%;
+          }
+        }
+      }
+    }
+
+    &__maps {
+      padding: 0em;
+
+      &__slider {
+        max-width: 100%;
+        margin: 0em auto;
+
+        .maps__slider__image {
+          height: 700px;
+
+          img {
+            transform: translate(-50%, -50%) scale(1.5);
+            height: 100%;
+            width: unset;
+          }
+        }
+      }
+    }
+
+    &__form {
+      padding: 0em 4em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.6em;
+
+      input {
+        width: calc(50% - 0.6em);
+        margin-bottom: 0.6em;
+      }
+
+      textarea {
+        padding-bottom: 8em;
+      }
+
+      &__button {
+        width: unset;
+        padding: 1.6em 7.3em;
+        margin: 0em auto;
+      }
+    }
+
   }
 
 }
