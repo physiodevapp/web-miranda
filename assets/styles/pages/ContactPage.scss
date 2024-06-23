@@ -1,0 +1,99 @@
+
+@import "../components/ButtonComponent.scss";
+
+.contact {
+
+  &__list {
+    list-style: none;
+    margin-top: 5em;
+    padding: 0em 2em;
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10em;
+      position: relative;
+
+      &__number {
+        position: absolute;
+        font-family: $font-roboto;
+        font-size: 200px;
+        font-weight: 700;
+        line-height: 234.38px;
+        letter-spacing: -6px;
+        text-align: right;
+        color: #F8F8F8;
+        right: 0%;
+        top: 72%;
+        transform: translateY(-50%);
+        z-index: -1;
+      }
+
+      &__image {
+        align-self: flex-start;
+      }
+
+      .list__item__wrapper {
+        padding: 0.25em 3em 0em 1.2em;
+
+        &__title {
+          @include room-title;
+          font-size: 1.4rem;
+          line-height: 16.41px;
+          padding-bottom: 1em;
+        }
+
+        &__subtitle {
+          @include room-description;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  &__maps {
+    padding: 0em 1.2em;
+
+    &__slider {
+      margin: 3em auto 0em;
+      min-height: 160px;
+      max-width: 450px;
+      padding: 0em 0em 3em;
+
+      .maps__slider {
+
+        &__image {
+          background-color: #DFDFDF;
+          height: 230px;
+          width: 100%;
+          display: block;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          overflow: hidden;
+
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+          }
+        }
+
+      }
+
+      .swiper-slide {
+        padding: 0em 0em;
+      }
+
+      .swiper-pagination {
+
+        .swiper-pagination-bullet-active {
+          background-color: $color-primary;
+        }
+      }
+
+    }
+  }
+}
