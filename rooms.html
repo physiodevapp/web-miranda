@@ -6,7 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="./assets/js/navbar.js" defer></script>
     <script src="./assets/js/rooms.js" defer></script>
     <title>Rooms</title>
@@ -60,64 +62,706 @@
       </nav>
     </header>
     <main class="rooms">
-    <section id="pagination" class="rooms__slider">
-      <article class="rooms__slider__room-card">
-        <figure class="rooms__slider__room-card__image">
-          <img data-field="url" src="" alt="" />
-        </figure>
-        <ul class="rooms__slider__room-card__features">
-          <li class="feature feature">
-            <img
-              src="./assets/images/8725460_bed_icon 1.svg"
-              alt="includes-bed"
-            />
-          </li>
-          <li class="feature feature--included">
-            <img
-              src="./assets/images/925808_wifi_icon 1.svg"
-              alt="includes-bed"
-            />
-          </li>
-          <li class="feature feature--included">
-            <img
-              src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg"
-              alt="includes-bed"
-            />
-          </li>
-          <li class="feature feature">
-            <img
-              src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg"
-              alt="includes-bed"
-            />
-          </li>
-          <li class="feature feature">
-            <img
-              src="./assets/images/9042522_gym_icon 1.svg"
-              alt="includes-bed"
-            />
-          </li>
-          <li class="feature feature--included">
-            <img
-              src="./assets/images/9081473_smoking_no_icon 1.svg"
-              alt="includes-bed"
-            />
-          </li>
-          <li class="feature feature">
-            <img
-              src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg"
-              alt="includes-bed"
-            />
-          </li>
-        </ul>
-        <h4 class="rooms__slider__room-card__title" data-field="title"></h4>
-        <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle"></h6>
-        <span class="rooms__slider__room-card__price" data-field="price"></span>
-        <button class="rooms__slider__room-card__button">
-          <a href="./details.html">Booking Now</a>
-        </button>
-      </article>
-    </section>
-  </main>
+      <div class="swiper rooms__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1718982740187.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1718983706784.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+                <button class="rooms__slider__room-card__button">
+                  <a href="./details.html">Booking Now</a>
+                </button>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1719001376258.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1718998276275.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1719001665985.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1718997953416.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1718983706784.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1718982740187.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>            
+          </div>
+          <div class="swiper-slide">
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1718998276275.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1719001376258.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1719001665985.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1718997953416.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1718983706784.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1718998276275.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>            
+          </div>
+          <div class="swiper-slide">
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1718998276275.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1719001376258.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1719001665985.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1718997953416.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1718983706784.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>
+            <article class="rooms__slider__room-card">
+              <figure class="rooms__slider__room-card__image">
+                <img src="./assets/images/photo_1718998276275.jpg" alt="">
+              </figure>
+              <li class="rooms__slider__room-card__features">
+                <ul class="feature">
+                  <img src="./assets/images/8725460_bed_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/925808_wifi_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/4920723_automobile_car_transport_transportation_travel_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/9042522_gym_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature--included">
+                  <img src="./assets/images/9081473_smoking_no_icon 1.svg" alt="includes-bed">
+                </ul>
+                <ul class="feature feature">
+                  <img src="./assets/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="includes-bed">
+                </ul>
+              </li>
+              <div class="room-card-wrapper">
+                <h4 class="rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h6 class="rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
+                <h5 class="rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
+              </div>
+            </article>            
+          </div>
+        </div>
+
+        <div class="pag-nav-wrapper">
+          <div class="swiper-button-prev navigation">
+            <img src="./assets/images/Double_Chevron_Left.svg" alt="">
+          </div>
+
+          <div class="swiper-pagination pagination"></div>
+  
+          <div class="swiper-button-next navigation">
+            <img src="./assets/images/Double_Chevron_Right.svg" alt="">
+          </div>      
+        </div>
+      </div>
+    </main>
     <footer class="footer">
       <article class="footer__brand">
         <div class="footer__brand__logo">
