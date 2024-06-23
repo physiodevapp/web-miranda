@@ -1,16 +1,17 @@
 
 @import "../components/RoomCardComponent.scss";
-@import "../components/FooterComponent.scss";
 
 .rooms {
-  margin-bottom: 6em;
-
+  
   &__slider {
-    position: relative;
-    padding: 0em 1.26em;
+    padding: 0em 0em 4em;
 
     &__room-card {
       @include roomCard;
+
+      &__price { 
+        display: inline-block;
+      }
 
       &__image {
         display: block;
@@ -37,45 +38,65 @@
       }
     }
 
-    & .pagination {
-      position: absolute;
-      bottom: 0em;
-      display: inline-flex;
-      flex-direction: row;
+    .pag-nav-wrapper {
+      position: relative;
+      display: flex;
       justify-content: center;
-      list-style: none;
-      left: 50%;
-      transform: translate(-50%, calc(100% + 2.6em));
-      max-width: 100%;
-
-      & .page {
-        font-family: "Oswald";
-        font-size: 0.9rem;
-        font-weight: 700;
-        line-height: 19px;
-        text-align: center;
-        padding: 0.7em 1.2em;
-        background: $color-secondary;
-        color: $color-tertiary;
-
-        &.change-by-one {
-          padding: 0.7em 1.2em;
-          line-height: 1;
-          background-repeat: no-repeat;
-          background-position: center;
+      align-items: center;
+      top: 2em;
+      
+      .navigation {
+        position: relative;
+        height: unset;
+        margin: unset;
+        left: unset;
+        right: unset;
+  
+        &::after {
+          content: unset;
         }
-
-        &.not-allowed {
-          padding: 0.7em 1.0909em;
-        }
-        
-        &--selected {
-          background: $color-primary;
-          color: $color-secondary;
-        }
+      }
+  
+      .pagination {
+        position: relative;
+        display: inline-block;
+        width: unset;
+        bottom: unset;
       }
     }
 
+
+    .swiper-pagination-bullet {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+
+      font-family: "Oswald";
+      font-size: 0.9rem;
+      font-weight: 700;
+      line-height: 19px;
+      text-align: center;
+      padding: 1.2em 1.2em;
+      background-color: $color-secondary;
+      color: $color-tertiary;
+      border-radius: 0em;
+      opacity: 1;
+
+      &.hide {
+        display: none;
+      }
+
+      &.dots {
+        background-color: white;
+        color: black;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      background: $color-primary;
+      color: $color-secondary;
+    }
   }
 
 }

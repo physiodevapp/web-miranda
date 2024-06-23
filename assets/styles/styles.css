@@ -974,12 +974,8 @@
   background-color: #BDAC8D;
 }
 
-.rooms {
-  margin-bottom: 6em;
-}
 .rooms__slider {
-  position: relative;
-  padding: 0em 1.26em;
+  padding: 0em 0em 4em;
 }
 .rooms__slider__room-card {
   text-align: center;
@@ -1046,6 +1042,9 @@
 .rooms__slider__room-card__button:hover {
   color: #BDAC8D;
 }
+.rooms__slider__room-card__price {
+  display: inline-block;
+}
 .rooms__slider__room-card__image {
   display: block;
   position: relative;
@@ -1064,37 +1063,53 @@
   text-decoration: none;
   color: inherit;
 }
-.rooms__slider .pagination {
-  position: absolute;
-  bottom: 0em;
-  display: inline-flex;
-  flex-direction: row;
+.rooms__slider .pag-nav-wrapper {
+  position: relative;
+  display: flex;
   justify-content: center;
-  list-style: none;
-  left: 50%;
-  transform: translate(-50%, calc(100% + 2.6em));
-  max-width: 100%;
+  align-items: center;
+  top: 2em;
 }
-.rooms__slider .pagination .page {
+.rooms__slider .pag-nav-wrapper .navigation {
+  position: relative;
+  height: unset;
+  margin: unset;
+  left: unset;
+  right: unset;
+}
+.rooms__slider .pag-nav-wrapper .navigation::after {
+  content: unset;
+}
+.rooms__slider .pag-nav-wrapper .pagination {
+  position: relative;
+  display: inline-block;
+  width: unset;
+  bottom: unset;
+}
+.rooms__slider .swiper-pagination-bullet {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   font-family: "Oswald";
   font-size: 0.9rem;
   font-weight: 700;
   line-height: 19px;
   text-align: center;
-  padding: 0.7em 1.2em;
-  background: #FFFFFF;
+  padding: 1.2em 1.2em;
+  background-color: #FFFFFF;
   color: #222222;
+  border-radius: 0em;
+  opacity: 1;
 }
-.rooms__slider .pagination .page.change-by-one {
-  padding: 0.7em 1.2em;
-  line-height: 1;
-  background-repeat: no-repeat;
-  background-position: center;
+.rooms__slider .swiper-pagination-bullet.hide {
+  display: none;
 }
-.rooms__slider .pagination .page.not-allowed {
-  padding: 0.7em 1.0909em;
+.rooms__slider .swiper-pagination-bullet.dots {
+  background-color: white;
+  color: black;
 }
-.rooms__slider .pagination .page--selected {
+.rooms__slider .swiper-pagination-bullet-active {
   background: #BDAC8D;
   color: #FFFFFF;
 }
@@ -1364,7 +1379,6 @@
   font-size: 1.9rem;
 }
 .details__related-rooms__slider {
-  margin-top: 3em;
   min-height: 160px;
 }
 .details__related-rooms__slider .swiper-slide {
@@ -1638,7 +1652,6 @@
   color: #BDAC8D;
 }
 .offers__popular-rooms__slider {
-  margin-top: 3em;
   min-height: 160px;
 }
 .offers__popular-rooms__slider .swiper-slide {
