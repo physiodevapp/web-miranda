@@ -26,6 +26,10 @@
     text-transform: uppercase;
     letter-spacing: 0.2rem;
   }
+
+  @media only screen and (min-width: 100px) {
+    padding: 9em 7em 6em;    
+  }
 }
 
 @mixin pageNavbar {
@@ -63,5 +67,9 @@
         cursor: default;
       }
     }
+  }
+
+  @media only screen and (min-width: 100px) {
+    right: 9em;    
   }
 }

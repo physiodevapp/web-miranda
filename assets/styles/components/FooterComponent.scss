@@ -159,6 +159,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     padding-bottom: 8em;
+    padding: 2em 7em 5em;
 
     &__brand-media__wrapper {
       flex: 1;
@@ -180,7 +181,7 @@
       flex-direction: row;
       justify-content: space-between;
       background-color: $color-secondary;
-      padding: 1.4em 1.2em;
+      padding: 1.4em 7em;
     }
   }
 }
