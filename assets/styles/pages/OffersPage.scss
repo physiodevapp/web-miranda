@@ -189,5 +189,16 @@ $offers-rooms-element-marging-left: $offers-rooms-element-marging-right;
     }
 
   }
+
+  @media only screen and (min-width: 1000px) {
+
+    &__rooms {
+      padding: 0em 10em;
+
+      .offer__image {
+        height: 370px;
+      }
+    }
+  }
 }
 

@@ -1758,6 +1758,14 @@
   transform: translate(-50%, -50%);
   width: 100%;
 }
+@media only screen and (min-width: 1000px) {
+  .offers__rooms {
+    padding: 0em 10em;
+  }
+  .offers__rooms .offer__image {
+    height: 370px;
+  }
+}
 
 .contact__list {
   list-style: none;
