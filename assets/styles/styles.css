@@ -1765,6 +1765,9 @@
   .offers__rooms .offer__image {
     height: 370px;
   }
+  .offers__popular-rooms {
+    padding: 3em 7em 2em;
+  }
 }
 
 .contact__list {
