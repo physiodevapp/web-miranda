@@ -1113,6 +1113,17 @@
   background: #BDAC8D;
   color: #FFFFFF;
 }
+@media only screen and (min-width: 1000px) {
+  .rooms {
+    padding: 0em 10em;
+  }
+  .rooms__slider {
+    padding: 2em 0em 4em;
+  }
+  .rooms__slider__room-card__image img {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
 
 .details__room {
   margin-top: 3em;
@@ -2170,6 +2181,11 @@ body {
 }
 .header__title--home {
   margin-top: 1em;
+}
+@media only screen and (max-width: 1000px) {
+  .header__title {
+    padding-right: 2em;
+  }
 }
 .header__subtitle {
   font-family: "Archivo";
