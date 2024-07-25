@@ -76,176 +76,31 @@ const swiper = new Swiper('.swiper.rooms__slider', {
           this._beforeMiddleHTMLElement.removeAttribute("data-index");
           this._beforeMiddleHTMLElement.innerHTML = `...`;
         } else {
-          listItem.innerHTML = "..."
+          this._beforeMiddleHTMLElement.classList.remove("dots");
+          this._beforeMiddleHTMLElement.dataset.index = 1;
+          this._beforeMiddleHTMLElement.innerHTML = `${2}`;       
         }
+      } 
 
-        if (index === 1)
-          listItem.classList.add("page--selected")
+      if (this._afterMiddleHTMLElement) {
+        if (current >= this._total - 2) {
+          this._afterMiddleHTMLElement.classList.remove("dots");
+          this._afterMiddleHTMLElement.dataset.index = `${this._total - 2}`;
+          this._afterMiddleHTMLElement.innerHTML = `${this._total - 1}`;
+        } else if (this._total > bulletsMax) {
+          this._afterMiddleHTMLElement.classList.add("dots");
+          this._afterMiddleHTMLElement.removeAttribute("data-index");
+          this._afterMiddleHTMLElement.innerHTML = `...`;
+        }  
+      }
 
-        this._navbar.append(listItem);
-      });
-    this._containerHTMLElement.appendChild(this._navbar);
+    }
+  },  
+});
 
-    this.startListening();
-  }
-
-  startListening() {
-    const handleClick = (event) => {
-      const pages = document.querySelectorAll(`.${this._containerId} .page`);
-
-      if (!event || event.target.dataset.ref == 1) 
-        this._currentPage = 1 
-      else if (event.target.dataset.ref == 0 && this._currentPage > 1)
-        this._currentPage = this._currentPage - 1
-      else if (event.target.dataset.ref == pages.length - 1 && this._currentPage < this._numPages)
-        this._currentPage = this._currentPage + 1
-      else if(event.target.dataset.page)
-        this._currentPage = Number(event.target.dataset.page)
-
-      pages.forEach((page, index) => { 
-        page.classList.remove("not-allowed")
-
-        if (index == 0 || index == pages.length - 1){
-          page = page
-        } else if (index === 1) {
-          page.innerHTML = index
-          page.dataset.page = index
-        } else if (index === pages.length - 2){
-          page.innerHTML = this._numPages
-          page.dataset.page = this._numPages
-        } else if (this._numPages <= 5 ){
-          page.innerHTML = index
-          page.dataset.page = index
-        } else if (index === 2 && this._currentPage - 1 > 2) {
-          page.innerHTML = "..."
-          page.removeAttribute("data-page")
-          page.classList.add("not-allowed")
-        } else if (index === 2) {
-          page.innerHTML = index
-          page.dataset.page = index
-        } else if (index === pages.length - 3 && this._numPages - this._currentPage > 2) {
-          page.innerHTML = "..."
-          page.removeAttribute("data-page")
-          page.classList.add("not-allowed")
-        } else if (index === pages.length - 3) {
-          page.innerHTML = this._numPages - 1
-          page.dataset.page = this._numPages - 1
-        } else if (index === Math.floor(pages.length / 2) && (this._currentPage - 1 >= 2 && this._numPages - this._currentPage >= 2)) {
-          page.innerHTML = this._currentPage
-          page.dataset.page = this._currentPage
-        } else if (index === Math.floor(pages.length / 2) && this._currentPage < Math.floor(pages.length / 2)) {
-          page.innerHTML = Math.floor(pages.length / 2)
-          page.dataset.page = Math.floor(pages.length / 2)
-        } else if (index === Math.floor(pages.length / 2) && this._numPages - this._currentPage < Math.floor(pages.length / 2)) {
-          page.innerHTML = this._numPages - 2
-          page.dataset.page = this._numPages - 2
-        }
-
-        if (page.innerHTML == this._currentPage)
-          page.classList.add("page--selected") 
-        else 
-          page.classList.remove("page--selected")                 
-      });
-
-      this.removeOldItems();
-
-      this.loadNewItems();
-    };
-
-    handleClick();
-
-    this._navbar.querySelectorAll("li").forEach((listItem) => {
-      listItem.addEventListener("click", handleClick);
-    });
-  }
-
-  stopListening() {
-    this._navbar.querySelectorAll("li").forEach((listItem) => {
-      listItem.replaceWith(listItem.cloneNode(true));
-    });
-  }
-}
-
-const rooms = [
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night"
-  },
-];
-const roomsPagination = new Pagination(2, rooms, "pagination");
+const bulletHTMLElements = document.querySelectorAll(".swiper-pagination-bullet");
+bulletHTMLElements.forEach((bulletElement) => bulletElement.addEventListener("click", (event) => {
+    const nextSlideIndex = event.target.dataset.index
+    nextSlideIndex && swiper.slideTo(nextSlideIndex)
+  })
+)
