@@ -274,4 +274,44 @@
 
     }
   }
+  @media only screen and (min-width: 1000px) {
+    section:not(&__facilities) {
+      padding: 0em 10em;
+    }
+
+    &__facilities {
+      padding-top: 6em;
+      
+      &__slider {
+        max-width: 1060px;
+
+        .facilities__slider {
+          margin: 0em 1em 2em;
+        }
+      }
+    }
+
+    &__facts {
+
+      &__list {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0em;
+
+        &__item {
+          margin-top: 4em;
+        }
+      }
+
+      &__slider {
+        margin-top: 10em;
+        max-width: 1160px;
+
+        .facts__slider__image {
+          height: 320px;
+        }
+      }
+    }
+
+  }
 }
