@@ -4,6 +4,23 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    100: {
+      slidesPerView: 1, 
+      grid: {
+        fill:	'row',
+        rows: 1,
+      },
+    },
+    1000: {
+      spaceBetween: 10,
+      slidesPerView: 2, 
+      grid: {
+        fill:	'row',
+        rows: 1,
+      },
+    }
+  }  
 });
 
 const locales = "en-US";
