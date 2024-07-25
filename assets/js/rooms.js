@@ -6,7 +6,7 @@ const swiper = new Swiper('.swiper.rooms__slider', {
     el: '.swiper-pagination',
     type: 'bullets',
     renderBullet: function (index, className) {
-      const total = this.slides.length;
+      const total = Math.round(this.slides.length / ( this.params.grid.rows * this.params.slidesPerView))
       const middle = Math.floor(total / 2);
       const current = index + 1;
       
@@ -28,10 +28,10 @@ const swiper = new Swiper('.swiper.rooms__slider', {
   },
   breakpoints: {
     100: {
-      slidesPerView: 1,
+      slidesPerView: 1, 
       grid: {
         fill:	'row',
-        rows: 3,
+        rows: 6,
       },
     },
     1000: {
@@ -39,13 +39,13 @@ const swiper = new Swiper('.swiper.rooms__slider', {
       slidesPerView: 3, 
       grid: {
         fill:	'row',
-        rows: 2,
+        rows: 4,
       },
     }
   },
   on: {
     init: function() {
-      this._total = this.slides.length;
+      this._total = Math.round(this.slides.length / (this.params.grid.rows * this.params.slidesPerView));
       this._middle = Math.floor(this._total / 2);
       this._middleHTMLElement = document.querySelector(".swiper-pagination .middle");
       this._beforeMiddleHTMLElement = document.querySelectorAll(".swiper-pagination .swiper-pagination-bullet")[1];
