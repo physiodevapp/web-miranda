@@ -1,0 +1,202 @@
+
+@import "../components/ButtonComponent.scss";
+
+.contact {
+
+  &__list {
+    list-style: none;
+    margin-top: 5em;
+    padding: 0em 2em;
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10em;
+      position: relative;
+
+      &__image {
+        align-self: flex-start;
+      }
+
+      .list__item__wrapper {
+        padding: 0.25em 3em 0em 1.2em;
+
+        &__title {
+          @include room-title;
+          font-size: 1.4rem;
+          line-height: 16.41px;
+          padding-bottom: 1em;
+        }
+
+        &__subtitle {
+          @include room-description;
+          font-size: 0.9rem;
+        }
+
+        &__number {
+          position: absolute;
+          font-family: $font-roboto;
+          font-size: 200px;
+          font-weight: 700;
+          line-height: 234.38px;
+          letter-spacing: -6px;
+          text-align: right;
+          color: #F8F8F8;
+          right: 0%;
+          top: 72%;
+          transform: translateY(-50%);
+          z-index: -1;
+        }
+      }
+    }
+  }
+
+  &__maps {
+    padding: 0em 1.2em;
+
+    &__slider {
+      margin: 3em auto 0em;
+      min-height: 160px;
+      max-width: 450px;
+      padding: 0em 0em 3em;
+
+      .maps__slider {
+
+        &__image {
+          background-color: #DFDFDF;
+          height: 230px;
+          width: 100%;
+          display: block;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          overflow: hidden;
+
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+          }
+        }
+
+      }
+
+      .swiper-slide {
+        padding: 0em 0em;
+      }
+
+      .swiper-pagination {
+
+        .swiper-pagination-bullet-active {
+          background-color: $color-primary;
+        }
+      }
+
+    }
+  }
+
+  &__form {
+    padding: 0em 1.2em;
+    margin-top: 1.5em;
+    text-align: center;
+    
+    input, textarea {
+      width: 100%;
+      border: none;
+      padding: 1em 1em 1em 2.4em;
+      background: #F8F8F8;
+      margin-bottom: 1em;
+      font-family: $font-roboto;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 18.75px;
+      text-align: left;
+    }
+    
+    input {
+      background-position: 0.6em center;
+      background-repeat: no-repeat;
+    }
+
+    textarea {
+      background-position: 0.6em 1em;
+      background-repeat: no-repeat;
+    }
+
+    &__button {
+      @include button;
+      width: calc(100% - 2.6em);
+      margin-top: 1.6em;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    padding: 0em 7em;
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      padding: 0em 1em;
+
+      &__item {
+        flex: 1;
+        margin-bottom: 5em;
+        padding-left: 2em;
+
+        .list__item__wrapper {
+
+          &__number {
+            right: 0%;
+          }
+        }
+      }
+    }
+
+    &__maps {
+      padding: 0em;
+
+      &__slider {
+        max-width: 100%;
+        margin: 0em auto;
+
+        .maps__slider__image {
+          height: 700px;
+
+          img {
+            transform: translate(-50%, -50%) scale(1.5);
+            height: 100%;
+            width: unset;
+          }
+        }
+      }
+    }
+
+    &__form {
+      padding: 0em 4em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.6em;
+
+      input {
+        width: calc(50% - 0.6em);
+        margin-bottom: 0.6em;
+      }
+
+      textarea {
+        padding-bottom: 8em;
+      }
+
+      &__button {
+        width: unset;
+        padding: 1.6em 7.3em;
+        margin: 0em auto;
+      }
+    }
+
+  }
+
+}

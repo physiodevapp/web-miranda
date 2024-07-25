@@ -16,6 +16,10 @@
     &--home {
       margin-top: 1em;
     }
+
+    @media only screen and (max-width: 1000px) {
+      padding-right: 2em;
+    }
   }
 
   &__subtitle {
@@ -25,6 +29,10 @@
     line-height: 18px;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    padding: 9em 7em 6em;    
   }
 }
 
@@ -63,5 +71,9 @@
         cursor: default;
       }
     }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    right: 9em;    
   }
 }

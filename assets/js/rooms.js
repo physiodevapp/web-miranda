@@ -1,104 +1,80 @@
 
 
-class Pagination {
-  constructor(perPage, items, containerId) {
-    this._perPage = perPage;
-    this._numPages =
-      Math.floor(items.length / perPage) +
-      (!!(items.length % perPage) ? 1 : 0);
-    this._currentPage = 1;
-    this._items = items;
-    this._containerId = containerId;
-    this._containerHTMLElement = document.getElementById(containerId);
-    this._itemHTMLTemplate = document.getElementById(containerId).firstElementChild;
-    
-    this.init();
-  }
-
-  init() {
-    this.createNavBar();
-  }
-
-  isURL(string) {
-    let isValid = true
-    try {
-      new URL(string);
-    } catch (error) {
-      isValid = false;
+const bulletsMax = 5;
+const swiper = new Swiper('.swiper.rooms__slider', {  
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    renderBullet: function (index, className) {
+      const total = Math.round(this.slides.length / ( this.params.grid.rows * this.params.slidesPerView))
+      const middle = Math.floor(total / 2);
+      const current = index + 1;
+      
+      if (current === 1 || current === total || total <= bulletsMax)
+        return `<span data-index=${current - 1} class="${className}">${current}</span>`;
+      else if (current === 2)
+        return `<span data-index=${current - 1} class="${className}">${2}</span>`;
+      else if (current === total - 1)
+        return `<span class="${className} dots">...</span>`;
+      else if (current === middle)
+        return `<span data-index=${2} class="${className} middle">${3}</span>`;
+      else
+        return `<span class="${className} hide"></span>`;
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    100: {
+      slidesPerView: 1, 
+      grid: {
+        fill:	'row',
+        rows: 6,
+      },
+    },
+    1000: {
+      spaceBetween: 20,
+      slidesPerView: 3, 
+      grid: {
+        fill:	'row',
+        rows: 4,
+      },
     }
+  },
+  on: {
+    init: function() {
+      this._total = Math.round(this.slides.length / (this.params.grid.rows * this.params.slidesPerView));
+      this._middle = Math.floor(this._total / 2);
+      this._middleHTMLElement = document.querySelector(".swiper-pagination .middle");
+      this._beforeMiddleHTMLElement = document.querySelectorAll(".swiper-pagination .swiper-pagination-bullet")[1];
+      this._afterMiddleHTMLElement = document.querySelectorAll(".swiper-pagination .swiper-pagination-bullet")[this._total - 2];
+    }, 
+    slideChange: function() {
+      const current = this.activeIndex + 1;
+      
+      if (this._middleHTMLElement) {
+        if (current >= 3 && current < this._total - 1 && this._total > bulletsMax) {
+          this._middleHTMLElement.classList.add("swiper-pagination-bullet-active");
+        }
+        if (current > this._total - 2) {
+          this._middleHTMLElement.innerHTML = this._total - 2;
+          this._middleHTMLElement.dataset.index = this._total - 3;
+        } else if (current <= 3 ) {
+          this._middleHTMLElement.innerHTML = 3;
+          this._middleHTMLElement.dataset.index = 2;
+        } else if (current >= 3 && current < this._total - 1 && this._total > bulletsMax) {
+          this._middleHTMLElement.innerHTML = current;
+          this._middleHTMLElement.dataset.index = current - 1;
+        } 
+      }
 
-    return isValid;
-  }
-
-  fetchItemHTMLTemplate(itemObject) {
-    let itemHTMLElement = this._itemHTMLTemplate.cloneNode(true);
-
-    itemHTMLElement.querySelectorAll("[data-field]")
-      .forEach((fieldHTMLElement) => {
-        const fieldName = fieldHTMLElement.dataset.field;
-        if (fieldHTMLElement.tagName === "IMG" && fieldHTMLElement.hasAttribute("src"))
-          fieldHTMLElement.src = (itemObject[fieldName]) || "";
-        else
-          fieldHTMLElement.innerHTML = itemObject[fieldHTMLElement.dataset.field] || "";
-      });
-
-    return itemHTMLElement;
-  }
-
-  loadNewItems() {
-    const showItems = this._items.slice(
-      this._perPage * (this._currentPage - 1),
-      this._perPage * this._currentPage
-    );
-    const showHTMLElements = showItems.map((itemObject, index) => {
-      const itemHTMLElement = this.fetchItemHTMLTemplate(itemObject);
-      itemHTMLElement.id = index;
-      return itemHTMLElement;
-    });
-
-    showHTMLElements.forEach((htmlElement, index) => {
-      this._containerHTMLElement.appendChild(htmlElement.cloneNode(true));
-    });
-  }
-
-  removeOldItems() {
-    const removeHTMLElements = [...this._containerHTMLElement.getElementsByTagName("article"),];
-    for (const htmlElement of removeHTMLElements) {
-      this._containerHTMLElement.removeChild(htmlElement);
-    }
-  }
-
-  createNavBar() {
-    this._navbar = document.createElement("ul");
-    this._navbar.classList.add(this._containerId);
-    const buttonsLimit = this._numPages >= 5 ? 7 : this._numPages + 2
-    Array(buttonsLimit)
-      .fill()
-      .forEach((item, index) => {
-        const listItem = document.createElement("li");
-        listItem.dataset.ref = index;
-        listItem.classList.add("page");
-
-        if (index === 0) {
-          listItem.innerHTML = ""
-          listItem.style.backgroundImage = `url("./assets/images/Double_Chevron_Left.svg")`
-          listItem.classList.add("change-by-one")
-        } else if (index === buttonsLimit - 1) {
-          listItem.innerHTML = ""
-          listItem.style.backgroundImage = `url("./assets/images/Double_Chevron_Right.svg")`
-          listItem.classList.add("change-by-one")
-        } else if (index === 1) {
-          listItem.innerHTML = index 
-          listItem.dataset.page = index
-        } else if (index === buttonsLimit - 2) {
-          listItem.innerHTML = this._numPages
-          listItem.dataset.page = this._numPages
-        } else if (index <= Math.floor(buttonsLimit / 2)) {
-          listItem.innerHTML = index 
-          listItem.dataset.page = index
-        } else if (this._numPages - index < 2) {
-          listItem.innerHTML = index
-          listItem.dataset.page = index
+      if (this._beforeMiddleHTMLElement) {
+        if (current > 3 && this._total > bulletsMax) {
+          this._beforeMiddleHTMLElement.classList.add("dots");
+          this._beforeMiddleHTMLElement.removeAttribute("data-index");
+          this._beforeMiddleHTMLElement.innerHTML = `...`;
         } else {
           listItem.innerHTML = "..."
         }
@@ -194,170 +170,82 @@ const rooms = [
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1719001376258.jpg'
+    price: "$345/Night"
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718983706784.jpg'
+    price: "$345/Night"
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718998497112.jpg'
+    price: "$345/Night"
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718982740187.jpg'
+    price: "$345/Night"
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1719001376258.jpg'
+    price: "$345/Night"
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718998497112.jpg'
+    price: "$345/Night"
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718998497112.jpg'
+    price: "$345/Night"
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1719001376258.jpg'
+    price: "$345/Night"
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718983706784.jpg'
+    price: "$345/Night"
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718998497112.jpg'
+    price: "$345/Night"
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718982740187.jpg'
+    price: "$345/Night"
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1719001376258.jpg'
+    price: "$345/Night"
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718982740187.jpg'
+    price: "$345/Night"
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718998497112.jpg'
+    price: "$345/Night"
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1719001376258.jpg'
+    price: "$345/Night"
   },
   { 
     title: "Minimal Duplex Room", 
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718983706784.jpg'
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718998497112.jpg'
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718982740187.jpg'
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1719001376258.jpg'
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718982740187.jpg'
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718998497112.jpg'
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1719001376258.jpg'
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718983706784.jpg'
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718998497112.jpg'
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718982740187.jpg'
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1719001376258.jpg'
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718982740187.jpg'
-  },
-  { 
-    title: "Minimal Duplex Room", 
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.",
-    price: "$345/Night",
-    url: './assets/images/photo_1718998497112.jpg'
+    price: "$345/Night"
   },
 ];
 const roomsPagination = new Pagination(2, rooms, "pagination");
