@@ -31,10 +31,22 @@ body {
 }
 
 .header {
-  @include pageHeader;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0em 2em;
+  background: #333333;
+  color: #FFFFFF;
+  position: relative;
 
-  &__navbar {
-    @include pageNavbar;
+  &__info {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    @include pageHeader;
+  
+    &__navbar {
+      @include pageNavbar;
+    }
   }
 }
 

@@ -197,7 +197,9 @@ $offers-rooms-element-marging-left: $offers-rooms-element-marging-right;
   @media only screen and (min-width: 1000px) {
 
     &__rooms {
-      padding: 0em 10em;
+      max-width: 1200px;
+      margin: 3em auto;
+      padding: 0em 2em;
 
       &__offer {
         padding: 0em 0em 1em;
@@ -268,6 +270,7 @@ $offers-rooms-element-marging-left: $offers-rooms-element-marging-right;
 
       &__slider {
         margin-top: 2em;
+        max-width: 1200px;
 
         .popular-rooms__slider__room-card {
 

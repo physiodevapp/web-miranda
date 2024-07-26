@@ -524,6 +524,9 @@
   left: calc(100% + 1.2em);
   transform: translateX(-100%);
 }
+.home__menu__image--desktop {
+  display: none;
+}
 .home__menu__subtitle {
   font-family: "Archivo";
   font-size: 0.9rem;
@@ -673,6 +676,63 @@
 }
 .home__gallery__slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #BDAC8D;
+}
+@media only screen and (min-width: 1000px) {
+  .home {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .home__menu {
+    padding: 0em 7em;
+  }
+  .home__menu__image--mobile {
+    display: none;
+  }
+  .home__menu__image--desktop {
+    display: block;
+    left: 0%;
+    transform: translate(-110%, 20%);
+    width: 10vw;
+  }
+  .home__menu__title {
+    position: absolute;
+  }
+  .home__menu__slider {
+    padding: 10em 0em 3em;
+    margin-top: 0em;
+  }
+  .home__menu__slider .slider__button {
+    top: 2em;
+    padding: 1.6em;
+  }
+  .home__menu__slider .slider__button img {
+    transform: scale(2);
+  }
+  .home__menu__slider .slider__button--next {
+    right: 3em;
+  }
+  .home__menu__slider .slider__button--prev {
+    left: 95%;
+  }
+  .home__gallery {
+    padding: 0em 7em;
+  }
+  .home__gallery__slider {
+    max-width: unset;
+  }
+  .home__gallery__slider .gallery__slider__image {
+    height: 300px;
+  }
+  .home__gallery__slider .gallery__slider__image img {
+    height: 100%;
+  }
+  .home__milestones {
+    margin: 3em 7em 0em;
+  }
+  .home__milestones__list {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .about__history {
@@ -980,6 +1040,8 @@
 }
 @media only screen and (min-width: 1000px) {
   .about section:not(.about__facilities) {
+    max-width: 1200px;
+    margin: 3.6em auto;
     padding: 0em 7em;
   }
   .about__history__video {
@@ -1185,7 +1247,9 @@
 }
 @media only screen and (min-width: 1000px) {
   .rooms {
-    padding: 0em 10em;
+    padding: 0em 2em;
+    max-width: 1200px;
+    margin: 0em auto;
   }
   .rooms__slider {
     padding: 2em 0em 4em;
@@ -1231,7 +1295,7 @@
   font-size: 0.8rem;
   line-height: 11.97px;
 }
-.details__room__image {
+.details__room__booking__image {
   width: 100%;
   height: 214px;
   background-color: #EFEFEF;
@@ -1242,21 +1306,18 @@
   transform: translateX(-50%);
   overflow: hidden;
 }
-.details__room__image img {
+.details__room__booking__image img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 100%;
+  width: 100%;
 }
-.details__availability {
-  margin-top: 1em;
-  padding: 0em 1.2em;
-}
-.details__availability__form {
+.details__room__booking__form {
   padding: 0em 1em;
+  margin-top: 1em;
 }
-.details__availability__form__label {
+.details__room__booking__form__label {
   font-family: "Roboto";
   font-size: 1rem;
   font-weight: 700;
@@ -1266,7 +1327,7 @@
   display: block;
   margin-bottom: 1.4em;
 }
-.details__availability__form__button {
+.details__room__booking__form__button {
   padding-top: 1.6em;
   padding-bottom: 1.6em;
   background-color: #BDAC8D;
@@ -1281,24 +1342,24 @@
   border: none;
   width: 100%;
 }
-.details__availability .date-wrapper {
+.details__room__booking .date-wrapper {
   padding: 0.4em 2em 0.6em;
   display: inline-flex;
   width: 100%;
   margin-bottom: 2em;
 }
-.details__availability .date-wrapper__button-picker {
+.details__room__booking .date-wrapper__button-picker {
   border: none;
   background: #FFFFFF;
   line-height: 0px;
   vertical-align: bottom;
 }
-.details__availability .date-wrapper__date-input {
+.details__room__booking .date-wrapper__date-input {
   width: 0px;
   height: 0px;
   border: none;
 }
-.details__availability .date-wrapper__text-input {
+.details__room__booking .date-wrapper__text-input {
   border: none;
   flex: 1;
   margin-left: 0.8em;
@@ -1307,9 +1368,13 @@
   outline: none;
   font-family: "Roboto";
 }
-.details__availability .date-wrapper__text-input::placeholder {
+.details__room__booking .date-wrapper__text-input::placeholder {
   color: #686868;
   opacity: 1; /* Firefox */
+}
+.details__availability {
+  margin-top: 1em;
+  padding: 0em 1.2em;
 }
 .details__availability__terms {
   font-family: Roboto;
@@ -1567,18 +1632,25 @@
   width: 100%;
 }
 @media only screen and (min-width: 1000px) {
+  .details {
+    margin: 0em auto;
+    max-width: 1200px;
+  }
   .details section:not(.details__founder) {
-    padding: 0em 40em 0em 7em;
+    padding: 0em 30em 0em 2em;
   }
   .details__founder {
     box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.2705882353);
     width: 26%;
     padding: 4em 2em !important;
     position: relative;
-    left: 7em;
+    left: 2em;
   }
   .details__policy {
-    padding-left: 10em !important;
+    padding-left: 5em !important;
+  }
+  .details__room {
+    padding: 0em 2em 0em !important;
   }
   .details__room__info {
     background-color: white;
@@ -1586,6 +1658,7 @@
     padding: 0em 0em 1.4em 2em;
     position: relative;
     top: 2em;
+    width: 50%;
   }
   .details__room__info__title {
     display: inline-block;
@@ -1594,22 +1667,23 @@
   .details__room__info__price {
     display: inline-block;
   }
-  .details__room__image {
-    height: 400px;
-    transform: translate(-50%, -10%);
-    z-index: -1;
+  .details__room__booking {
+    display: flex;
+    gap: 2em;
   }
-  .details__room__image img {
-    height: unset;
+  .details__room__booking__image {
+    height: 400px;
+    transform: translate(0%, -10%);
+    z-index: -1;
+    left: 0%;
+    width: 60%;
+  }
+  .details__room__booking__image img {
+    height: 100%;
     width: 100%;
   }
   .details__availability__terms {
     margin-top: 0;
-  }
-  .details__availability__form {
-    position: absolute;
-    right: 7em;
-    top: 26em;
   }
   .details__amenities__list__item {
     width: 30%;
@@ -1893,7 +1967,9 @@
 }
 @media only screen and (min-width: 1000px) {
   .offers__rooms {
-    padding: 0em 10em;
+    max-width: 1200px;
+    margin: 3em auto;
+    padding: 0em 2em;
   }
   .offers__rooms__offer {
     padding: 0em 0em 1em;
@@ -1951,6 +2027,7 @@
   }
   .offers__popular-rooms__slider {
     margin-top: 2em;
+    max-width: 1200px;
   }
   .offers__popular-rooms__slider .popular-rooms__slider__room-card__image img {
     transform: translate(-50%, -50%) scale(1.5);
@@ -2088,7 +2165,9 @@
 }
 @media only screen and (min-width: 1000px) {
   .contact {
-    padding: 0em 7em;
+    max-width: 1200px;
+    margin: 0em auto;
+    padding: 0em 2em;
   }
   .contact__list {
     display: flex;
@@ -2285,28 +2364,35 @@ body {
 }
 
 .header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0em 2em;
   background: #333333;
   color: #FFFFFF;
   position: relative;
+}
+.header__info {
+  max-width: 1140px;
+  margin: 0 auto;
   padding: 9em 1.2em 6em;
   min-height: 335px;
 }
-.header__title {
+.header__info__title {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 3.5rem;
   line-height: 1em;
   margin-top: 0.28em;
 }
-.header__title--home {
+.header__info__title--home {
   margin-top: 1em;
 }
 @media only screen and (max-width: 1000px) {
-  .header__title {
+  .header__info__title {
     padding-right: 2em;
   }
 }
-.header__subtitle {
+.header__info__subtitle {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 0.8rem;
@@ -2315,18 +2401,19 @@ body {
   letter-spacing: 0.2rem;
 }
 @media only screen and (min-width: 1000px) {
-  .header {
-    padding: 9em 7em 6em;
+  .header__info {
+    padding: 11em 0em 0em;
+    min-height: unset;
   }
 }
-.header__navbar {
+.header__info__navbar {
   position: absolute;
   bottom: -0.1em;
   right: 1.2em;
   background-color: #FFFFFF;
   padding: 1em;
 }
-.header__navbar__pages {
+.header__info__navbar__pages {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2334,26 +2421,29 @@ body {
   color: #222222;
   font-family: "Archivo";
 }
-.header__navbar__pages .page {
+.header__info__navbar__pages .page {
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
 }
-.header__navbar__pages .page a {
+.header__info__navbar__pages .page a {
   text-decoration: none;
   color: inherit;
 }
-.header__navbar__pages .page--divisor {
+.header__info__navbar__pages .page--divisor {
   margin: 0em 0.4em;
   cursor: default;
 }
-.header__navbar__pages .page--active {
+.header__info__navbar__pages .page--active {
   color: #BEAD8E;
   cursor: default;
 }
 @media only screen and (min-width: 1000px) {
-  .header__navbar {
-    right: 9em;
+  .header__info__navbar {
+    position: relative;
+    display: inline-flex;
+    left: 100%;
+    transform: translateX(-100%);
   }
 }
 

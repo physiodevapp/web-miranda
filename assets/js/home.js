@@ -16,12 +16,46 @@
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      100: {
+        slidesPerView: 1, 
+        grid: {
+          fill:	'row',
+          rows: 3,
+        },
+      },
+      1000: {
+        spaceBetween: 20,
+        slidesPerView: 2, 
+        grid: {
+          fill:	'row',
+          rows: 3,
+        },
+      }
+    },
   });
   const swiperGallery = new Swiper(".swiper.home__gallery__slider", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true
     },
+    breakpoints: {
+    100: {
+      slidesPerView: 1, 
+      grid: {
+        fill:	'row',
+        rows: 1,
+      },
+    },
+    1000: {
+      spaceBetween: 20,
+      slidesPerView: 3, 
+      grid: {
+        fill:	'row',
+        rows: 1,
+      },
+    }
+  },
   });
   const todayDate = new Date().toLocaleDateString("es-US", {
     day: "numeric",
