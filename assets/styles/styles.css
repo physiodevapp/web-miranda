@@ -979,7 +979,7 @@
   background-color: #BDAC8D;
 }
 @media only screen and (min-width: 1000px) {
-  section:not(.about__facilities) {
+  .about section:not(.about__facilities) {
     padding: 0em 7em;
   }
   .about__history__video {
@@ -1567,7 +1567,7 @@
   width: 100%;
 }
 @media only screen and (min-width: 1000px) {
-  section:not(.details__founder) {
+  .details section:not(.details__founder) {
     padding: 0em 40em 0em 7em;
   }
   .details__founder {
