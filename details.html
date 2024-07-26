@@ -50,21 +50,23 @@
     </div>
   </nav>
   <header class="header">
-    <h6 class="header__subtitle">THE ULTIMATE LUXURY</h6>
-    <h4 class="header__title">Ultimate Room</h4>
-    <nav class="header__navbar">
-      <ul class="header__navbar__pages">
-        <li class="page">
-          <a href="./index.html">Home</a>
-        </li>
-        <li class="page page--divisor">
-          |
-        </li>
-        <li class="page page--active">
-          Room Details
+    <div class="header__info">
+      <h6 class="header__info__subtitle">THE ULTIMATE LUXURY</h6>
+      <h4 class="header__info__title">Ultimate Room</h4>
+      <nav class="header__info__navbar">
+        <ul class="header__info__navbar__pages">
+          <li class="page">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="page page--divisor">
+            |
+          </li>
+          <li class="page page--active">
+            Room Details
+          </ul>
         </ul>
-      </ul>
-    </nav>
+      </nav>
+    </div>
   </header>
   <main class="details">
     <section class="details__room">
@@ -73,30 +75,32 @@
         <h4 class="details__room__info__title">Luxury Double Bed</h4>
         <h5 class="details__room__info__price">$345<span class="details__room__info__price__time">/Night</span></h5>
       </div>
-      <figure class="details__room__image">
-        <img src="./assets/images/photo_1718998497112.jpg" alt="">
-      </figure>
+      <div class="details__room__booking">
+        <figure class="details__room__booking__image">
+          <img src="./assets/images/photo_1718998497112.jpg" alt="">
+        </figure>
+        <form action="" class="details__room__booking__form">
+          <label for="arrival-date-input" class="details__room__booking__form__label">Check In</label>
+          <div class="date-wrapper">
+            <input id="arrival-date-input" name="arrival-date" class="date-wrapper__date-input" type="date">
+            <input id="arrival-text-input" name="arrival-text" class="date-wrapper__text-input" type="text">
+            <button id="arrival-date-button" class="date-wrapper__button-picker">
+              <img src="./assets/images/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1 (1).svg" alt="">
+            </button>
+          </div>
+          <label for="departure-date-input" class="details__room__booking__form__label">Check Out</label>
+          <div class="date-wrapper">
+            <input id="departure-date-input" name="departure-date" class="date-wrapper__date-input" type="date">
+            <input id="departure-text-input" name="departure-text" class="date-wrapper__text-input" type="text">
+            <button id="departure-date-button" class="date-wrapper__button-picker">
+              <img src="./assets/images/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1 (1).svg" alt="">
+            </button>
+          </div>
+          <button class="details__room__booking__form__button">Check Availability</button>
+        </form>
+      </div>
     </section>
     <section class="details__availability">
-      <form action="" class="details__availability__form">
-        <label for="arrival-date-input" class="details__availability__form__label">Check In</label>
-        <div class="date-wrapper">
-          <input id="arrival-date-input" name="arrival-date" class="date-wrapper__date-input" type="date">
-          <input id="arrival-text-input" name="arrival-text" class="date-wrapper__text-input" type="text">
-          <button id="arrival-date-button" class="date-wrapper__button-picker">
-            <img src="./assets/images/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1 (1).svg" alt="">
-          </button>
-        </div>
-        <label for="departure-date-input" class="details__availability__form__label">Check Out</label>
-        <div class="date-wrapper">
-          <input id="departure-date-input" name="departure-date" class="date-wrapper__date-input" type="date">
-          <input id="departure-text-input" name="departure-text" class="date-wrapper__text-input" type="text">
-          <button id="departure-date-button" class="date-wrapper__button-picker">
-            <img src="./assets/images/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1 (1).svg" alt="">
-          </button>
-        </div>
-        <button class="details__availability__form__button">Check Availability</button>
-      </form>
       <p class="details__availability__terms">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
     </section>
     <section class="details__amenities">

@@ -1,8 +1,5 @@
 
 @mixin pageHeader {
-  background: #333333;
-  color: #FFFFFF;
-  position: relative;
   padding: 9em 1.2em 6em;
   min-height: 335px;
 
@@ -32,7 +29,8 @@
   }
 
   @media only screen and (min-width: 1000px) {
-    padding: 9em 7em 6em;    
+    padding: 11em 0em 0em;
+    min-height: unset;   
   }
 }
 
@@ -74,6 +72,9 @@
   }
 
   @media only screen and (min-width: 1000px) {
-    right: 9em;    
+    position: relative;
+    display: inline-flex;
+    left: 100%;
+    transform: translateX(-100%);   
   }
 }

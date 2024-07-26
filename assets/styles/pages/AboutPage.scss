@@ -285,6 +285,8 @@
   }
   @media only screen and (min-width: 1000px) {
     .about section:not(&__facilities) {
+      max-width: 1200px;
+      margin: 3.6em auto;
       padding: 0em 7em;
     }
 
