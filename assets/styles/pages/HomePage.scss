@@ -25,6 +25,14 @@
       border: 1px solid white;
       margin-top: 2em;
     }
+
+    @media only screen and (min-width: 1000px) {
+      display: inline-flex;
+  
+      &--primary {
+        margin-right: 2em;
+      }
+    }
   }
 }
 
@@ -298,36 +306,47 @@
   &__intro-video {
     background-color: $color-tertiary;
     padding: 4em 1.2em 2.4em;
+
+    &__wrapper {
+
+      .intro-video__wrapper {
+
+        &__info {
     
-    &__title {
-      @include room-title;
-      color: $color-secondary;
-      margin-top: 0.8em;
+          &__title {
+            @include room-title;
+            color: $color-secondary;
+            margin-top: 0.8em;
+          }
+      
+          &__subtitle {
+            @include room-subtitle;
+            color: $color-primary;
+          }
+      
+          &__description {
+            @include room-description;
+            color: $color-secondary;
+            margin-top: 0.8em;
+          }
+        }   
+    
+        &__video {
+          margin-top: 2em;
+          width: 100%;
+          max-height: 270px;
+        }
+    
+        &__button {
+          @include button;
+          padding-right: 4.1em;
+          padding-left: 4.1em;
+          margin-top: 2em;
+        }
+      }
+
     }
 
-    &__subtitle {
-      @include room-subtitle;
-      color: $color-primary;
-    }
-
-    &__description {
-      @include room-description;
-      color: $color-secondary;
-      margin-top: 0.8em;
-    }
-
-    &__video {
-      margin-top: 2em;
-      width: 100%;
-      max-height: 270px;
-    }
-
-    &__button {
-      @include button;
-      padding-right: 4.1em;
-      padding-left: 4.1em;
-      margin-top: 2em;
-    }
   }
 
   &__facilities {
@@ -574,11 +593,85 @@
 
   @media only screen and (min-width: 1000px) {
 
-    max-width: 1200px;
-    margin: 0 auto;
+    .home section:not(&__rooms):not(&__intro-video) {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+
+    &__intro-video {
+      padding-bottom: 1em;
+      margin-bottom: 6em;
+
+      &__wrapper {
+        max-width: 1200px;
+        margin: 0em auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        .intro-video__wrapper {
+
+          &__info {
+            width: 50%;
+            margin-right: 2em;
+            padding-top: 4em;
+    
+            &__title {
+              padding-right: 2em;
+              font-size: 4rem;
+              line-height: 4rem;
+              margin-bottom: 0.4em;
+            }
+    
+            &__description {
+              padding-right: 6em;
+            }
+          }
+    
+          &__button {
+            position: relative;
+            transform: translateY(-140%);
+          }
+    
+          &__video {
+            width: 47%;
+            max-height: unset;
+            height: 460px;
+          }
+        }
+      }
+
+    }
+
+    &__rooms {
+      .popular-rooms__slider__room-card__image {
+        height: 400px;
+      }
+
+      .slider__button {
+        padding: 1.75em 2em;
+        top: 14em;
+        
+        &--prev {
+          left: 32em;
+        }
+        
+        &--next {
+          right: 32em;
+        }
+      }
+    }
+
+    &__facilities {
+      padding: 0em 2em;
+
+       &__slider {
+        max-width: unset;
+       }
+    }
 
     &__menu {
-      padding: 0em 7em;
+      padding: 0em 2em;
 
       &__image {
          &--mobile {
@@ -621,7 +714,7 @@
     }
 
     &__gallery {
-      padding: 0em 7em;
+      padding: 0em 2em;
 
       &__slider {
         max-width: unset;
@@ -637,7 +730,7 @@
     }
 
     &__milestones {
-      margin: 3em 7em 0em;
+      max-width: calc(1200px - 4em) !important;
 
       &__list {
         display: flex;

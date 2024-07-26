@@ -26,6 +26,14 @@
   border: 1px solid white;
   margin-top: 2em;
 }
+@media only screen and (min-width: 1000px) {
+  .header .button {
+    display: inline-flex;
+  }
+  .header .button--primary {
+    margin-right: 2em;
+  }
+}
 
 .home__availability {
   background-color: #222222;
@@ -289,7 +297,6 @@
   padding-bottom: 1.6em;
 }
 .home__rooms__popular-rooms__slider .popular-rooms__slider__room-card__image {
-  max-height: 218px;
   height: 218px;
   width: 100%;
   background: #E9E9E9;
@@ -389,7 +396,7 @@
   background-color: #222222;
   padding: 4em 1.2em 2.4em;
 }
-.home__intro-video__title {
+.home__intro-video__wrapper .intro-video__wrapper__info__title {
   font-family: "Old Standard TT";
   font-size: 2.6rem;
   font-weight: 400;
@@ -400,7 +407,7 @@
   color: #FFFFFF;
   margin-top: 0.8em;
 }
-.home__intro-video__subtitle {
+.home__intro-video__wrapper .intro-video__wrapper__info__subtitle {
   font-family: "Archivo";
   font-size: 0.9rem;
   font-weight: 700;
@@ -411,7 +418,7 @@
   text-transform: uppercase;
   color: #BDAC8D;
 }
-.home__intro-video__description {
+.home__intro-video__wrapper .intro-video__wrapper__info__description {
   font-family: "Roboto";
   font-size: 0.9rem;
   font-weight: 400;
@@ -421,12 +428,12 @@
   color: #FFFFFF;
   margin-top: 0.8em;
 }
-.home__intro-video__video {
+.home__intro-video__wrapper .intro-video__wrapper__video {
   margin-top: 2em;
   width: 100%;
   max-height: 270px;
 }
-.home__intro-video__button {
+.home__intro-video__wrapper .intro-video__wrapper__button {
   padding-top: 1.6em;
   padding-bottom: 1.6em;
   background-color: #BDAC8D;
@@ -678,12 +685,64 @@
   background-color: #BDAC8D;
 }
 @media only screen and (min-width: 1000px) {
-  .home {
+  .home section:not(.home__rooms):not(.home__intro-video) {
     max-width: 1200px;
     margin: 0 auto;
   }
+  .home__intro-video {
+    padding-bottom: 1em;
+    margin-bottom: 6em;
+  }
+  .home__intro-video__wrapper {
+    max-width: 1200px;
+    margin: 0em auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home__intro-video__wrapper .intro-video__wrapper__info {
+    width: 50%;
+    margin-right: 2em;
+    padding-top: 4em;
+  }
+  .home__intro-video__wrapper .intro-video__wrapper__info__title {
+    padding-right: 2em;
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 0.4em;
+  }
+  .home__intro-video__wrapper .intro-video__wrapper__info__description {
+    padding-right: 6em;
+  }
+  .home__intro-video__wrapper .intro-video__wrapper__button {
+    position: relative;
+    transform: translateY(-140%);
+  }
+  .home__intro-video__wrapper .intro-video__wrapper__video {
+    width: 47%;
+    max-height: unset;
+    height: 460px;
+  }
+  .home__rooms .popular-rooms__slider__room-card__image {
+    height: 400px;
+  }
+  .home__rooms .slider__button {
+    padding: 1.75em 2em;
+    top: 14em;
+  }
+  .home__rooms .slider__button--prev {
+    left: 32em;
+  }
+  .home__rooms .slider__button--next {
+    right: 32em;
+  }
+  .home__facilities {
+    padding: 0em 2em;
+  }
+  .home__facilities__slider {
+    max-width: unset;
+  }
   .home__menu {
-    padding: 0em 7em;
+    padding: 0em 2em;
   }
   .home__menu__image--mobile {
     display: none;
@@ -715,7 +774,7 @@
     left: 95%;
   }
   .home__gallery {
-    padding: 0em 7em;
+    padding: 0em 2em;
   }
   .home__gallery__slider {
     max-width: unset;
@@ -727,7 +786,7 @@
     height: 100%;
   }
   .home__milestones {
-    margin: 3em 7em 0em;
+    max-width: calc(1200px - 4em) !important;
   }
   .home__milestones__list {
     display: flex;
@@ -1112,7 +1171,6 @@
   text-align: center;
 }
 .rooms__slider__room-card__image {
-  max-height: 218px;
   height: 218px;
   width: 100%;
   background: #E9E9E9;
@@ -1556,7 +1614,6 @@
   padding-bottom: 1.6em;
 }
 .details__related-rooms__slider .related-rooms__slider__room-card__image {
-  max-height: 218px;
   height: 218px;
   width: 100%;
   background: #E9E9E9;
@@ -1887,7 +1944,6 @@
   padding-bottom: 1.6em;
 }
 .offers__popular-rooms__slider .popular-rooms__slider__room-card__image {
-  max-height: 218px;
   height: 218px;
   width: 100%;
   background: #E9E9E9;
