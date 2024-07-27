@@ -733,10 +733,12 @@
     top: 14em;
   }
   .home__rooms .slider__button--prev {
-    left: 32em;
+    right: 50%;
+    transform: translateX(-24vw);
   }
   .home__rooms .slider__button--next {
-    right: 32em;
+    right: 50%;
+    transform: translateX(24vw);
   }
   .home__facilities {
     padding: 0em 2em;
@@ -775,10 +777,10 @@
     transform: scale(2);
   }
   .home__menu__slider .slider__button--next {
-    right: 3em;
+    right: 0em;
   }
   .home__menu__slider .slider__button--prev {
-    left: 95%;
+    left: 98%;
   }
   .home__gallery {
     padding: 0em 2em;
@@ -2654,7 +2656,10 @@ body {
   background-color: #F8F8F8;
   padding: 0.5em 1.2em;
 }
-.footer__copyright__paragraph {
+.footer__copyright__wrapper {
+  max-width: 1200px;
+}
+.footer__copyright__wrapper .footer__copyright__paragraph {
   padding: 0.6em 0em;
   font-family: "Roboto";
   color: #222222;
@@ -2686,13 +2691,17 @@ body {
   }
   .footer__copyright {
     bottom: 0em;
+  }
+  .footer__copyright__wrapper {
+    max-width: 1200px;
+    margin: 0em auto;
+    padding: 1.4em 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #F8F8F8;
-    padding: 1.4em 7em;
   }
-  .footer__copyright__paragraph a:visited {
+  .footer__copyright__wrapper .footer__copyright__paragraph a:visited {
     color: inherit;
     text-decoration: none;
   }
