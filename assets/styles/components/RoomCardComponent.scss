@@ -3,7 +3,6 @@
   text-align: center;
 
   &__image {
-    max-height: 218px;;
     height: 218px;
     width: 100%;
     background: #E9E9E9;
@@ -13,7 +12,7 @@
   &__features {
     list-style: none;
     position: relative;
-    transform: translateY(-70%);
+    transform: translateY(-60%);
     display: inline-flex;
     background-color: white;
     padding: 0.68em 1.3em;

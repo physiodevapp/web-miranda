@@ -19,7 +19,26 @@ $offers-rooms-element-marging-left: $offers-rooms-element-marging-right;
       box-shadow: 0px 14px 24px 0px #B8B8B81A;
       position: relative;
 
-      & .offer__price {
+      .offer__image {
+        background-color: #EBEBEB;
+        height: 162px;
+        width: 100%;
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+        }
+      }
+
+      .offer__info__price {
         font-family: $font-archivo;
         font-weight: 700;
         text-align: right;
@@ -57,54 +76,35 @@ $offers-rooms-element-marging-left: $offers-rooms-element-marging-right;
 
       }
 
-      & .offer__image {
-        background-color: #EBEBEB;
-        height: 162px;
-        width: 100%;
-        display: block;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        overflow: hidden;
-
-        img {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 100%;
-        }
-      }
-
-      & .offer__subtitle {
+      .offer__info__subtitle {
         @include room-subtitle;
         margin-top: 0.6em;
         margin-left: $offers-rooms-element-marging-left;
         margin-right: $offers-rooms-element-marging-right;
       }
 
-      & .offer__title {
+      .offer__info__title {
         @include room-title;
         margin-top: 0.2em;
         margin-left: $offers-rooms-element-marging-left;
         margin-right: $offers-rooms-element-marging-right;
       }
 
-      & .offer__description {
+      .offer__info__description {
         @include room-description;
         margin-top: 1.4em;
         margin-left: $offers-rooms-element-marging-left;
         margin-right: $offers-rooms-element-marging-right;
       }
   
-      & .offer__amenities {
+      .offer__info__amenities {
         @include amenities;
         margin-top: 0.4em;
         margin-left: $offers-rooms-element-marging-left;
         margin-right: $offers-rooms-element-marging-right;
       }
 
-      & .offer__button {
+      .offer__info__button {
         @include button;
         padding-left: 4em;
         padding-right: 4em;
@@ -184,10 +184,109 @@ $offers-rooms-element-marging-left: $offers-rooms-element-marging-right;
             width: 100%;
           }
         }
+
+        &__subtitle {
+          color: #777777;
+        }
       }
 
     }
 
+  }
+
+  @media only screen and (min-width: 1000px) {
+
+    &__rooms {
+      max-width: 1200px;
+      margin: 3em auto;
+      padding: 0em 2em;
+
+      &__offer {
+        padding: 0em 0em 1em;
+      
+        .offer__image {
+          height: 370px;
+        }
+  
+        .offer__info {
+          position: relative;
+          bottom: 3em;
+          background-color: white;
+          width: 94%;
+          transform: translateX(-50%);
+          left: 50%;
+          padding: 0em 3em 3em;
+          border-top: 4px solid #bdac8d;
+  
+          &__price {
+            right: 4rem;
+  
+            &--before {
+              top: 1.8em;
+            }
+  
+            &--after {
+              top: 2.4em;
+            }
+          }
+  
+          &__title {
+            line-height: 120px;
+            border-bottom: 2px solid #ECECEC;
+          }
+  
+          &__subtitle {
+            position: relative;
+            top: 2.6em;
+          }
+  
+          &__description {
+            width: 59%;
+            display: inline-flex;
+            margin: 0em;
+            padding: 1.4em 0.8em 0.8em;
+          }
+  
+          &__amenities {
+            display: inline-flex;
+            width: 40%;
+            margin: 0em;
+          }
+  
+          &__button {
+            margin-top: 1em;
+          }
+        }
+      }
+    }
+
+    &__popular-rooms {
+      padding: 4em 7em 5em;
+
+      &__title {
+        font-size: 4rem;
+        margin-top: 1.4em;
+      }
+
+      &__slider {
+        margin-top: 2em;
+        max-width: 1200px;
+
+        .popular-rooms__slider__room-card {
+
+          &__image {
+            img {
+              transform: translate(-50%, -50%) scale(1.5);
+            }
+          }
+
+          &__subtitle {
+            font-size: 0.8rem;
+            margin-top: 0.6em;
+          }
+        }
+      }
+    }
   }
 }
 

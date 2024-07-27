@@ -1,8 +1,5 @@
 
 @mixin pageHeader {
-  background: #333333;
-  color: #FFFFFF;
-  position: relative;
   padding: 9em 1.2em 6em;
   min-height: 335px;
 
@@ -16,6 +13,10 @@
     &--home {
       margin-top: 1em;
     }
+
+    @media only screen and (max-width: 1000px) {
+      padding-right: 2em;
+    }
   }
 
   &__subtitle {
@@ -27,8 +28,9 @@
     letter-spacing: 0.2rem;
   }
 
-  @media only screen and (min-width: 100px) {
-    padding: 9em 7em 6em;    
+  @media only screen and (min-width: 1000px) {
+    padding: 11em 0em 0em;
+    min-height: unset;  
   }
 }
 
@@ -69,7 +71,10 @@
     }
   }
 
-  @media only screen and (min-width: 100px) {
-    right: 9em;    
+  @media only screen and (min-width: 1000px) {
+    position: relative;
+    display: inline-flex;
+    left: 100%;
+    transform: translateX(-100%);   
   }
 }

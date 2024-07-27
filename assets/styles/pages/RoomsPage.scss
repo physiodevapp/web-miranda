@@ -71,7 +71,7 @@
       flex-wrap: wrap;
       justify-content: center;
       align-content: center;
-
+      cursor: pointer;
       font-family: "Oswald";
       font-size: 0.9rem;
       font-weight: 700;
@@ -96,6 +96,23 @@
     .swiper-pagination-bullet-active {
       background: $color-primary;
       color: $color-secondary;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    padding: 0em 2em;
+    max-width: 1200px;
+    margin: 0em auto;
+
+    &__slider {
+      padding: 2em 0em 4em;
+
+      &__room-card__image {
+
+        img {
+          transform: translate(-50%, -50%) scale(1.5);
+        }
+      }
     }
   }
 
