@@ -1110,7 +1110,7 @@
   .about section:not(.about__facilities) {
     max-width: 1200px;
     margin: 3.6em auto;
-    padding: 0em 7em;
+    padding: 0em 2em;
   }
   .about__history__video {
     height: 560px;
