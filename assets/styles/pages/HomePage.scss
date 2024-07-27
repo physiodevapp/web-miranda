@@ -644,6 +644,11 @@
     }
 
     &__rooms {
+
+      &__title {
+        font-size: 4rem;
+      }
+
       .popular-rooms__slider__room-card__image {
         height: 400px;
       }
@@ -653,17 +658,23 @@
         top: 14em;
         
         &--prev {
-          left: 32em;
+          right: 50%;
+          transform: translateX(-24vw);
         }
         
         &--next {
-          right: 32em;
+          right: 50%;
+          transform: translateX(24vw);
         }
       }
     }
 
     &__facilities {
       padding: 0em 2em;
+
+      &__title {
+        font-size: 4rem;
+      }
 
        &__slider {
         max-width: unset;
@@ -688,6 +699,7 @@
 
       &__title {
         position: absolute;
+        font-size: 4rem;
       }
 
       &__slider {
