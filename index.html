@@ -60,52 +60,59 @@
   <main class="home">
     <article class="home__availability">
       <form action="">
-      <label for="arrival-date-input" class="home__availability__label">Arrival Date</label>
-      <div class="date-wrapper">
-          <button id="arrival-date-button" class="date-wrapper__button-picker">
-            <img src="./assets/images/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.svg" alt="">
-          </button>
-          <input id="arrival-date-input" name="arrival-date" class="date-wrapper__date-input" type="date">
-          <input id="arrival-text-input" name="arrival-text" class="date-wrapper__text-input" type="text">
+        <div>
+          <label for="arrival-date-input" class="home__availability__label">Arrival Date</label>
+          <div class="date-wrapper">
+            <button id="arrival-date-button" class="date-wrapper__button-picker">
+              <img src="./assets/images/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.svg" alt="">
+            </button>
+            <input id="arrival-date-input" name="arrival-date" class="date-wrapper__date-input" type="date">
+            <input id="arrival-text-input" name="arrival-text" class="date-wrapper__text-input" type="text">
+          </div>
         </div>
-        <label for="departure-date-input" class="home__availability__label">LeDeparture Date</label>
-        <div class="date-wrapper">
-          <button id="departure-date-button" class="date-wrapper__button-picker">
-            <img src="./assets/images/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.svg" alt="">
-          </button>
-          <input id="departure-date-input" name="departure-date" class="date-wrapper__date-input" type="date">
-          <input id="departure-text-input" name="departure-text" class="date-wrapper__text-input" type="text">
+        <div>
+          <label for="departure-date-input" class="home__availability__label">LeDeparture Date</label>
+          <div class="date-wrapper">
+            <button id="departure-date-button" class="date-wrapper__button-picker">
+              <img src="./assets/images/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.svg" alt="">
+            </button>
+            <input id="departure-date-input" name="departure-date" class="date-wrapper__date-input" type="date">
+            <input id="departure-text-input" name="departure-text" class="date-wrapper__text-input" type="text">
+          </div>
         </div>
         <button class="button">Check availability</button>
       </form>
     </article>
     <section class="home__about-us">
       <article class="home__about-us__summary">
+        <div class="home__about-us__summary__background"></div>
         <h6 class="home__about-us__summary__subtitle">About us</h6>
         <h4 class="home__about-us__summary__title">Discover Our Underground</h4>
         <p class="home__about-us__summary__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <button class="home__about-us__summary__button">Book now</button>
       </article>
-      <article class="home__about-us__feature">
-        <figure class="home__about-us__feature__image">
-          <img src="./assets/images/photo_1718990533303.jpg" alt="">
-        </figure>
-        <article class="home__about-us__feature__details">
-          <img class="feature__details__image" src="./assets/images/svg-gobbler - 2022-03-01T200745.428 1.svg" alt="" />
-          <h4 class="feature__details__title">Strong Team</h4>
-          <p class="feature__details__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+      <div>
+        <article class="home__about-us__feature">
+          <figure class="home__about-us__feature__image">
+            <img src="./assets/images/photo_1718990533303.jpg" alt="">
+          </figure>
+          <article class="home__about-us__feature__details">
+            <img class="feature__details__image" src="./assets/images/svg-gobbler - 2022-03-01T200745.428 1.svg" alt="" />
+            <h4 class="feature__details__title">Strong Team</h4>
+            <p class="feature__details__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+          </article>
         </article>
-      </article>
-      <article class="home__about-us__feature">
-        <figure class="home__about-us__feature__image">
-          <img src="./assets/images/photo_1718970911355.jpg"  alt="" />
-        </figure>
-        <article class="home__about-us__feature__details home__about-us__feature__details--black">
-          <img class="feature__details__image" src="./assets/images/svg-gobbler - 2022-03-01T201407.985 1.svg" alt="" />
-          <h4 class="feature__details__title">Luxury Room</h4>
-          <p class="feature__details__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+        <article class="home__about-us__feature">
+          <figure class="home__about-us__feature__image">
+            <img src="./assets/images/photo_1718970911355.jpg"  alt="" />
+          </figure>
+          <article class="home__about-us__feature__details home__about-us__feature__details--black">
+            <img class="feature__details__image" src="./assets/images/svg-gobbler - 2022-03-01T201407.985 1.svg" alt="" />
+            <h4 class="feature__details__title">Luxury Room</h4>
+            <p class="feature__details__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+          </article>
         </article>
-      </article>
+      </div>
     </section>
     <section class="home__rooms">
       <h6 class="home__rooms__subtitle">Rooms</h6>
@@ -114,7 +121,8 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <article class="popular-rooms__slider__room-card">
-              <figure class="popular-rooms__slider__room-card__image" >
+              <figure class="popular-rooms__slider__room-card__image"
+              style="background-image: url(./assets/images/photo_1718982740187.jpg);">
                 <img src="./assets/images/photo_1718982740187.jpg" alt="" />
               </figure>
               <li class="popular-rooms__slider__room-card__features">
@@ -170,7 +178,8 @@
           </div>
           <div class="swiper-slide">
             <article class="popular-rooms__slider__room-card">
-              <figure class="popular-rooms__slider__room-card__image" >
+              <figure class="popular-rooms__slider__room-card__image"
+              style="background-image: url(./assets/images/photo_1718983706784.jpg);">
                 <img src="./assets/images/photo_1718983706784.jpg" alt="" />
               </figure>
               <ul class="popular-rooms__slider__room-card__features">
@@ -226,7 +235,8 @@
           </div>
           <div class="swiper-slide">
             <article class="popular-rooms__slider__room-card">
-              <figure class="popular-rooms__slider__room-card__image" >
+              <figure class="popular-rooms__slider__room-card__image"
+              style="background-image: url(./assets/images/photo_1718983348838.jpg);">
                 <img src="./assets/images/photo_1718983348838.jpg" alt="" />
               </figure>
               <ul class="popular-rooms__slider__room-card__features">
@@ -282,7 +292,8 @@
           </div>
           <div class="swiper-slide">
             <article class="popular-rooms__slider__room-card">
-              <figure class="popular-rooms__slider__room-card__image" >
+              <figure class="popular-rooms__slider__room-card__image"
+              style="background-image: url(./assets/images/photo_1718982740187.jpg);" >
                 <img src="./assets/images/photo_1718982740187.jpg" alt="" />
               </figure>
               <li class="popular-rooms__slider__room-card__features">

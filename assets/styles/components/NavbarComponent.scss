@@ -104,20 +104,27 @@
   @media only screen and (min-width: 1000px) {
     position: fixed;
     z-index: 10;
-    padding: 0.6em 7em;
     width: 100%;
     height: 70px;
     left: 0%;
     top: 0%;
     background-color: $color-tertiary;
 
+    &__message, &__wrapper {
+      position: relative;
+      width: 97%;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 1200px;
+    }
+
     &__message {
       display: block;
       color: $color-secondary;
+      padding: 0.4em 0em;
     }
 
     &__wrapper {
-      position: relative;
       padding-right: 2em;
 
       #menu-button {
