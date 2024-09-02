@@ -138,7 +138,7 @@
 
     arrivalTextInput.value = newDate;
   }
-  const handleBlurArrivalText = (event) => {
+  const handleFocusLostArrivalText = (event) => {
     arrivalTextInput.setAttribute("placeholder", todayDate);
     
     const newDate = new Date(event.target.value);
@@ -152,7 +152,8 @@
 
   arrivalButton.addEventListener("click", handleClickArrivalButton);
   arrivalDateInput.addEventListener("change", handleChangeArrivalDate);
-  arrivalTextInput.addEventListener("blur", handleBlurArrivalText);
+  arrivalTextInput.addEventListener("blur", handleFocusLostArrivalText);
+  arrivalTextInput.addEventListener("mouseleave", handleFocusLostArrivalText);
 
   const handleClickDepartureButton = (event) => {
     event.preventDefault();
@@ -172,7 +173,7 @@
 
     departureTextInput.value = newDate;
   }
-  const handleBlurDepartureText = (event) => {
+  const handleFocusLostDepartureText = (event) => {
     departureTextInput.setAttribute("placeholder", nextDate);
     
     const newDate = new Date(event.target.value);
@@ -186,7 +187,8 @@
 
   departureButton.addEventListener("click", handleClickDepartureButton);
   departureDateInput.addEventListener("change", handleChangeDepartureDate);
-  departureTextInput.addEventListener("blur", handleBlurDepartureText);
+  departureTextInput.addEventListener("blur", handleFocusLostDepartureText);
+  departureTextInput.addEventListener("mouseleave", handleFocusLostDepartureText);
 
   const facilitiesSliders = document.querySelectorAll(".home__facilities__slider .swiper-wrapper .facilities__slider__number");
   facilitiesSliders.forEach((htmlElement, index) => htmlElement.innerHTML = index < 10 ? `0${index + 1}` : index);
