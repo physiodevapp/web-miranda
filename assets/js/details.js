@@ -74,7 +74,7 @@ const handleChangeArrivalDate = (event) => {
   
   arrivalTextInput.value = newDate;
 }
-const handleBlurArrivalText = (event) => {
+const handleFocusLostArrivalText = (event) => {
   arrivalTextInput.setAttribute("placeholder", todayDate);
   
   const newDate = new Date(event.target.value);
@@ -88,7 +88,8 @@ const handleBlurArrivalText = (event) => {
 
 arrivalButton.addEventListener("click", handleClickArrivalButton);
 arrivalDateInput.addEventListener("change", handleChangeArrivalDate);
-arrivalTextInput.addEventListener("blur", handleBlurArrivalText);
+arrivalTextInput.addEventListener("blur", handleFocusLostArrivalText);
+arrivalTextInput.addEventListener("mouseleave", handleFocusLostArrivalText);
 
 const handleClickDepartureButton = (event) => {
   event.preventDefault();
@@ -108,7 +109,7 @@ const handleChangeDepartureDate = (event) => {
 
   departureTextInput.value = newDate;
 }
-const handleBlurDepartureText = (event) => {
+const handleFocusLostDepartureText = (event) => {
   departureTextInput.setAttribute("placeholder", nextDate);
   
   const newDate = new Date(event.target.value);
@@ -122,4 +123,5 @@ const handleBlurDepartureText = (event) => {
 
 departureButton.addEventListener("click", handleClickDepartureButton);
 departureDateInput.addEventListener("change", handleChangeDepartureDate);
-departureTextInput.addEventListener("blur", handleBlurDepartureText);
+departureTextInput.addEventListener("blur", handleFocusLostDepartureText);
+departureTextInput.addEventListener("mouseleave", handleFocusLostDepartureText);
