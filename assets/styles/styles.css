@@ -1871,6 +1871,7 @@
   line-height: 25.02px;
   color: #BEAD8E;
   top: 2.8em;
+  text-decoration: line-through;
 }
 .offers__rooms__offer .offer__info__price--before .offer__price__time {
   font-size: 1rem;
